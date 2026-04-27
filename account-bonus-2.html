@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice - Інтернет-магазин</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+</head>
+<body>
+    <header>
+        <!-- Discount banner -->
+        <div class="discount-banner">
+            <div class="discount-content">
+                <span>Не пропусти! МЕГА знижки на Пʼятницю 13</span>
+                <span>-50%</span>
+                <span>-40%</span>
+                <span>-30%</span>
+            </div>
+        </div>
+        
+        <!-- Top header with language and city selection -->
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-content">
+                    <!-- Left menu -->
+                    <div class="lang-city">
+                        <div class="custom-dropdown custom-dropdown--gray lang-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Вибір мови">
+                            <span class="custom-dropdown__current">UA</span>
+                            <ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">EN</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">RU</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="true">UA</li>
+                            </ul>
+                        </div>
+                        <div class="custom-dropdown city-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Вибір міста">
+                            <img src="images/location.svg" alt="Location" class="city-selector__icon">
+                            <span class="custom-dropdown__current">Черкаси</span>
+                            <span class="city-selector__arrow" aria-hidden="true"></span>
+                            <ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+                                <li class="custom-dropdown__option" role="option" aria-selected="true">Черкаси</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">Київ</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">Львів</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Right section -->
+                    <div class="menu-links">
+                        <div class="menu-item">
+                            <a href="#">Choice</a>
+                            <img src="images/dropdown.svg" alt="Dropdown">
+                        </div>
+                        <a href="#" class="menu-link">Врятувати світ</a>
+                        <a href="#" class="menu-link">Trade-In</a>
+                        <a href="#" class="menu-link">Доставка</a>
+                        <a href="#" class="menu-link">Повернення</a>
+                        <div class="help-link">
+                            <img src="images/help-icon.svg" alt="Help">
+                            <span>Допомога</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main header with logo, search and cart -->
+        <div class="main-header">
+            <div class="container">
+                <div class="main-header-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Choice">
+                        </a>
+                    </div>
+                    
+                    <!-- Catalog button -->
+                    <div class="catalog-btn">
+                        <div class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>Каталог</span>
+                    </div>
+                    
+                    <!-- Search -->
+                    <div class="search-container">
+                        <div class="search-input">
+                            <div class="search-icon">
+                                <img src="images/search.svg" alt="Search">
+                            </div>
+                            <input type="text" placeholder="Я шукаю...">
+                            <div class="microphone-icon">
+                                <img src="images/microphone.svg" alt="Voice search">
+                            </div>
+                        </div>
+                        <button class="search-btn">Знайти</button>
+                    </div>
+                    
+                    <!-- User actions -->
+                    <div class="user-actions">
+                        <a href="#" class="action-item">
+                            <img src="images/data-icon.svg" alt="Profile">
+                        </a>
+                        <a href="#" class="action-item">
+                            <img src="images/favorites.svg" alt="Favorites">
+                        </a>
+                        <a href="#" class="cart-btn">
+                            <img src="images/cart.svg" alt="Cart">
+                            <span>Кошик</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="account">
+            <div class="container">
+                <div class="account-header">
+                    <div class="account-header-info">
+                        <div class="account-header-info__avatar">
+                            <img src="images/avatar-img.png" alt="Avatar">
+                        </div>
+                        <div class="account-header-info__details">
+                            <span>Ім'я</span>
+                            <span>xxxxxxxxx@gmail.com</span>
+                            <button class="account-header-info__bonuse">
+                                <span>Бонуси</span>
+                                <span>X XXX грн</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="account-header-counters">
+                        <div class="account-header-counters__item">
+                            <div class="account-header-counters__item-name">
+                                <img src="images/icon-cart.svg" alt="Order">
+                                <span>Мої замовлення</span>
+                            </div>
+                            <span class="account-header-counters__item-count">10</span>
+                        </div>
+                        <div class="account-header-counters__item">
+                            <div class="account-header-counters__item-name">
+                                <img src="images/icon-like-gray.svg" alt="Order">
+                                <span>Мої обрані</span>
+                            </div>
+                            <span class="account-header-counters__item-count">10</span>
+                        </div>
+                        <div class="account-header-counters__item">
+                            <div class="account-header-counters__item-name">
+                                <img src="images/icon-reviews.svg" alt="Order">
+                                <span>Мої відгуки</span>
+                            </div>
+                            <span class="account-header-counters__item-count">10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-wrapper">
+                    <div class="account-sidebar">
+                        <div class="account-sidebar-menu">
+                            <a href="#" class="account-sidebar-menu__item">
+                                <img src="images/icon-home.svg" alt="Account">
+                                <span>Мій кабінет</span>
+                            </a>
+                            <a href="#" class="account-sidebar-menu__item">
+                                <img src="images/icon-cart.svg" alt="Account">
+                                <span>Мої замовлення</span>
+                            </a>
+                            <a href="#" class="account-sidebar-menu__item">
+                                <img src="images/icon-like.svg" alt="Account">
+                                <span>Обрані товари</span>
+                            </a>
+                            <a href="#" class="account-sidebar-menu__item">
+                                <img src="images/icon-bonus.svg" alt="Account">
+                                <span>Бонуси</span>
+                            </a>
+                            <a href="#" class="account-sidebar-menu__item">
+                                <img src="images/icon-man.svg" alt="Account">
+                                <span>Персональні дані</span>
+                            </a>
+                            <a href="#" class="account-sidebar-menu__item">
+                                <img src="images/icon-exit.svg" alt="Account">
+                                <span>Вийти</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="account-main">
+                        <div class="account-title">
+                            Мої бонуси
+                        </div>
+                        <div class="account-main-bonus">
+                            <div class="account-bonus-item">
+                                <div class="account-bonus-item__header">
+                                    <div class="account-bonus-item__info">
+                                        <div class="account-bonus-item__number">Замовлення № XXX</div>
+                                        <div class="account-bonus-item__cost">2 500₴</div>
+                                        <div class="account-bonus-item__bonus">250 ₴</div>
+                                    </div>
+                                    <button class="account-bonus-item__toggle" type="button">
+                                        <img src="images/dropdown.svg" alt="Розгорнути" class="account-bonus-item__arrow">
+                                    </button>
+                                </div>
+                                <div class="account-bonus-item__content">
+                                    <div class="account-bonus-item__product">
+                                        <div class="account-bonus-item__product-image">
+                                            <img src="images/product1.jpg" alt="Redmi Note 8T 4/64">
+                                        </div>
+                                        <div class="account-bonus-item__product-info">
+                                            <h3>Redmi Note 8T 4/64</h3>
+                                        </div>
+                                        <div class="account-bonus-item__product-price">XX 000₴</div>
+                                        <div class="account-bonus-item__product-bonus">XX 000₴</div>
+                                    </div>
+                                    <div class="account-bonus-item__product">
+                                        <div class="account-bonus-item__product-image">
+                                            <img src="images/product2.jpg" alt="Redmi Note 8T 4/64">
+                                        </div>
+                                        <div class="account-bonus-item__product-info">
+                                            <h3>Redmi Note 8T 4/64</h3>
+                                        </div>
+                                        <div class="account-bonus-item__product-price">XX 000₴</div>
+                                        <div class="account-bonus-item__product-bonus">XX 000₴</div>
+                                    </div>
+                                    <div class="account-bonus-item__total">
+                                        <span>Всього бонусів:</span>
+                                        <span>XX 000₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="account-bonus-item">
+                                <div class="account-bonus-item__header">
+                                    <div class="account-bonus-item__info">
+                                        <div class="account-bonus-item__number">Замовлення № XXX</div>
+                                        <div class="account-bonus-item__cost">Вартість</div>
+                                        <div class="account-bonus-item__bonus">Бонуси</div>
+                                    </div>
+                                    <button class="account-bonus-item__toggle" type="button">
+                                        <img src="images/dropdown.svg" alt="Розгорнути" class="account-bonus-item__arrow">
+                                    </button>
+                                </div>
+                                <div class="account-bonus-item__content">
+                                    <div class="account-bonus-item__total">
+                                        <span>Всього бонусів:</span>
+                                        <span>XX 000₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="account-bonus-item">
+                                <div class="account-bonus-item__header">
+                                    <div class="account-bonus-item__info">
+                                        <div class="account-bonus-item__number">Замовлення № XXX</div>
+                                        <div class="account-bonus-item__cost">Вартість</div>
+                                        <div class="account-bonus-item__bonus">Бонуси</div>
+                                    </div>
+                                    <button class="account-bonus-item__toggle" type="button">
+                                        <img src="images/dropdown.svg" alt="Розгорнути" class="account-bonus-item__arrow">
+                                    </button>
+                                </div>
+                                <div class="account-bonus-item__content">
+                                    <div class="account-bonus-item__total">
+                                        <span>Всього бонусів:</span>
+                                        <span>XX 000₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Review Modal -->
+    <div class="review-modal" id="reviewModal" style="display: none;">
+        <div class="review-modal__overlay"></div>
+        <div class="review-modal__content">
+            <div class="review-modal__header">
+                <h2 class="review-modal__title">Написати відгук</h2>
+                <button class="review-modal__close" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#706F6F" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="review-modal__body">
+                <div class="review-modal__product-info">
+                    <span class="review-modal__label">Оцініть товар</span>
+                </div>
+                <div class="review-modal__rating">
+                    <div class="review-modal__stars">
+                        <button type="button" class="review-modal__star" data-rating="1">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#D9D9D9"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="review-modal__star" data-rating="2">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#D9D9D9"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="review-modal__star" data-rating="3">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#D9D9D9"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="review-modal__star" data-rating="4">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#D9D9D9"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="review-modal__star" data-rating="5">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#D9D9D9"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="review-modal__rating-labels">
+                        <span class="review-modal__rating-label">Погано</span>
+                        <span class="review-modal__rating-label">Так собі</span>
+                        <span class="review-modal__rating-label">Нормально</span>
+                        <span class="review-modal__rating-label">Добре</span>
+                        <span class="review-modal__rating-label">Чудово</span>
+                    </div>
+                </div>
+                <div class="review-modal__comment-section">
+                    <button type="button" class="review-modal__comment-btn">
+                        <span class="review-modal__comment-text">Коментар до замовлення</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="#2EA4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="review-modal__textarea-wrapper" style="display: none;">
+                        <textarea class="review-modal__textarea" placeholder="Напишіть ваш відгук..."></textarea>
+                    </div>
+                </div>
+                <div class="review-modal__actions">
+                    <button type="button" class="review-modal__submit-btn">Залишити відгук</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__main container">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Choice"></a>
+          <p class="footer__desc">Choice — сучасний інтернет-магазин техніки та електроніки. Великий вибір, швидка доставка, офіційна гарантія.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><img src="images/icon-call.svg" alt="call"></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><img src="images/icon-insta.svg" alt="Instagram"></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><img src="images/icon-x.svg" alt="x"></a>
+            <a href="#" class="footer__social-link" aria-label="Telegram"><img src="images/icon-telegram.svg" alt="Telegram"></a>
+          </div>
+        </div>
+        <nav class="footer__nav" aria-label="Навігація">
+          <div class="footer__nav-block">
+            <h3 class="footer__nav-title">Навігація</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#">Смартфони</a></li>
+              <li><a href="#">Ноутбуки</a></li>
+              <li><a href="#">Побутова техніка</a></li>
+              <li><a href="#">Аксесуари</a></li>
+              <li><a href="#">Гаджети</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-block">
+            <h3 class="footer__nav-title">ТОП категорій</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#">Доставка і оплата</a></li>
+              <li><a href="#">Гарантія</a></li>
+              <li><a href="#">Повернення</a></li>
+              <li><a href="#">Бонусна програма</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-block">
+            <ul class="footer__nav-list">
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Новини</a></li>
+              <li><a href="#">Вакансії</a></li>
+              <li><a href="#">Партнерам</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__contacts">
+          <div class="footer__contacts-title">Ми на зв'язку</div>
+          <div class="footer__contacts-phone-block">
+            <a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+            <div class="footer__contacts-phone-desc">Оформити замовлення<br>9:00 - 21:00</div>
+          </div>
+          <div class="footer__contacts-phone-block">
+            <a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+            <div class="footer__contacts-phone-desc">Служба підтримки<br>9:00 - 21:00</div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="footer__bottom-wrap">
+            <div class="container">
+                <div class="footer__bottom">
+                    <div class="footer__copyright">CHOICE "© 2025. Всі права захищені"</div>
+                    
+                <div class="footer__payments">
+                    <img src="images/icon-visa.svg" alt="Visa">
+                    <img src="images/icon-mastercard.svg" alt="Mastercard">
+                </div>
+                <div class="footer__privacy-wrapper">
+                    <a href="#" class="footer__privacy">Політика конфіденційності</a>
+                    <a href="#" class="footer__privacy">Договір оферти</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+    <script src="js/script.js"></script>
+</body>
+</html>

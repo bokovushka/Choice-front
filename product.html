@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice - Інтернет-магазин</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+</head>
+<body>
+    <header>
+        <!-- Discount banner -->
+        <div class="discount-banner">
+            <div class="discount-content">
+                <span>Не пропусти! МЕГА знижки на Пʼятницю 13</span>
+                <span>-50%</span>
+                <span>-40%</span>
+                <span>-30%</span>
+            </div>
+        </div>
+        
+        <!-- Top header with language and city selection -->
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-content">
+                    <!-- Left menu -->
+                    <div class="lang-city">
+                        <div class="custom-dropdown custom-dropdown--gray lang-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Вибір мови">
+                            <span class="custom-dropdown__current">UA</span>
+                            <ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">EN</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">RU</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="true">UA</li>
+                            </ul>
+                        </div>
+                        <div class="custom-dropdown city-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Вибір міста">
+                            <img src="images/location.svg" alt="Location" class="city-selector__icon">
+                            <span class="custom-dropdown__current">Черкаси</span>
+                            <span class="city-selector__arrow" aria-hidden="true"></span>
+                            <ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+                                <li class="custom-dropdown__option" role="option" aria-selected="true">Черкаси</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">Київ</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">Львів</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Right section -->
+                    <div class="menu-links">
+                        <div class="menu-item">
+                            <a href="#">Choice</a>
+                            <img src="images/dropdown.svg" alt="Dropdown">
+                        </div>
+                        <a href="#" class="menu-link">Врятувати світ</a>
+                        <a href="#" class="menu-link">Trade-In</a>
+                        <a href="#" class="menu-link">Доставка</a>
+                        <a href="#" class="menu-link">Повернення</a>
+                        <div class="help-link">
+                            <img src="images/help-icon.svg" alt="Help">
+                            <span>Допомога</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main header with logo, search and cart -->
+        <div class="main-header">
+            <div class="container">
+                <div class="main-header-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Choice">
+                        </a>
+                    </div>
+                    
+                    <!-- Catalog button -->
+                    <div class="catalog-btn">
+                        <div class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>Каталог</span>
+                    </div>
+                    
+                    <!-- Search -->
+                    <div class="search-container">
+                        <div class="search-input">
+                            <div class="search-icon">
+                                <img src="images/search.svg" alt="Search">
+                            </div>
+                            <input type="text" placeholder="Я шукаю...">
+                            <div class="microphone-icon">
+                                <img src="images/microphone.svg" alt="Voice search">
+                            </div>
+                        </div>
+                        <button class="search-btn">Знайти</button>
+                    </div>
+                    
+                    <!-- User actions -->
+                    <div class="user-actions">
+                        <a href="#" class="action-item">
+                            <img src="images/data-icon.svg" alt="Profile">
+                        </a>
+                        <a href="#" class="action-item">
+                            <img src="images/favorites.svg" alt="Favorites">
+                        </a>
+                        <a href="#" class="cart-btn">
+                            <img src="images/cart.svg" alt="Cart">
+                            <span>Кошик</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumbs-wrapper">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item breadcrumbs__item--home">
+                            <a href="/" class="breadcrumbs__link"><img src="images/icon-home.svg" alt="Головна" class="breadcrumbs__icon">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item"><span class="breadcrumbs__arrow"></span><span class="breadcrumbs__text">Каталог товарів</span></li>
+                        <li class="breadcrumbs__item breadcrumbs__item--current">
+                            <span class="breadcrumbs__arrow"></span>
+                            <span class="breadcrumbs__text">Смартфони та телефони</span>
+                        </li>
+                        <li class="breadcrumbs__item breadcrumbs__item--current">
+                            <span class="breadcrumbs__arrow"></span>
+                            <span class="breadcrumbs__text">Смартфон телефон</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="product-header">
+            <div class="container">
+                <div class="product-header__menu-bar">
+                    <nav class="product-header__menu" aria-label="Навігація по розділам">
+                        <ul class="product-header__menu-list">
+                            <li class="product-header__menu-item product-header__menu-item--active">ПРО ТОВАР</li>
+                            <li class="product-header__menu-sep"></li>
+                            <li class="product-header__menu-item">ХАРАКТЕРИСТИКИ</li>
+                            <li class="product-header__menu-sep"></li>
+                            <li class="product-header__menu-item">ВІДГУКИ <span class="product-header__menu-count">18</span></li>
+                            <li class="product-header__menu-sep"></li>
+                            <li class="product-header__menu-item">ДОСТАВКА</li>
+                            <li class="product-header__menu-sep"></li>
+                            <li class="product-header__menu-item">АКСЕСУАРИ</li>
+                            <li class="product-header__menu-sep"></li>
+                            <li class="product-header__menu-item">СЕРВІСИ</li>
+                        </ul>
+                    </nav>
+                    <div class="product-header__summary">
+                        <img src="images/product-main.jpg" alt="Redmi Note 8T 4/64" class="product-header__summary-img">
+                        <div class="product-header__summary-info">
+                            <div class="product-header__summary-title">Redmi Note 8T 4/64</div>
+                            <div class="product-header__summary-inner">
+                                <div class="product-header__summary-prices">
+                                    <span class="old-price">3 000₴</span>
+                                    <span class="current-discount">-50%</span>
+                                </div>
+                                <div class="product-header__summary-price">3 000₴</div>
+                            </div>
+                        </div>
+                        <button class="cart-btn" type="button" aria-label="Додати в кошик">
+                            <img src="images/icon-cart.svg" alt="Кошик">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="product-main">
+            <div class="container">
+                <div class="product-main__content">
+                    <div class="product-main__content-left">
+                        <div class="product-main__slider">
+                            <img src="images/product-main.jpg" alt="Фото 1" class="product-main__slider-img">
+                            <img src="images/product-main.jpg" alt="Фото 2" class="product-main__slider-img">
+                            <img src="images/product-main.jpg" alt="Фото 3" class="product-main__slider-img">
+                            <img src="images/product-main.jpg" alt="Фото 4" class="product-main__slider-img">
+                            <img src="images/product-main.jpg" alt="Фото 5" class="product-main__slider-img">
+                            <img src="images/product-main.jpg" alt="Фото 6" class="product-main__slider-img">
+                            <img src="images/product-main.jpg" alt="Фото 7" class="product-main__slider-img">
+                            <img src="images/product-main.jpg" alt="Фото 8" class="product-main__slider-img">
+                        </div>
+                        <div class="product-main__slider-nav">
+                            <img src="images/product-main.jpg" alt="Фото 1" class="product-main__slider-nav-img">
+                            <img src="images/product-main.jpg" alt="Фото 2" class="product-main__slider-nav-img">
+                            <img src="images/product-main.jpg" alt="Фото 3" class="product-main__slider-nav-img">
+                            <img src="images/product-main.jpg" alt="Фото 4" class="product-main__slider-nav-img">
+                            <img src="images/product-main.jpg" alt="Фото 5" class="product-main__slider-nav-img">
+                            <img src="images/product-main.jpg" alt="Фото 6" class="product-main__slider-nav-img">
+                            <img src="images/product-main.jpg" alt="Фото 7" class="product-main__slider-nav-img">
+                            <img src="images/product-main.jpg" alt="Фото 8" class="product-main__slider-nav-img">
+                        </div>
+                    </div>
+                    <div class="product-main__content-right">
+                        <div class="product-main-block">
+                            <div class="product-main__title">
+                                <h2>Смартфон телефон</h2>
+                            </div>
+                            <div class="product-main__badjes-wrapper">
+                                <span class="product-main__stock">
+                                    <img src="images/icon-success.svg" alt="В наявності">
+                                    <span class="product-main__stock-label" style="background:#8CBF5C;color:#fff;">В наявності</span>
+                                </span>
+                                <div class="product-main__stars" role="radiogroup" aria-label="Оцінка товару">
+                                    <button class="product-main__star" type="button" aria-label="1 зірка" data-star="1">★</button>
+                                    <button class="product-main__star" type="button" aria-label="2 зірки" data-star="2">★</button>
+                                    <button class="product-main__star" type="button" aria-label="3 зірки" data-star="3">★</button>
+                                    <button class="product-main__star" type="button" aria-label="4 зірки" data-star="4">★</button>
+                                    <button class="product-main__star" type="button" aria-label="5 зірок" data-star="5">★</button>
+                                </div>
+                                <span class="product-main__reviews">
+                                    <img src="images/icon-reviews.svg" alt="Відгуки">
+                                    <span class="product-main__reviews-count">18 відгуків</span>
+                                </span>
+                                <span class="product-main__code">Код: 3522343535</span>
+                                <div class="product-main__payments">
+                                    <span class="product-main__payment"><img src="images/icon-cash.svg" alt="Готівкою">Готівкою</span>
+                                    <span class="product-main__payment"><img src="images/icon-card.svg" alt="Безготівковий розрахунок">Безготівковий розрахунок</span>
+                                    <span class="product-main__payment"><img src="images/icon-cash.svg" alt="Готівкою">Готівкою</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-block product-main__attributes">
+                            <form class="product-attributes" aria-label="Фільтри товару">
+                                <div class="product-attributes__row">
+                                    <div class="product-attributes__group">
+                                        <label for="color" class="product-attributes__label">Колір</label>
+                                        <div class="product-attributes__select-wrapper">
+                                            <select id="color" name="color" class="product-attributes__select" aria-label="Колір">
+                                                <option value="">Значення</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="product-attributes__group">
+                                        <label for="series" class="product-attributes__label">Серія</label>
+                                        <div class="product-attributes__select-wrapper">
+                                            <select id="series" name="series" class="product-attributes__select" aria-label="Серія">
+                                                <option value="">Значення</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-attributes__row">
+                                    <div class="product-attributes__group">
+                                        <label for="memory" class="product-attributes__label">Пам'ять</label>
+                                        <div class="product-attributes__select-wrapper">
+                                            <select id="memory" name="memory" class="product-attributes__select" aria-label="Пам'ять">
+                                                <option value="">Значення</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="product-attributes__group">
+                                        <label for="battery" class="product-attributes__label">Тип акумулятора
+                                            <img src="images/icon-question.svg" alt="Пояснення типу акумулятора" class="product-attributes__help" aria-label="Пояснення типу акумулятора" tabindex="0">
+                                        </label>
+                                        <div class="product-attributes__select-wrapper">
+                                            <select id="battery" name="battery" class="product-attributes__select" aria-label="Тип акумулятора">
+                                                <option value="">Значення</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product-main-block product-main-trade">
+                            <div class="tradein-block">
+                                <div class="tradein-block__info">
+                                    <span class="tradein-block__title">Trade-in:</span>
+                                    <span class="tradein-block__desc">Маєте товар, який хочете обміняти з CHOICE?</span>
+                                </div>
+                                <button class="tradein-block__btn" type="button">Обмін</button>
+                                <a href="#" class="tradein-block__link">Детальніше</a>
+                            </div>
+                        </div>
+                        <div class="product-main-block product-main-prices">
+                            <div class="prices-block">
+                                <div class="prices-block__left">
+                                    <div class="prices-block__old-row">
+                                        <span class="prices-block__old-price">3 000₴</span>
+                                        <span class="prices-block__discount">-50%</span>
+                                    </div>
+                                    <div class="prices-block__current">3 000₴</div>
+                                    <div class="prices-block__bonus-row">
+                                        <img src="images/icon-bodyglass.svg" alt="Бонус" class="prices-block__bonus-icon">
+                                        <span class="prices-block__bonus-desc"><b>+18 ₴</b> на бонусний рахунок</span>
+                                    </div>
+                                </div>
+                                <div class="prices-block__center">
+                                    <div class="prices-block__actions">
+                                        <button class="prices-block__btn prices-block__btn--main" type="button">
+                                            <img src="images/icon-cart.svg" alt="Купити" class="prices-block__btn-icon">Купити
+                                        </button>
+                                        <button class="prices-block__btn prices-block__btn--quick" type="button">Купити в 1 клік</button>
+                                    </div>
+                                    <button class="prices-block__reserve" type="button">Зарезервувати товар</button>
+                                </div>
+                                <div class="prices-block__right">
+                                    <button class="prices-block__like" type="button" aria-label="Додати в обране">
+                                        <img src="images/icon-like.svg" alt="Обране">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-block product-main-credit">
+                            <div class="credit-block">
+                                <span class="credit-block__price">від <b>3 000₴</b></span>
+                                <button class="credit-block__btn" type="button">
+                                    <img src="images/cart.svg" alt="Купити в кредит" class="credit-block__btn-icon">Купити в кредит
+                                </button>
+                                <div class="credit-block__icons">
+                                    <img src="images/icon-paw.svg" alt="paw" class="credit-block__icon">
+                                    <img src="images/icon-liq.svg" alt="liqpay" class="credit-block__icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-block product-main-delivery">
+                            <div class="delivery-accordion delivery-accordion--open" aria-expanded="true">
+                                <button class="delivery-accordion__header" type="button" aria-controls="delivery-accordion-content" aria-expanded="true">
+                                    Доставка <span class="delivery-accordion__city">у <a href="#" class="delivery-accordion__city-link">Черкаси</a></span>
+                                    <span class="delivery-accordion__arrow"></span>
+                                </button>
+                                <div class="delivery-accordion__content" id="delivery-accordion-content">
+                                    <ul class="delivery-list">
+                                        <li class="delivery-list__item">
+                                            <img src="images/icon-cart-items.svg" alt="Самовивіз" class="delivery-list__icon">
+                                            <span class="delivery-list__title">Самовивіз з магазину</span>
+                                            <a href="#" class="delivery-list__link">Наявність у магазині</a>
+                                            <span class="delivery-list__date delivery-list__date--blue">Сьогодні,</span>
+                                            <span class="delivery-list__free">Безкоштовно</span>
+                                        </li>
+                                        <li class="delivery-list__item">
+                                            <img src="images/icon-place-map.svg" alt="Кур'єрська доставка" class="delivery-list__icon">
+                                            <span class="delivery-list__title">Кур'єрська доставка</span>
+                                            <span class="delivery-list__dots"></span>
+                                            <span class="delivery-list__date">2.02,</span>
+                                            <span class="delivery-list__price">215₴</span>
+                                        </li>
+                                        <li class="delivery-list__item delivery-list__item--group">
+                                            <div class="delivery-list__group-header">
+                                                <img src="images/icon-track.svg" alt="Доставка у відділення" class="delivery-list__icon">
+                                                <span class="delivery-list__title">Доставка у відділення</span>
+                                            </div>
+                                            <ul class="delivery-list__sublist">
+                                                <li class="delivery-list__item">
+                                                    <span>До відділення Нова Пошта</span>
+                                                    <span class="delivery-list__dots"></span>
+                                                    <span class="delivery-list__date">2.02,</span>
+                                                    <span class="delivery-list__price">215₴</span>
+                                                </li>
+                                                <li class="delivery-list__item">
+                                                    <span>До відділення Нова Пошта</span>
+                                                    <span class="delivery-list__dots"></span>
+                                                    <span class="delivery-list__date">2.02,</span>
+                                                    <span class="delivery-list__price">215₴</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-block product-main-service">
+                            <div class="service-block">
+                                <h3 class="service-block__title">Виберіть сервіс</h3>
+                                <div class="service-slider__wrapper">
+                                    <button class="service-slider__arrow service-slider__arrow--prev" type="button" aria-label="Попередній сервіс"></button>
+                                    <div class="service-slider">
+                                        <div class="service-card">
+                                            <img src="images/product-main.jpg" alt="Назва сервісу" class="service-card__img">
+                                            <div class="service-card__info">
+                                                <div class="service-card__name">Назва сервісу</div>
+                                                <div class="service-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+                                            </div>
+                                            <div class="service-card__aside">
+                                                <div class="service-card__price">799 ₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати сервіс у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="service-card">
+                                            <img src="images/product-main.jpg" alt="Назва сервісу" class="service-card__img">
+                                            <div class="service-card__info">
+                                                <div class="service-card__name">Назва сервісу</div>
+                                                <div class="service-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+                                            </div>
+                                            <div class="service-card__aside">
+                                                <div class="service-card__price">799 ₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати сервіс у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="service-card">
+                                            <img src="images/product-main.jpg" alt="Назва сервісу" class="service-card__img">
+                                            <div class="service-card__info">
+                                                <div class="service-card__name">Назва сервісу</div>
+                                                <div class="service-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+                                            </div>
+                                            <div class="service-card__aside">
+                                                <div class="service-card__price">799 ₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати сервіс у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <button class="service-slider__arrow service-slider__arrow--next" type="button" aria-label="Наступний сервіс"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-main-block product-main-aksesuar">
+                            <div class="service-block">
+                                <h3 class="service-block__title">Виберіть аксесуар</h3>
+                                <div class="service-slider__wrapper">
+                                    <button class="service-slider__arrow service-slider__arrow--prev" type="button" aria-label="Попередній аксесуар"></button>
+                                    <div class="aksesuar-slider">
+                                        <div class="service-card">
+                                            <div class="service-card-inner">
+                                                <img src="images/product-main.jpg" alt="Назва аксесуару" class="service-card__img">
+                                                <div class="service-card__info">
+                                                    <div class="service-card__desc">Lorem ipsum .</div>
+                                                </div>
+                                            </div>
+                                            <div class="service-card__aside">
+                                                <div class="service-card__price">799 ₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати аксесуар у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="service-card">
+                                            <div class="service-card-inner">
+                                                <img src="images/product-main.jpg" alt="Назва аксесуару" class="service-card__img">
+                                                <div class="service-card__info">
+                                                    <div class="service-card__desc">Lorem ipsum .</div>
+                                                </div>
+                                            </div>
+                                            <div class="service-card__aside">
+                                                <div class="service-card__price">799 ₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати аксесуар у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="service-card">
+                                            <div class="service-card-inner">
+                                                <img src="images/product-main.jpg" alt="Назва аксесуару" class="service-card__img">
+                                                <div class="service-card__info">
+                                                    <div class="service-card__desc">Lorem ipsum .</div>
+                                                </div>
+                                            </div>
+                                            <div class="service-card__aside">
+                                                <div class="service-card__price">799 ₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати аксесуар у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="service-card">
+                                            <div class="service-card-inner">
+                                                <img src="images/product-main.jpg" alt="Назва аксесуару" class="service-card__img">
+                                                <div class="service-card__info">
+                                                    <div class="service-card__desc">Lorem ipsum .</div>
+                                                </div>
+                                            </div>
+                                            <div class="service-card__aside">
+                                                <div class="service-card__price">799 ₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати аксесуар у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="service-card">
+                                            <div class="service-card-inner">
+                                                <img src="images/product-main.jpg" alt="Назва аксесуару" class="service-card__img">
+                                                <div class="service-card__info">
+                                                    <div class="service-card__desc">Lorem ipsum .</div>
+                                                </div>
+                                            </div>
+                                            <div class="service-card__aside">
+                                                <div class="service-card__price">799 ₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати аксесуар у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <button class="service-slider__arrow service-slider__arrow--next" type="button" aria-label="Наступний аксесуар"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-complectation">
+            <div class="container">
+                <h2 class="section-complectation__title">Ідеальний комплект</h2>
+                <div class="complectation-wrapper">
+                    <div class="complectation-tabs">
+                        <div class="complectation-tab active">Усі</div>
+                        <div class="complectation-tab">Текст</div>
+                        <div class="complectation-tab">Текст</div>
+                    </div>
+                    <div class="complectation-content">
+                        <div class="complectation-item active">
+                            <div class="complectation-item-wrapper">
+                                <div class="complectation-slider">
+                                    <div class="complectation-slider__item">
+                                        <div class="complectation-slider__inner">
+
+                                            <div class="complectation-inside-1">
+                                                <div class="complectation-slider-image-wrapper">
+                                                    <img src="images/product-main.jpg" alt="Назва аксесуару" class="complectation-slider-image">
+                                                </div>
+                                                <div class="complectation-slider-info">
+                                                    <div class="complectation-slider-name">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                                    <div class="complectation-slider-price-wrapper">
+                                                        <div class="complectation-slider-price-old">3 000₴</div>
+                                                        <div class="complectation-slider-price-discount">-50%</div>
+                                                    </div>
+                                                    <div class="complectation-slider-price">3 000₴</div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="complectation-slider-plus">
+                                                +
+                                            </div>
+
+
+                                            <div class="complectation-inside-2">
+                                                <div class="complectation-slider-image-wrapper">
+                                                    <img src="images/product-main.jpg" alt="Назва аксесуару" class="complectation-slider-image">
+                                                </div>
+                                                <div class="complectation-slider-info">
+                                                    <div class="complectation-slider-name">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                                    <div class="complectation-slider-price-wrapper">
+                                                        <div class="complectation-slider-price-old">3 000₴</div>
+                                                        <div class="complectation-slider-price-discount">-50%</div>
+                                                    </div>
+                                                    <div class="complectation-slider-price">3 000₴</div>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="complectation-slider-equal">
+                                                =
+                                            </div>
+
+
+                                            <div class="complectation-slider__summary">
+                                                <div class="complectation-slider-price-wrapper">
+                                                    <div class="complectation-slider-price-old">3 000₴</div>
+                                                    <div class="complectation-slider-price-discount">-50%</div>
+                                                </div>
+                                                <div class="complectation-slider-price">3 000₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати комплект у кошик">
+                                                    <img src="images/icon-cart.svg" alt="Кошик">
+                                                    Купити комплект
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="complectation-slider-dots"></div>
+                            </div>
+                        </div>
+                        <div class="complectation-item active">
+                            <div class="complectation-item-wrapper">
+                                <div class="complectation-slider">
+                                    <div class="complectation-slider__item">
+                                        <div class="complectation-slider__inner">
+
+                                            <div class="complectation-inside-1">
+                                                <div class="complectation-slider-image-wrapper">
+                                                    <img src="images/product-main.jpg" alt="Назва аксесуару" class="complectation-slider-image">
+                                                </div>
+                                                <div class="complectation-slider-info">
+                                                    <div class="complectation-slider-name">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                                    <div class="complectation-slider-price-wrapper">
+                                                        <div class="complectation-slider-price-old">3 000₴</div>
+                                                        <div class="complectation-slider-price-discount">-50%</div>
+                                                    </div>
+                                                    <div class="complectation-slider-price">3 000₴</div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="complectation-slider-plus">
+                                                +
+                                            </div>
+
+
+                                            <div class="complectation-inside-2">
+                                                <div class="complectation-slider-image-wrapper">
+                                                    <img src="images/product-main.jpg" alt="Назва аксесуару" class="complectation-slider-image">
+                                                </div>
+                                                <div class="complectation-slider-info">
+                                                    <div class="complectation-slider-name">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                                    <div class="complectation-slider-price-wrapper">
+                                                        <div class="complectation-slider-price-old">3 000₴</div>
+                                                        <div class="complectation-slider-price-discount">-50%</div>
+                                                    </div>
+                                                    <div class="complectation-slider-price">3 000₴</div>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="complectation-slider-equal">
+                                                =
+                                            </div>
+
+
+                                            <div class="complectation-slider__summary">
+                                                <div class="complectation-slider-price-wrapper">
+                                                    <div class="complectation-slider-price-old">3 000₴</div>
+                                                    <div class="complectation-slider-price-discount">-50%</div>
+                                                </div>
+                                                <div class="complectation-slider-price">3 000₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати комплект у кошик">
+                                                    <img src="images/icon-cart.svg" alt="Кошик">
+                                                    Купити комплект
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="complectation-slider-dots"></div>
+                            </div>
+                        </div>
+                        <div class="complectation-item active">
+                            <div class="complectation-item-wrapper">
+                                <div class="complectation-slider">
+                                    <div class="complectation-slider__item">
+                                        <div class="complectation-slider__inner">
+
+                                            <div class="complectation-inside-1">
+                                                <div class="complectation-slider-image-wrapper">
+                                                    <img src="images/product-main.jpg" alt="Назва аксесуару" class="complectation-slider-image">
+                                                </div>
+                                                <div class="complectation-slider-info">
+                                                    <div class="complectation-slider-name">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                                    <div class="complectation-slider-price-wrapper">
+                                                        <div class="complectation-slider-price-old">3 000₴</div>
+                                                        <div class="complectation-slider-price-discount">-50%</div>
+                                                    </div>
+                                                    <div class="complectation-slider-price">3 000₴</div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="complectation-slider-plus">
+                                                +
+                                            </div>
+
+
+                                            <div class="complectation-inside-2">
+                                                <div class="complectation-slider-image-wrapper">
+                                                    <img src="images/product-main.jpg" alt="Назва аксесуару" class="complectation-slider-image">
+                                                </div>
+                                                <div class="complectation-slider-info">
+                                                    <div class="complectation-slider-name">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                                    <div class="complectation-slider-price-wrapper">
+                                                        <div class="complectation-slider-price-old">3 000₴</div>
+                                                        <div class="complectation-slider-price-discount">-50%</div>
+                                                    </div>
+                                                    <div class="complectation-slider-price">3 000₴</div>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="complectation-slider-equal">
+                                                =
+                                            </div>
+
+
+                                            <div class="complectation-slider__summary">
+                                                <div class="complectation-slider-price-wrapper">
+                                                    <div class="complectation-slider-price-old">3 000₴</div>
+                                                    <div class="complectation-slider-price-discount">-50%</div>
+                                                </div>
+                                                <div class="complectation-slider-price">3 000₴</div>
+                                                <button class="cart-btn" type="button" aria-label="Додати комплект у кошик">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                    Купити комплект
+                                                </button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="complectation-slider-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="related-products-section">
+            <div class="container">
+                <div class="related-products-header">
+                    <div class="related-products-header-title">
+                        Схожий товар
+                    </div>
+                    <a href="#" class="related-products-header-link">
+                        <span>Дивитися усі</span>
+                        <img src="images/icon-right-blue.svg" alt="arrow right">
+                    </a>
+                </div>
+                <div class="promo-wrapper">
+                    <div class="promo-item">
+                        <div class="promo-item-like">
+                            <img src="images/icon-like.svg" alt="like">
+                        </div>
+                        <div class="promo-item-slider">
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                        </div>
+                        <div class="promo-item-content">
+                            <div class="product-card-inner">
+                                <h3>Шуруповерт звичайний</h3>
+                                <p class="product-card-desc">Годинник спортивний</p>
+                                <div class="discount-message">
+                                    <span>Знижка 2 000₴</span>
+                                </div>
+                                <div class="prices">
+                                    <div class="prices-left">
+                                        <div class="old-price-wrapper">
+                                            <span class="old-price">3 000₴</span>
+                                            <span class="discount-tag">-50%</span>
+                                        </div>
+                                        <span class="current-price">3 000₴</span>
+                                    </div>
+                                    <button class="add-to-cart" aria-label="Додати до кошика">
+                                        <img src="images/cart.svg" alt="Кошик">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-item">
+                        <div class="promo-item-like">
+                            <img src="images/icon-like.svg" alt="like">
+                        </div>
+                        <div class="promo-item-slider">
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                        </div>
+                        <div class="promo-item-content">
+                            <div class="product-card-inner">
+                                <h3>Шуруповерт звичайний</h3>
+                                <p class="product-card-desc">Годинник спортивний</p>
+                                <div class="discount-message">
+                                    <span>Знижка 2 000₴</span>
+                                </div>
+                                <div class="prices">
+                                    <div class="prices-left">
+                                        <div class="old-price-wrapper">
+                                            <span class="old-price">3 000₴</span>
+                                            <span class="discount-tag">-50%</span>
+                                        </div>
+                                        <span class="current-price">3 000₴</span>
+                                    </div>
+                                    <button class="add-to-cart" aria-label="Додати до кошика">
+                                        <img src="images/cart.svg" alt="Кошик">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-item">
+                        <div class="promo-item-like">
+                            <img src="images/icon-like.svg" alt="like">
+                        </div>
+                        <div class="promo-item-slider">
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                        </div>
+                        <div class="promo-item-content">
+                            <div class="product-card-inner">
+                                <h3>Шуруповерт звичайний</h3>
+                                <p class="product-card-desc">Годинник спортивний</p>
+                                <div class="discount-message">
+                                    <span>Знижка 2 000₴</span>
+                                </div>
+                                <div class="prices">
+                                    <div class="prices-left">
+                                        <div class="old-price-wrapper">
+                                            <span class="old-price">3 000₴</span>
+                                            <span class="discount-tag">-50%</span>
+                                        </div>
+                                        <span class="current-price">3 000₴</span>
+                                    </div>
+                                    <button class="add-to-cart" aria-label="Додати до кошика">
+                                        <img src="images/cart.svg" alt="Кошик">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-item">
+                        <div class="promo-item-like">
+                            <img src="images/icon-like.svg" alt="like">
+                        </div>
+                        <div class="promo-item-slider">
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                        </div>
+                        <div class="promo-item-content">
+                            <div class="product-card-inner">
+                                <h3>Шуруповерт звичайний</h3>
+                                <p class="product-card-desc">Годинник спортивний</p>
+                                <div class="discount-message">
+                                    <span>Знижка 2 000₴</span>
+                                </div>
+                                <div class="prices">
+                                    <div class="prices-left">
+                                        <div class="old-price-wrapper">
+                                            <span class="old-price">3 000₴</span>
+                                            <span class="discount-tag">-50%</span>
+                                        </div>
+                                        <span class="current-price">3 000₴</span>
+                                    </div>
+                                    <button class="add-to-cart" aria-label="Додати до кошика">
+                                        <img src="images/cart.svg" alt="Кошик">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-item">
+                        <div class="promo-item-like">
+                            <img src="images/icon-like.svg" alt="like">
+                        </div>
+                        <div class="promo-item-slider">
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                            <div class="promo-item-slider-slide">
+                                <img src="images/test-product.png" alt="product">
+                            </div>
+                        </div>
+                        <div class="promo-item-content">
+                            <div class="product-card-inner">
+                                <h3>Шуруповерт звичайний</h3>
+                                <p class="product-card-desc">Годинник спортивний</p>
+                                <div class="discount-message">
+                                    <span>Знижка 2 000₴</span>
+                                </div>
+                                <div class="prices">
+                                    <div class="prices-left">
+                                        <div class="old-price-wrapper">
+                                            <span class="old-price">3 000₴</span>
+                                            <span class="discount-tag">-50%</span>
+                                        </div>
+                                        <span class="current-price">3 000₴</span>
+                                    </div>
+                                    <button class="add-to-cart" aria-label="Додати до кошика">
+                                        <img src="images/cart.svg" alt="Кошик">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-score">
+            <div class="container">
+                <div class="score-title">
+                    <h2>Оцінка спеціаліста</h2>
+                </div>
+                <div class="score-wrapper">
+                    <div class="score-left">
+                        <div class="score-left__subtitle">Перевірка від спеціаліста "Чойс":</div>
+                        <div class="score-left-content">
+                            <div class="score-left-content-info">
+                                <img src="images/choice-buddy.png" alt="Оператор Антон" class="score-left-content-info__img">
+                                <div class="score-left-content-info__name">Оператор Антон</div>
+                            </div>
+                            <div class="score-left-content-text">
+                                <div class="score-left-content-text-title">
+                                    <b>Стан товару оцінено в - 9/10.</b>
+                                </div>
+                                <p>
+                                    При перевірці стану товару не було виявлено пошкоджень та техніка відповідає технічним стандартам.<br><br>
+                                    За нашою класифікацією станів товару:<br>
+                                    10/9 -   Без слідів використання<br>
+                                    Ідеальний стан без слідів використання.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score-right">
+                        <div class="score-right-grid">
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                            <div class="score-right-item">
+                                <div class="score-right-item__title">Стан товару</div>
+                                <div class="score-right-item__value">7 / 10</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <img src="images/choice-guarante.png" class="score-right-image" alt="Choice Гарантія">
+                </div>
+            </div>
+        </section>
+        <section class="product-setting">
+            <div class="container">
+                <div class="product-setting__grid">
+                    <div class="product-setting-grid-left">
+                        <div class="product-setting-block product-setting-options">
+                            <div class="product-setting-title">Характеристики</div>
+                            <div class="product-setting-options-list" role="table" aria-label="Характеристики">
+                                <div class="product-setting-options-row product-setting-options-row--alt" role="row">
+                                    <div class="product-setting-options-item product-setting-options-item--title" role="cell">Призначення/застосування</div>
+                                    <div class="product-setting-options-item product-setting-options-item--value" role="cell">Відповідь</div>
+                                </div>
+                                <div class="product-setting-options-row " role="row">
+                                    <div class="product-setting-options-item product-setting-options-item--title" role="cell">Призначення/застосування</div>
+                                    <div class="product-setting-options-item product-setting-options-item--value" role="cell">Відповідь</div>
+                                </div>
+                                <div class="product-setting-options-row product-setting-options-row--alt" role="row">
+                                    <div class="product-setting-options-item product-setting-options-item--title" role="cell">Призначення/застосування</div>
+                                    <div class="product-setting-options-item product-setting-options-item--value" role="cell">Відповідь</div>
+                                </div>
+                                <div class="product-setting-options-row" role="row">
+                                    <div class="product-setting-options-item product-setting-options-item--title" role="cell">Призначення/застосування</div>
+                                    <div class="product-setting-options-item product-setting-options-item--value" role="cell">Відповідь</div>
+                                </div>
+                                <div class="product-setting-options-row product-setting-options-row--alt" role="row">
+                                    <div class="product-setting-options-item product-setting-options-item--title" role="cell">Призначення/застосування</div>
+                                    <div class="product-setting-options-item product-setting-options-item--value" role="cell">Відповідь</div>
+                                </div>
+                            </div>
+                            <div class="product-setting-button-wrapper">
+                                <button class="show-more-btn" type="button">
+                                    Показати більше <span class="show-more-btn__icon">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-setting-block product-setting-reviews">
+                            <div class="product-setting-title">Відгуки та питання</div>
+                            <div class="product-setting-review-blue-wrapper">
+                                <div class="product-setting-review-blue-wrapper-text">Нам важлива ваша думка про якість обслуговування.</div>
+                                <div class="product-setting-review-blue-wrapper-button">
+                                    <a href="#" class="product-setting-review-blue-wrapper-button-link btn" tabindex="0" aria-label="Залишити відгук">Залишити відгук</a>
+                                </div>
+                            </div>
+                            <div class="product-setting-all-reviews">
+                                <div class="product-setting-all-reviews-left">
+                                    <div class="product-setting-all-reviews-left-text">
+                                        <span>4.9</span>
+                                        <p>(18 відгуків)</p>
+                                    </div>
+                                    <div class="product-setting-all-reviews-left-stars" aria-label="Оцінка 4.9 з 5" role="img">
+                                        <img src="images/icon-star-blue.svg" alt="Зірка">
+                                        <img src="images/icon-star-blue.svg" alt="Зірка">
+                                        <img src="images/icon-star-blue.svg" alt="Зірка">
+                                        <img src="images/icon-star-blue.svg" alt="Зірка">
+                                        <img src="images/icon-star-blue.svg" alt="Зірка">
+                                    </div>
+                                </div>
+                                <div class="product-setting-all-reviews-right">
+                                    <div class="product-setting-all-reviews-scores">
+                                        <!-- 5 stars -->
+                                        <div class="product-setting-all-reviews-scores-item">
+                                            <div class="product-setting-all-reviews-scores-item-stars">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            </div>
+                                            <div class="product-setting-all-reviews-scores-item-score">
+                                                <div class="product-setting-all-reviews-scores-item-score-progress-bar">
+                                                    <div class="product-setting-all-reviews-scores-item-score-progress-bar-inner" style="width:90%"></div>
+                                                </div>
+                                                <p>16</p>
+                                            </div>
+                                        </div>
+                                        <!-- 4 stars -->
+                                        <div class="product-setting-all-reviews-scores-item">
+                                            <div class="product-setting-all-reviews-scores-item-stars">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            </div>
+                                            <div class="product-setting-all-reviews-scores-item-score">
+                                                <div class="product-setting-all-reviews-scores-item-score-progress-bar">
+                                                    <div class="product-setting-all-reviews-scores-item-score-progress-bar-inner" style="width:10%"></div>
+                                                </div>
+                                                <p>2</p>
+                                            </div>
+                                        </div>
+                                        <!-- 3, 2, 1 stars -->
+                                        <div class="product-setting-all-reviews-scores-item">
+                                            <div class="product-setting-all-reviews-scores-item-stars">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            </div>
+                                            <div class="product-setting-all-reviews-scores-item-score">
+                                                <div class="product-setting-all-reviews-scores-item-score-progress-bar">
+                                                    <div class="product-setting-all-reviews-scores-item-score-progress-bar-inner" style="width:0%"></div>
+                                                </div>
+                                                <p>0</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-setting-all-reviews-scores-item">
+                                            <div class="product-setting-all-reviews-scores-item-stars">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            </div>
+                                            <div class="product-setting-all-reviews-scores-item-score">
+                                                <div class="product-setting-all-reviews-scores-item-score-progress-bar">
+                                                    <div class="product-setting-all-reviews-scores-item-score-progress-bar-inner" style="width:0%"></div>
+                                                </div>
+                                                <p>0</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-setting-all-reviews-scores-item">
+                                            <div class="product-setting-all-reviews-scores-item-stars">
+                                                <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            </div>
+                                            <div class="product-setting-all-reviews-scores-item-score">
+                                                <div class="product-setting-all-reviews-scores-item-score-progress-bar">
+                                                    <div class="product-setting-all-reviews-scores-item-score-progress-bar-inner" style="width:0%"></div>
+                                                </div>
+                                                <p>0</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-setting-reviews-buttons" role="group" aria-label="Фільтр за оцінкою">
+                                <button class="product-setting-reviews-button" tabindex="0" aria-label="Фільтр 5 зірок"><img src="images/icon-star.svg" alt="Зірка">5</button>
+                                <button class="product-setting-reviews-button" tabindex="0" aria-label="Фільтр 4 зірки"><img src="images/icon-star.svg" alt="Зірка">4</button>
+                                <button class="product-setting-reviews-button" tabindex="0" aria-label="Фільтр 3 зірки"><img src="images/icon-star.svg" alt="Зірка">3</button>
+                                <button class="product-setting-reviews-button" tabindex="0" aria-label="Фільтр 2 зірки"><img src="images/icon-star.svg" alt="Зірка">2</button>
+                                <button class="product-setting-reviews-button" tabindex="0" aria-label="Фільтр 1 зірка"><img src="images/icon-star.svg" alt="Зірка">1</button>
+                            </div>
+                            <div class="product-setting-reviews-list">
+                                <div class="product-setting-reviews-list-item">
+                                    <div class="product-setting-reviews-list-item-left">
+                                        <div class="product-setting-reviews-list-item-left-stars" aria-label="5 зірок" role="img">
+                                            <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            <img src="images/icon-star-blue.svg" alt="Зірка">
+                                            <img src="images/icon-star-blue.svg" alt="Зірка">
+                                        </div>
+                                        <div class="product-setting-reviews-list-item-left-date">2025-05-21</div>
+                                        <div class="product-setting-reviews-list-item-left-buyed">
+                                            <img src="images/icon-cart.svg" alt="Кошик">
+                                            Куплено в Choice
+                                        </div>
+                                    </div>
+                                    <div class="product-setting-reviews-list-item-right">
+                                        <div class="product-setting-reviews-list-item-right-name">Ірина Іванівна</div>
+                                        <div class="product-setting-reviews-list-item-right-text">
+                                            Мені досить сподобалось обслуговування. Товар приїхав неушкодженим. Доставили у вказаний день. Наступного разу обовʼязково звернусь за послугами.
+                                        </div>
+                                        <div class="product-setting-reviews-list-item-right-options">
+                                            <button class="product-setting-reviews-list-item-right-options-answer" tabindex="0" aria-label="Відповісти на відгук">
+                                                <img src="images/icon-reviews.svg" alt="Відповісти">
+                                                Відповісти
+                                            </button>
+                                            <div class="product-setting-reviews-list-item-right-options-rate">
+                                                <p>Корисний відгук?</p>
+                                                <button class="product-setting-reviews-list-item-right-options-rate-button" tabindex="0" aria-label="Корисний відгук">
+                                                    <img src="images/icon-finger-up.svg" alt="Обране">
+                                                </button>
+                                                <span class="product-setting-reviews-list-item-right-options-rate-divider"></span>
+                                                <button class="product-setting-reviews-list-item-right-options-rate-button" tabindex="0" aria-label="Не корисний відгук">
+                                                    <img src="images/icon-finger-down.svg" alt="Не корисний">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Повторить для других отзывов -->
+                            </div>
+                            <div class="product-setting-reviews-show-all">
+                                <button class="show-more-btn" type="button" aria-label="Дивитися усі відгуки до товару">
+                                    Дивитися усі відгуки до товару <span class="show-more-btn__icon">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-setting-block product-setting-aksesuar">
+                            <div class="product-setting-aksesuar-title">Аксесуари</div>
+                            <div class="product-setting-aksesuar-tabs" role="tablist" aria-label="Категорії аксесуарів">
+                                <button class="product-setting-aksesuar-tabs-item active" role="tab" aria-selected="true" tabindex="0" data-tab="all">Усі</button>
+                                <button class="product-setting-aksesuar-tabs-item" role="tab" aria-selected="false" tabindex="0" data-tab="text1">Текст</button>
+                                <button class="product-setting-aksesuar-tabs-item" role="tab" aria-selected="false" tabindex="0" data-tab="text2">Текст</button>
+                            </div>
+                            <div class="product-setting-aksesuar-tabs-content">
+                                <div class="product-setting-aksesuar-list" data-tab-content="all">
+                                    <div class="product-setting-aksesuar-list-item">
+                                        <div class="product-setting-aksesuar-list-item-image">
+                                            <img src="images/product-main.jpg" alt="Підставка антивібраційна SAVITEL SAVITEL SV-1">
+                                        </div>
+                                        <div class="product-setting-aksesuar-list-item-content">
+                                            <div class="product-setting-aksesuar-list-item-title">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                            <div class="product-setting-aksesuar-list-item-bottom">
+                                                <span class="product-setting-aksesuar-list-item-price">3 000₴</span>
+                                                <button class="product-setting-aksesuar-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-setting-aksesuar-list-item">
+                                        <div class="product-setting-aksesuar-list-item-image">
+                                            <img src="images/product-main.jpg" alt="Підставка антивібраційна SAVITEL SAVITEL SV-1">
+                                        </div>
+                                        <div class="product-setting-aksesuar-list-item-content">
+                                            <div class="product-setting-aksesuar-list-item-title">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                            <div class="product-setting-aksesuar-list-item-bottom">
+                                                <span class="product-setting-aksesuar-list-item-price">3 000₴</span>
+                                                <button class="product-setting-aksesuar-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-setting-aksesuar-list-item">
+                                        <div class="product-setting-aksesuar-list-item-image">
+                                            <img src="images/product-main.jpg" alt="Підставка антивібраційна SAVITEL SAVITEL SV-1">
+                                        </div>
+                                        <div class="product-setting-aksesuar-list-item-content">
+                                            <div class="product-setting-aksesuar-list-item-title">Підставка антивібраційна SAVITEL SAVITEL SV-1</div>
+                                            <div class="product-setting-aksesuar-list-item-bottom">
+                                                <span class="product-setting-aksesuar-list-item-price">3 000₴</span>
+                                                <button class="product-setting-aksesuar-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-setting-aksesuar-list" data-tab-content="text1" style="display:none;">
+                                    <div class="product-setting-aksesuar-list-item">
+                                        <div class="product-setting-aksesuar-list-item-image">
+                                            <img src="images/product-main.jpg" alt="Навушники JBL Tune 510BT">
+                                        </div>
+                                        <div class="product-setting-aksesuar-list-item-content">
+                                            <div class="product-setting-aksesuar-list-item-title">Навушники JBL Tune 510BT</div>
+                                            <div class="product-setting-aksesuar-list-item-bottom">
+                                                <span class="product-setting-aksesuar-list-item-price">1 499₴</span>
+                                                <button class="product-setting-aksesuar-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-setting-aksesuar-list-item">
+                                        <div class="product-setting-aksesuar-list-item-image">
+                                            <img src="images/product-main.jpg" alt="Зарядний пристрій Baseus GaN2 Pro">
+                                        </div>
+                                        <div class="product-setting-aksesuar-list-item-content">
+                                            <div class="product-setting-aksesuar-list-item-title">Зарядний пристрій Baseus GaN2 Pro</div>
+                                            <div class="product-setting-aksesuar-list-item-bottom">
+                                                <span class="product-setting-aksesuar-list-item-price">899₴</span>
+                                                <button class="product-setting-aksesuar-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-setting-aksesuar-list" data-tab-content="text2" style="display:none;">
+                                    <div class="product-setting-aksesuar-list-item">
+                                        <div class="product-setting-aksesuar-list-item-image">
+                                            <img src="images/product-main.jpg" alt="Чохол для телефону Silicone Case">
+                                        </div>
+                                        <div class="product-setting-aksesuar-list-item-content">
+                                            <div class="product-setting-aksesuar-list-item-title">Чохол для телефону Silicone Case</div>
+                                            <div class="product-setting-aksesuar-list-item-bottom">
+                                                <span class="product-setting-aksesuar-list-item-price">399₴</span>
+                                                <button class="product-setting-aksesuar-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-setting-aksesuar-list-item">
+                                        <div class="product-setting-aksesuar-list-item-image">
+                                            <img src="images/product-main.jpg" alt="Захисне скло для екрану 5D">
+                                        </div>
+                                        <div class="product-setting-aksesuar-list-item-content">
+                                            <div class="product-setting-aksesuar-list-item-title">Захисне скло для екрану 5D</div>
+                                            <div class="product-setting-aksesuar-list-item-bottom">
+                                                <span class="product-setting-aksesuar-list-item-price">249₴</span>
+                                                <button class="product-setting-aksesuar-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                                    <img src="images/cart.svg" alt="Кошик">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-setting-aksesuar-show-more">
+                                <button class="show-more-btn" type="button" aria-label="Показати більше аксесуарів">
+                                    Показати більше <span class="show-more-btn__icon">+</span>
+                                </button>
+                            </div>
+                        </div>
+                        <section class="product-setting-services product-setting-block" aria-labelledby="product-setting-services-title">
+                          <h3 id="product-setting-services-title" class="product-setting-services-title">Сервіси</h3>
+                          <ul class="product-setting-services-list" role="list">
+                            <li class="product-setting-services-list-item">
+                              <div class="product-setting-services-list-item-image">
+                                <img src="images/icon-security.svg" alt="Гарантія+">
+                              </div>
+                              <div class="product-setting-services-list-item-content">
+                                <div class="product-setting-services-list-item-title">Назва сервісу</div>
+                                <div class="product-setting-services-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</div>
+                                <div class="product-setting-services-list-item-bottom">
+                                  <div class="product-setting-services-list-item-prices">
+                                    <div>
+                                        <span class="old-price">3 000₴</span>
+                                        <span class="current-discount">-50%</span>
+                                    </div>
+                                    <div class="product-setting-services-list-item-price">3 000₴</div>
+                                  </div>
+                                  
+                                  <button class="product-setting-services-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                    <img src="images/cart.svg" alt="Кошик">
+                                  </button>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="product-setting-services-list-item">
+                              <div class="product-setting-services-list-item-image">
+                                <img src="images/icon-security.svg" alt="Гарантія+">
+                              </div>
+                              <div class="product-setting-services-list-item-content">
+                                <div class="product-setting-services-list-item-title">Назва сервісу</div>
+                                <div class="product-setting-services-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</div>
+                                <div class="product-setting-services-list-item-bottom">
+                                  <div class="product-setting-services-list-item-prices">
+                                    <div>
+                                        <span class="old-price">3 000₴</span>
+                                        <span class="current-discount">-50%</span>
+                                    </div>
+                                    <div class="product-setting-services-list-item-price">3 000₴</div>
+                                  </div>
+                                  
+                                  <button class="product-setting-services-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                    <img src="images/cart.svg" alt="Кошик">
+                                  </button>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="product-setting-services-list-item">
+                              <div class="product-setting-services-list-item-image">
+                                <img src="images/icon-security.svg" alt="Гарантія+">
+                              </div>
+                              <div class="product-setting-services-list-item-content">
+                                <div class="product-setting-services-list-item-title">Назва сервісу</div>
+                                <div class="product-setting-services-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</div>
+                                <div class="product-setting-services-list-item-bottom">
+                                  <div class="product-setting-services-list-item-prices">
+                                    <div>
+                                        <span class="old-price">3 000₴</span>
+                                        <span class="current-discount">-50%</span>
+                                    </div>
+                                    <div class="product-setting-services-list-item-price">3 000₴</div>
+                                  </div>
+                                  
+                                  <button class="product-setting-services-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                    <img src="images/cart.svg" alt="Кошик">
+                                  </button>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="product-setting-services-list-item">
+                              <div class="product-setting-services-list-item-image">
+                                <img src="images/icon-security.svg" alt="Гарантія+">
+                              </div>
+                              <div class="product-setting-services-list-item-content">
+                                <div class="product-setting-services-list-item-title">Назва сервісу</div>
+                                <div class="product-setting-services-list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</div>
+                                <div class="product-setting-services-list-item-bottom">
+                                  <div class="product-setting-services-list-item-prices">
+                                    <div>
+                                        <span class="old-price">3 000₴</span>
+                                        <span class="current-discount">-50%</span>
+                                    </div>
+                                    <div class="product-setting-services-list-item-price">3 000₴</div>
+                                  </div>
+                                  <button class="product-setting-services-list-item-cart" aria-label="Додати у кошик" tabindex="0">
+                                    <img src="images/cart.svg" alt="Кошик">
+                                  </button>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="product-setting-services-show-more">
+                            <button class="show-more-btn" type="button" aria-label="Показати більше сервісів">
+                              Показати більше <span class="show-more-btn__icon">+</span>
+                            </button>
+                          </div>
+                        </section>
+                    </div>
+                    <div class="product-setting-grid-right product-main-block">
+                        <div class="product-setting-right-image-wrapper">
+                            <img src="images/product-main.jpg" alt="Машинка для стрижки волосся Philips HC5612/15" class="product-setting-right-image">
+                        </div>
+                        <div class="product-setting-right-artikl">Код: 3522343535</div>
+                        <div class="product-setting-right-title">Машинка для стрижки волосся Philips HC5612/15</div>
+                        <div class="product-setting-right-prices">
+                            <div class="product-setting-right-prices-inner">
+                                <div class="product-setting-right-prices-row">
+                                    <div>
+                                        <span class="old-price">3 000₴</span>
+                                        <span class="current-discount">-50%</span>
+                                    </div>
+                                    <div class="product-setting-right-price">3 000₴</div>
+                                </div>
+                                <button class="product-setting-right-like" type="button" aria-label="Додати в обране">
+                                    <img src="images/icon-like.svg" alt="Обране">
+                                </button>
+                            </div>
+                            <div class="product-setting-right-bonus">
+                                <img src="images/icon-bodyglass.svg" alt="Бонус" class="product-setting-right-bonus-icon">
+                                <span class="product-setting-right-bonus-desc"><b>+18 ₴</b> на бонусний рахунок</span>
+                            </div>
+                            
+                        </div>
+                        <div class="product-setting-right-btn">
+                            <button class="add-to-cart" aria-label="Додати до кошика">
+                                <img src="images/cart.svg" alt="Кошик">
+                                Купити
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-photos">
+            <div class="container">
+                <div class="background-wrapper">
+                    <h2 class="section-photos__title">Фото товару</h2>
+                    <div class="photos-wrapper">
+                        <button class="photos-slider__arrow photos-slider__arrow--prev" type="button" aria-label="Попереднє фото"></button>
+                        <div class="photos-slider">
+                            <div class="photos-item">
+                                <img src="images/product-main.jpg" alt="Фото товару">
+                            </div>
+                            <div class="photos-item">
+                                <img src="images/product-main.jpg" alt="Фото товару">
+                            </div>
+                            <div class="photos-item">
+                                <img src="images/product-main.jpg" alt="Фото товару">
+                            </div>
+                            <div class="photos-item">
+                                <img src="images/product-main.jpg" alt="Фото товару">
+                            </div>
+                            <div class="photos-item">
+                                <img src="images/product-main.jpg" alt="Фото товару">
+                            </div>
+                            <div class="photos-item">
+                                <img src="images/product-main.jpg" alt="Фото товару">
+                            </div>
+                            <div class="photos-item">
+                                <img src="images/product-main.jpg" alt="Фото товару">
+                            </div>
+                        </div>
+                        <button class="photos-slider__arrow photos-slider__arrow--next" type="button" aria-label="Наступне фото"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <section class="seo-block">
+        <div class="container">
+            <h2 class="seo-block__title">SEO</h2>
+            <div class="seo-block__text">
+              <p>В умовах мегаполісів проблема чистого повітря стоїть на першому місці. Навіть удома не врятуєшся від смогу. Відкрити новий світ без пилу, алергенів і сторонніх запахів вам допоможе очищувач повітря Kadis S-35 — технології на варті здорового дихання.</p>
+              <p>Очищувач повітря Kadis S-35 — технології на варті здорового дихання Надійне збирання, ефективна робота, функціональність і економічність — усе це очищувач Kadis S-35. Девайс обробляє 150 м³ повітряних мас за годину — цієї потужності досить для оброблення приміщення площею до 35 м². Споживаючи всього 23 Вт/год, його функціонування не вдарить по бюджету. Відразу з коробки він готовий до роботи — просто підключіть до розетки, і пристрій почне очищати повітря у вашій оселі.</p>
+              <p>Прилад обладнаний 3-шаровим фільтром, що видаляє практично всі забруднювачі: Попереднє очищення затримує великі частки пилу, алергенів і сторонніх запахів, HEPA-фільтр вловлює найдрібніші частинки, а вугільний фільтр нейтралізує внутрішні елементи приладу та запобігає передчасному спрацюванню інших фільтрів. Очищувач повітря зручно експлуатувати вдома, в офісі і в подорожах. В умовах мегаполісів проблема чистого повітря стоїть на першому місці. Навіть удома не врятуєшся від смогу. Відкрити новий світ без пилу, алергенів і сторонніх запахів вам допоможе очищувач повітря Kadis S-35 — технології на варті здорового дихання</p>
+            </div>
+        </div>
+        
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__main container">
+          <div class="footer__brand">
+            <a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Choice"></a>
+            <p class="footer__desc">Choice — сучасний інтернет-магазин техніки та електроніки. Великий вибір, швидка доставка, офіційна гарантія.</p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Facebook"><img src="images/icon-call.svg" alt="call"></a>
+              <a href="#" class="footer__social-link" aria-label="Instagram"><img src="images/icon-insta.svg" alt="Instagram"></a>
+              <a href="#" class="footer__social-link" aria-label="YouTube"><img src="images/icon-x.svg" alt="x"></a>
+              <a href="#" class="footer__social-link" aria-label="Telegram"><img src="images/icon-telegram.svg" alt="Telegram"></a>
+            </div>
+          </div>
+          <nav class="footer__nav" aria-label="Навігація">
+            <div class="footer__nav-block">
+              <h3 class="footer__nav-title">Навігація</h3>
+              <ul class="footer__nav-list">
+                <li><a href="#">Смартфони</a></li>
+                <li><a href="#">Ноутбуки</a></li>
+                <li><a href="#">Побутова техніка</a></li>
+                <li><a href="#">Аксесуари</a></li>
+                <li><a href="#">Гаджети</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-block">
+              <h3 class="footer__nav-title">ТОП категорій</h3>
+              <ul class="footer__nav-list">
+                <li><a href="#">Доставка і оплата</a></li>
+                <li><a href="#">Гарантія</a></li>
+                <li><a href="#">Повернення</a></li>
+                <li><a href="#">Бонусна програма</a></li>
+                <li><a href="#">Контакти</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-block">
+              <ul class="footer__nav-list">
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Вакансії</a></li>
+                <li><a href="#">Партнерам</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="footer__contacts">
+            <div class="footer__contacts-title">Ми на зв'язку</div>
+            <div class="footer__contacts-phone-block">
+              <a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+              <div class="footer__contacts-phone-desc">Оформити замовлення<br>9:00 - 21:00</div>
+            </div>
+            <div class="footer__contacts-phone-block">
+              <a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+              <div class="footer__contacts-phone-desc">Служба підтримки<br>9:00 - 21:00</div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="footer__bottom-wrap">
+              <div class="container">
+                  <div class="footer__bottom">
+                      <div class="footer__copyright">CHOICE "© 2025. Всі права захищені"</div>
+                      
+                  <div class="footer__payments">
+                      <img src="images/icon-visa.svg" alt="Visa">
+                      <img src="images/icon-mastercard.svg" alt="Mastercard">
+                  </div>
+                  <div class="footer__privacy-wrapper">
+                      <a href="#" class="footer__privacy">Політика конфіденційності</a>
+                      <a href="#" class="footer__privacy">Договір оферти</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+    <script src="js/script.js"></script>
+</body>
+</html>

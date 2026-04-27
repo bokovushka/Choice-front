@@ -1,0 +1,496 @@
+<div class="modal modal--custom modal--custom-2 popup-filter fade" id="popup-filter" data-keyboard="false" tabindex="-1"
+	aria-labelledby="popup-filterLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<!-- modal-dialog-centered -->
+		<div class="modal-content p-0 our-fleet">
+			<div class="modal-body p-3 pt-4 pb-12">
+				<div class="d-flex align-items-start justify-content-between mb-8">
+					<div class="d-flex flex-column">
+						<div class="modal-title h4 font-m pr-10 pr-sm-4">Фільтри</div>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#i-close"></use>
+							</svg>
+						</span>
+					</button>
+				</div>
+				<div class="filter-menu">
+					<div class="row">
+						<div class="col-12">
+							<div class="sidebar" id="navbarFilters">
+								<div class="filter-top d-flex justify-content-between align-items-center pb-4 pt-0 py-lg-4">
+									<div class="filter-title mr-4">Фільтрувати за:</div>
+									<button type="button" class="btn-close btn btn-reset">
+										<span>Скинути</span>
+										<svg class="i-close">
+											<use xlink:href="img/icons/icons.svg#i-close"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="sidebar-filter">
+									<div class="accordion" id="accordion-catalog-popup">
+										<div class="row">
+											<div class="col">
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-1">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-1" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-1">Марка авто</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-1" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-1">
+														<div class="card-body">
+															<div class="field-wrap mb-3">
+																<div class="field">
+																	<div class="filter-list">
+																		<div class="input-search">
+																			<input type="search" class="search-input form-control"
+																				placeholder="Пошук">
+																			<span class="clear-icon"></span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-10">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-10" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-10">Модель авто</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-10" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-10">
+														<div class="card-body">
+															<div class="field-wrap mb-3">
+																<div class="field">
+																	<div class="filter-list">
+																		<div class="input-search">
+																			<input type="search" class="search-input form-control"
+																				placeholder="Пошук">
+																			<span class="clear-icon"></span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-2">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-2" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-2">Ціна авто</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-2" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-2">
+														<div class="card-body">
+															<div class="position-relative">
+																<div id="price-slider-full--popup"
+																	class="price-slider slider-range mb-6">
+																	<div class="field-wrap mb-3">
+																		<div class="field">
+																			<div class="inner">
+																				<div class="field-item">
+																					<div class="currency-content">
+																						<div class="input-currency">
+																							<input
+																								class="currency-first-full--popup form-control"
+																								type="number" value="0" min="0" max="10000"
+																								step="1">
+																						</div>
+																					</div>
+																				</div>
+																				<div class="field-item">
+																					<div class="currency-content">
+																						<div class="input-currency">
+																							<input
+																								class="currency-last-full--popup form-control"
+																								type="number" value="10000" min="0" max="10000"
+																								step="1">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="rangeBar-full">
+																		<div class="rangeBar-full--line"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-3">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-3" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-3">Рік</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-3" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-3">
+														<div class="card-body">
+															<div class="field-wrap mb-3">
+																<div class="field">
+																	<div class="inner">
+																		<div class="datepicker">
+																			<input id="graduation-year-first" class="form-control"
+																				type="text" readonly data-input
+																				autocomplete="no-autofill-please" placeholder="Від">
+																		</div>
+																		<div class="datepicker">
+																			<input id="graduation-year-last" class="form-control"
+																				type="text" readonly data-input
+																				autocomplete="no-autofill-please" placeholder="До">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-4">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-4" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-4">Пробіг (тис. км.)
+															</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-4" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-4">
+														<div class="card-body">
+															<div class="field-wrap mb-3">
+																<div class="field">
+																	<div class="inner">
+																		<div class="field-item">
+																			<input id="graduation-year-first" class="form-control"
+																				type="number" value="0" min="0" max="50000" step="1"
+																				data-input autocomplete="no-autofill-please">
+																		</div>
+																		<div class="field-item">
+																			<input id="graduation-year-last" class="form-control"
+																				type="number" value="50000" min="0" max="50000" step="1"
+																				data-input autocomplete="no-autofill-please">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-5">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-5" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-5">Коробка передач</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-5" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-5">
+														<div class="card-body">
+															<div class="mb-3">
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="gear-box-1">
+																	<label class="custom-control-label" for="gear-box-1">
+																		<span class="custom-checkbox--info">Автомат</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="gear-box-2">
+																	<label class="custom-control-label" for="gear-box-2">
+																		<span class="custom-checkbox--info">Ручна / Механіка</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-6">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-6" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-6">Паливо
+															</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-6" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-6">
+														<div class="card-body">
+															<div class="mb-3">
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="fuel-1">
+																	<label class="custom-control-label" for="fuel-1">
+																		<span class="custom-checkbox--info">Бензин</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="fuel-2">
+																	<label class="custom-control-label" for="fuel-2">
+																		<span class="custom-checkbox--info">Дизель</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-7">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-7" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-7">Тип приводу</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-7" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-7">
+														<div class="card-body">
+															<div class="mb-3">
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="drive-type-1">
+																	<label class="custom-control-label" for="drive-type-1">
+																		<span class="custom-checkbox--info">Повний</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="drive-type-2">
+																	<label class="custom-control-label" for="drive-type-2">
+																		<span class="custom-checkbox--info">Передній</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="drive-type-3">
+																	<label class="custom-control-label" for="drive-type-3">
+																		<span class="custom-checkbox--info">Задній</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-8">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-8" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-8">Обʼєм двигуна (л.)
+															</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-8" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-8">
+														<div class="card-body">
+															<div class="mb-3">
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="engine-capacity-1">
+																	<label class="custom-control-label" for="engine-capacity-1">
+																		<span class="custom-checkbox--info">2.0</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="engine-capacity-2">
+																	<label class="custom-control-label" for="engine-capacity-2">
+																		<span class="custom-checkbox--info">3.0</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="engine-capacity-3">
+																	<label class="custom-control-label" for="engine-capacity-3">
+																		<span class="custom-checkbox--info">5.0</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-9">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-9" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-9">Тип кузова</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-9" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-9">
+														<div class="card-body">
+															<div class="mb-3">
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="body-type-1">
+																	<label class="custom-control-label" for="body-type-1">
+																		<span class="custom-checkbox--info">Седан</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="body-type-2">
+																	<label class="custom-control-label" for="body-type-2">
+																		<span class="custom-checkbox--info">Універсал</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="body-type-3">
+																	<label class="custom-control-label" for="body-type-3">
+																		<span class="custom-checkbox--info">Хетчбек</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="body-type-4">
+																	<label class="custom-control-label" for="body-type-4">
+																		<span class="custom-checkbox--info">Пікап</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="body-type-5">
+																	<label class="custom-control-label" for="body-type-5">
+																		<span class="custom-checkbox--info">Мінівен</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="body-type-6">
+																	<label class="custom-control-label" for="body-type-6">
+																		<span class="custom-checkbox--info">Купе</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="body-type-7">
+																	<label class="custom-control-label" for="body-type-7">
+																		<span class="custom-checkbox--info">Легковий фургон</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input" id="body-type-8">
+																	<label class="custom-control-label" for="body-type-8">
+																		<span class="custom-checkbox--info">Позашляховик /
+																			Кроссовер</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card">
+													<div class="card-header p-0" id="heading-accordion-catalog-popup-10">
+														<div class="h6 mb-0">
+															<div class="btn btn-link collapsed" data-toggle="collapse"
+																data-target="#collapse-accordion-catalog-popup-10" aria-expanded="false"
+																aria-controls="collapse-accordion-catalog-popup-10">Колір</div>
+														</div>
+													</div>
+													<div id="collapse-accordion-catalog-popup-10" class="collapse"
+														aria-labelledby="heading-accordion-catalog-popup-10">
+														<div class="card-body">
+															<div class="mb-3">
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-1">
+																	<label class="custom-control-label" for="color-body-1">
+																		<span class="custom-checkbox--info">Чорний</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-2">
+																	<label class="custom-control-label" for="color-body-2">
+																		<span class="custom-checkbox--info">Білий</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-3">
+																	<label class="custom-control-label" for="color-body-3">
+																		<span class="custom-checkbox--info">Червоний</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-4">
+																	<label class="custom-control-label" for="color-body-4">
+																		<span class="custom-checkbox--info">Оранжевий</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-5">
+																	<label class="custom-control-label" for="color-body-5">
+																		<span class="custom-checkbox--info">Синій</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-6">
+																	<label class="custom-control-label" for="color-body-6">
+																		<span class="custom-checkbox--info">Жовтий</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-7">
+																	<label class="custom-control-label" for="color-body-7">
+																		<span class="custom-checkbox--info">Коричневий</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-8">
+																	<label class="custom-control-label" for="color-body-8">
+																		<span class="custom-checkbox--info">Зелений</span>
+																	</label>
+																</div>
+																<div class="custom-control custom-checkbox position-relative mb-1">
+																	<input type="checkbox" class="custom-control-input"
+																		id="color-body-9">
+																	<label class="custom-control-label" for="color-body-9">
+																		<span class="custom-checkbox--info">Сірий</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cta-car">
+								<img src="img/fnvaogao.jpg" alt="img" class="bg-down">
+								<div class="cta-car--content">
+									<div class="cta-car--title">Не знайшли потрібного авто?</div>
+
+									<p class="cta-car--text">
+										Допоможемо отримати вигідну комерційну пропозицію
+										у найкоротші терміни.
+									</p>
+									<a href="#" class="btn btn-main-blue btn-block">
+										Отримати пропозицію
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

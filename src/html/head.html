@@ -1,0 +1,113 @@
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>@@title</title>
+	<link rel="shortcut icon" href="##" type="image/x-icon" />
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<style>
+		/**
+		* Reinstate scrolling for non-JS clients
+		*/
+		.simplebar-content-wrapper {
+			scrollbar-width: auto;
+			-ms-overflow-style: auto;
+		}
+
+		.simplebar-content-wrapper::-webkit-scrollbar,
+		.simplebar-hide-scrollbar::-webkit-scrollbar {
+			display: initial;
+			width: initial;
+			height: initial;
+		}
+	</style>
+
+	<script>
+		(function () {
+			try {
+				const settings = JSON.parse(localStorage.getItem('accessibilitySettings'));
+				const savedImageSettings = localStorage.getItem('imageSettings');
+				const root = document.documentElement;
+
+				const classes = [];
+
+				if (settings?.colorScheme) classes.push(settings.colorScheme);
+				if (savedImageSettings) classes.push(savedImageSettings);
+
+				if (classes.length) {
+					root.classList.add(...classes);
+				}
+			} catch (e) {
+				// тихо ігноруємо
+			}
+		})();
+	</script>
+	<script>
+		(function () {
+			const removeClasses = [
+				'scheme-default', 'scheme-white-black', 'scheme-black-white', 'scheme-blue',
+				'images-normal', 'images-black-white', 'images-hide'
+			];
+
+			function applyAccessibilitySettings() {
+				try {
+					const settings = JSON.parse(localStorage.getItem('accessibilitySettings'));
+					const savedImageSettings = localStorage.getItem('imageSettings');
+					const root = document.documentElement;
+
+					root.classList.remove(...removeClasses);
+					if (settings?.colorScheme) root.classList.add(settings.colorScheme);
+					if (savedImageSettings) root.classList.add(savedImageSettings);
+
+					const applyToBody = () => {
+						const body = document.body;
+						if (!body) return;
+
+						body.classList.remove(...removeClasses);
+						if (settings?.colorScheme) body.classList.add(settings.colorScheme);
+						if (savedImageSettings) body.classList.add(savedImageSettings);
+
+						updateButtons(settings?.colorScheme, savedImageSettings);
+					};
+
+					if (document.body) {
+						applyToBody();
+					} else {
+						new MutationObserver((_, obs) => {
+							if (document.body) {
+								applyToBody();
+								obs.disconnect();
+							}
+						}).observe(document.documentElement, { childList: true, subtree: true });
+					}
+				} catch (e) {
+					console.error('Error loading accessibility settings:', e);
+				}
+			}
+
+			function updateButtons(activeScheme, activeImages) {
+				const schemeButtons = document.querySelectorAll('[data-scheme]');
+				const imageButtons = document.querySelectorAll('[data-images]');
+
+				schemeButtons.forEach(btn => {
+					btn.classList.toggle('active', btn.dataset.scheme === activeScheme);
+				});
+
+				imageButtons.forEach(btn => {
+					btn.classList.toggle('active', btn.dataset.images === activeImages);
+				});
+			}
+
+			applyAccessibilitySettings();
+
+			// BFCache робимо повне перезавантаження
+			window.addEventListener('pageshow', function (event) {
+				if (event.persisted) {
+					window.location.reload();
+				}
+			});
+
+		})();
+	</script>
+</head>

@@ -1,0 +1,331 @@
+// Receive Modal Form Switching
+.recieve-modal {
+  &__form-first {
+    display: block; // Show first form by default
+  }
+  
+  &__form-another {
+    display: none; // Hide second form by default
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 550px;
+    width: 100%;
+    
+    // Form styles for both forms
+    .recieve-modal__field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+    }
+    
+    .recieve-modal__label {
+      font-size: 14px;
+      font-weight: 500;
+      color: $color-text-dark;
+    }
+    
+    .recieve-modal__input {
+      width: 100%;
+      padding: 16px 20px;
+      border: 2px solid $color-gray2;
+      border-radius: 12px;
+      font-size: 16px;
+      color: $color-text-dark;
+      background: $color-white;
+      transition: border-color 0.3s ease;
+      
+      &:focus {
+        outline: none;
+        border-color: $color-brand-accent2;
+      }
+      
+      &::placeholder {
+        color: $color-gray1;
+      }
+    }
+    
+    .recieve-modal__submit {
+      @include button-reset;
+      background: $color-brand-accent2;
+      color: $color-white;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 16px 32px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      margin-top: 8px;
+      
+      &:hover {
+        background: $color-brand-accent1;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(46, 164, 255, 0.3);
+      }
+    }
+  }
+}
+
+// Day Choose Component
+.order-delivery__day-choose {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  
+  &-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    
+    &-label {
+      font-size: 14px;
+      font-weight: 900;
+      color: $color-text-dark;
+      
+      span {
+        color: $color-gray1;
+        font-weight: 400;
+        margin-left: 2px;
+      }
+    }
+    
+    &-button {
+      @include button-reset;
+      background: $color-white;
+      border: 2px solid $color-gray2;
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 400;
+      color: $color-text-dark;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      
+      &:hover {
+        border-color: $color-brand-accent2;
+        background: rgba(46, 164, 255, 0.05);
+        color: $color-brand-accent2;
+      }
+      
+      &.active {
+        background: $color-brand-accent2;
+        border-color: $color-brand-accent2;
+        color: $color-white;
+        font-weight: 500;
+      }
+    }
+    
+    &:last-child {
+      .order-delivery__day-choose-calendar-btn {
+        @include button-reset;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        background: #f3f3f3;
+        border-radius: 10px;
+        padding: 16px 16px;
+        width: 100%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        
+        &:hover {
+          border-color: $color-brand-accent2;
+          background: rgba(46, 164, 255, 0.05);
+        }
+        
+        img:first-child {
+          width: 24px;
+          height: 24px;
+        }
+        
+        &-text {
+          flex: 1;
+          font-size: 14px;
+          font-weight: 400;
+          color: $color-text-dark;
+          text-align: left;
+        }
+        
+        img:last-child {
+          width: 18px;
+          height: 18px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+// Choose Date Modal
+.choose-date-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  @include flex-center;
+  display: none;
+  
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  &__content {
+    background: $color-white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 1200px;
+    max-height: 90vh;
+    position: relative;
+    z-index: 10;
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__header {
+    @include flex-between;
+    align-items: center;
+    padding: 32px 32px 0 32px;
+    margin-bottom: 24px;
+  }
+  
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: $color-text-dark;
+    margin: 0;
+  }
+  
+  &__close {
+    @include button-reset;
+    width: 32px;
+    height: 32px;
+    @include flex-center;
+    border-radius: 50%;
+    background: $color-white-alt;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: $color-gray2;
+      transform: scale(1.1);
+    }
+    
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  &__body {
+    padding: 0 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 530px;
+  }
+  
+  &__input-block {
+    display: flex;
+    gap: 16px;
+    
+    &:first-child {
+      .choose-date-modal__input {
+        width: 100%;
+      }
+    }
+    
+    &:nth-child(2) {
+      .choose-date-modal__input {
+        flex: 1;
+      }
+    }
+  }
+  
+  &__input {
+    padding: 16px 20px;
+    border: 2px solid $color-gray2;
+    border-radius: 12px;
+    font-size: 16px;
+    color: $color-text-dark;
+    background: $color-white;
+    transition: border-color 0.3s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: $color-brand-accent2;
+    }
+    
+    &::placeholder {
+      color: $color-gray1;
+    }
+  }
+  
+  &__input-accept {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    &-checkbox {
+      width: 20px;
+      height: 20px;
+      border: 2px solid $color-gray2;
+      border-radius: 4px;
+      background: $color-white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      &:checked {
+        background: $color-brand-accent2;
+        border-color: $color-brand-accent2;
+      }
+    }
+    
+    &-label {
+      font-size: 14px;
+      color: $color-text-dark;
+      cursor: pointer;
+      
+      &:hover {
+        color: $color-brand-accent2;
+      }
+      span {
+        color: $color-brand-accent2;
+      }
+    }
+  }
+  &__submit {
+    @include button-reset;
+    background: $color-brand-accent2;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 32px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+    max-width: max-content;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(46, 164, 255, 0.3);
+    }
+  }
+}

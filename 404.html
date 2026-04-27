@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice - Інтернет-магазин</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+</head>
+<body>
+    <header>
+        <!-- Discount banner -->
+        <div class="discount-banner">
+            <div class="discount-content">
+                <span>Не пропусти! МЕГА знижки на Пʼятницю 13</span>
+                <span>-50%</span>
+                <span>-40%</span>
+                <span>-30%</span>
+            </div>
+        </div>
+        
+        <!-- Top header with language and city selection -->
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-content">
+                    <!-- Left menu -->
+                    <div class="lang-city">
+                        <div class="custom-dropdown custom-dropdown--gray lang-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Вибір мови">
+                            <span class="custom-dropdown__current">UA</span>
+                            <ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">EN</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">RU</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="true">UA</li>
+                            </ul>
+                        </div>
+                        <div class="custom-dropdown city-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Вибір міста">
+                            <img src="images/location.svg" alt="Location" class="city-selector__icon">
+                            <span class="custom-dropdown__current">Черкаси</span>
+                            <span class="city-selector__arrow" aria-hidden="true"></span>
+                            <ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+                                <li class="custom-dropdown__option" role="option" aria-selected="true">Черкаси</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">Київ</li>
+                                <li class="custom-dropdown__option" role="option" aria-selected="false">Львів</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Right section -->
+                    <div class="menu-links">
+                        <div class="menu-item">
+                            <a href="#">Choice</a>
+                            <img src="images/dropdown.svg" alt="Dropdown">
+                        </div>
+                        <a href="#" class="menu-link">Врятувати світ</a>
+                        <a href="#" class="menu-link">Trade-In</a>
+                        <a href="#" class="menu-link">Доставка</a>
+                        <a href="#" class="menu-link">Повернення</a>
+                        <div class="help-link">
+                            <img src="images/help-icon.svg" alt="Help">
+                            <span>Допомога</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main header with logo, search and cart -->
+        <div class="main-header">
+            <div class="container">
+                <div class="main-header-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Choice">
+                        </a>
+                    </div>
+                    
+                    <!-- Catalog button -->
+                    <div class="catalog-btn">
+                        <div class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>Каталог</span>
+                    </div>
+                    
+                    <!-- Search -->
+                    <div class="search-container">
+                        <div class="search-input">
+                            <div class="search-icon">
+                                <img src="images/search.svg" alt="Search">
+                            </div>
+                            <input type="text" placeholder="Я шукаю...">
+                            <div class="microphone-icon">
+                                <img src="images/microphone.svg" alt="Voice search">
+                            </div>
+                        </div>
+                        <button class="search-btn">Знайти</button>
+                    </div>
+                    
+                    <!-- User actions -->
+                    <div class="user-actions">
+                        <a href="#" class="action-item">
+                            <img src="images/data-icon.svg" alt="Profile">
+                        </a>
+                        <a href="#" class="action-item">
+                            <img src="images/favorites.svg" alt="Favorites">
+                        </a>
+                        <a href="#" class="cart-btn">
+                            <img src="images/cart.svg" alt="Cart">
+                            <span>Кошик</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="breadcrumbs-wrapper">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item breadcrumbs__item--home">
+                            <a href="/" class="breadcrumbs__link"><img src="images/icon-home.svg" alt="Головна" class="breadcrumbs__icon">Головна</a>
+                        </li>
+                        <li class="breadcrumbs__item"><span class="breadcrumbs__arrow"></span><span class="breadcrumbs__text">404</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <section class="section-not-found">
+            <div class="container">
+                <div class="not-found-wrapper">
+                    <div class="not-found-left">
+                        <div class="not-found-left-title">404</div>
+                        <div class="not-found-left-desc">От халепа!</div>
+                        <div class="not-found-left-text">Здається, ви натрапили на сторінку, якої не існує. Спробуйте ще раз.</div>
+                        <a href="/" class="not-found-left-link">На головну</a>
+                    </div>
+                    <div class="not-found-right">
+                        <img src="images/icon-404.svg" alt="404">
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        
+    </main>
+    <footer class="footer">
+      <div class="footer__main container">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Choice"></a>
+          <p class="footer__desc">Choice — сучасний інтернет-магазин техніки та електроніки. Великий вибір, швидка доставка, офіційна гарантія.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><img src="images/icon-call.svg" alt="call"></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><img src="images/icon-insta.svg" alt="Instagram"></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><img src="images/icon-x.svg" alt="x"></a>
+            <a href="#" class="footer__social-link" aria-label="Telegram"><img src="images/icon-telegram.svg" alt="Telegram"></a>
+          </div>
+        </div>
+        <nav class="footer__nav" aria-label="Навігація">
+          <div class="footer__nav-block">
+            <h3 class="footer__nav-title">Навігація</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#">Смартфони</a></li>
+              <li><a href="#">Ноутбуки</a></li>
+              <li><a href="#">Побутова техніка</a></li>
+              <li><a href="#">Аксесуари</a></li>
+              <li><a href="#">Гаджети</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-block">
+            <h3 class="footer__nav-title">ТОП категорій</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#">Доставка і оплата</a></li>
+              <li><a href="#">Гарантія</a></li>
+              <li><a href="#">Повернення</a></li>
+              <li><a href="#">Бонусна програма</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-block">
+            <ul class="footer__nav-list">
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Новини</a></li>
+              <li><a href="#">Вакансії</a></li>
+              <li><a href="#">Партнерам</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__contacts">
+          <div class="footer__contacts-title">Ми на зв'язку</div>
+          <div class="footer__contacts-phone-block">
+            <a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+            <div class="footer__contacts-phone-desc">Оформити замовлення<br>9:00 - 21:00</div>
+          </div>
+          <div class="footer__contacts-phone-block">
+            <a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+            <div class="footer__contacts-phone-desc">Служба підтримки<br>9:00 - 21:00</div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="footer__bottom-wrap">
+            <div class="container">
+                <div class="footer__bottom">
+                    <div class="footer__copyright">CHOICE "© 2025. Всі права захищені"</div>
+                    
+                <div class="footer__payments">
+                    <img src="images/icon-visa.svg" alt="Visa">
+                    <img src="images/icon-mastercard.svg" alt="Mastercard">
+                </div>
+                <div class="footer__privacy-wrapper">
+                    <a href="#" class="footer__privacy">Політика конфіденційності</a>
+                    <a href="#" class="footer__privacy">Договір оферти</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+    <script src="js/script.js"></script>
+</body>
+</html>
