@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":"Choice - Інтернет-магазин"
+})
+
+<body>
+	<header>
+		<!-- Discount banner -->
+		<div class="discount-banner">
+			<div class="discount-content">
+				<span>Не пропусти! МЕГА знижки на Пʼятницю 13</span>
+				<span>-50%</span>
+				<span>-40%</span>
+				<span>-30%</span>
+			</div>
+		</div>
+
+		<!-- Top header with language and city selection -->
+		<div class="top-header">
+			<div class="container">
+				<div class="top-header-content">
+					<!-- Left menu -->
+					<div class="lang-city">
+						<div class="custom-dropdown custom-dropdown--gray lang-selector" tabindex="0" aria-haspopup="listbox"
+							aria-expanded="false" aria-label="Вибір мови">
+							<span class="custom-dropdown__current">UA</span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="false">EN</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">RU</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="true">UA</li>
+							</ul>
+						</div>
+						<div class="custom-dropdown city-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false"
+							aria-label="Вибір міста">
+							<img src="images/location.svg" alt="Location" class="city-selector__icon">
+							<span class="custom-dropdown__current">Черкаси</span>
+							<span class="city-selector__arrow" aria-hidden="true"></span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="true">Черкаси</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Київ</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Львів</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Right section -->
+					<div class="menu-links">
+						<div class="menu-item">
+							<a href="#">Choice</a>
+							<img src="images/dropdown.svg" alt="Dropdown">
+						</div>
+						<a href="#" class="menu-link">Врятувати світ</a>
+						<a href="#" class="menu-link">Trade-In</a>
+						<a href="#" class="menu-link">Доставка</a>
+						<a href="#" class="menu-link">Повернення</a>
+						<div class="help-link">
+							<img src="images/help-icon.svg" alt="Help">
+							<span>Допомога</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Main header with logo, search and cart -->
+		<div class="main-header">
+			<div class="container">
+				<div class="main-header-content">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="Choice">
+						</a>
+					</div>
+
+					<!-- Catalog button -->
+					<div class="catalog-btn">
+						<div class="burger-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<span>Каталог</span>
+					</div>
+
+					<!-- Search -->
+					<div class="search-container">
+						<div class="search-input">
+							<div class="search-icon">
+								<img src="images/search.svg" alt="Search">
+							</div>
+							<input type="text" placeholder="Я шукаю...">
+							<div class="microphone-icon">
+								<img src="images/microphone.svg" alt="Voice search">
+							</div>
+						</div>
+						<button class="search-btn">Знайти</button>
+					</div>
+
+					<!-- User actions -->
+					<div class="user-actions">
+						<a href="#" class="action-item">
+							<img src="images/data-icon.svg" alt="Profile">
+						</a>
+						<a href="#" class="action-item">
+							<img src="images/favorites.svg" alt="Favorites">
+						</a>
+						<a href="#" class="cart-btn">
+							<img src="images/cart.svg" alt="Cart">
+							<span>Кошик</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- Hero Section -->
+		<section class="hero-section">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">Choice Обмін: дайте речам другий шанс</h1>
+						<p class="hero-description">Маєте пристрій або річ, якою більше не користуєтеся? Обміняйте їх через
+							Choice Обмін та отримайте щось натомість. Легкий і вигідний спосіб оновити свої речі, даючи їм
+							друге життя!</p>
+					</div>
+					<div class="hero-image">
+						<img src="images/exchange-main.png" alt="Choice Обмін">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Guarantees Section -->
+		<section class="guarantees-section">
+			<div class="container">
+				<div class="guarantees-header">
+					<h2 class="section-title">Наші гарантії</h2>
+					<p class="section-subtitle">Підзаголовок для розкривання</p>
+				</div>
+
+				<div class="guarantees-grid">
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="7 днів повернення">
+						</div>
+						<h3 class="guarantee-title">7 днів повернення</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Безкоштовна доставка">
+						</div>
+						<h3 class="guarantee-title">Безкоштовна доставка</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Річна гарантія">
+						</div>
+						<h3 class="guarantee-title">Річна гарантія</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Єдиний екземпляр">
+						</div>
+						<h3 class="guarantee-title">Єдиний екземпляр</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Персональний менеджер">
+						</div>
+						<h3 class="guarantee-title">Персональний менеджер</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Блискавична доставка">
+						</div>
+						<h3 class="guarantee-title">Блискавична доставка</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Безтурботна розстрочка">
+						</div>
+						<h3 class="guarantee-title">Безтурботна розстрочка</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Задоволені клієнти">
+						</div>
+						<h3 class="guarantee-title">Задоволені клієнти</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="hero-section">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">Choice Обмін: дайте речам другий шанс</h1>
+						<p class="hero-description">Маєте пристрій або річ, якою більше не користуєтеся? Обміняйте їх через
+							Choice Обмін та отримайте щось натомість. Легкий і вигідний спосіб оновити свої речі, даючи їм
+							друге життя!</p>
+					</div>
+					<div class="hero-image">
+						<div class="video-preview">
+							<img src="images/obmin-2.png" alt="Choice Обмін">
+							<button class="play-button" onclick="openVideoModal()">
+								<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 10L50 30L15 50V10Z" fill="#fff" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Guarantees Section -->
+		<section class="guarantees-section guarantee-second">
+			<div class="container">
+				<div class="guarantees-header">
+					<h2 class="section-title">Швидко і доступно</h2>
+				</div>
+
+				<div class="guarantees-grid">
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="7 днів повернення">
+						</div>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Безкоштовна доставка">
+						</div>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Річна гарантія">
+						</div>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Річна гарантія">
+						</div>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- No Retouching Section -->
+		<section class="no-retouching-section">
+			<div class="container">
+				<div class="no-retouching-header">
+					<h2 class="no-retouching-title">Жодної ретуші, лише реальні світлини</h2>
+					<p class="no-retouching-description">Зображення продукту не додає жодного ефекту PS для відновлення
+						оригінального кольору телефону.</p>
+				</div>
+
+				<div class="iphone-gallery">
+					<div class="iphone-gallery-left">
+						<div class="iphone-row-top">
+							<div class="iphone-image">
+								<img src="images/iphone-1.png" alt="iPhone реальне фото 1">
+							</div>
+							<div class="iphone-image">
+								<img src="images/iphone-2.png" alt="iPhone реальне фото 2">
+							</div>
+						</div>
+						<div class="iphone-row-bottom">
+							<div class="iphone-image iphone-image-wide">
+								<img src="images/iphone-3.png" alt="iPhone реальне фото 3">
+							</div>
+						</div>
+					</div>
+					<div class="iphone-gallery-right">
+						<div class="iphone-image iphone-image-large">
+							<img src="images/iphone-4.png" alt="iPhone реальне фото 4">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="hero-section">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">Choice Обмін: дайте речам другий шанс</h1>
+						<p class="hero-description">Маєте пристрій або річ, якою більше не користуєтеся? Обміняйте їх через
+							Choice Обмін та отримайте щось натомість. Легкий і вигідний спосіб оновити свої речі, даючи їм
+							друге життя!</p>
+					</div>
+					<div class="hero-image">
+						<div class="video-preview">
+							<img src="images/obmin-2.png" alt="Choice Обмін">
+							<button class="play-button" onclick="openVideoModal()">
+								<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 10L50 30L15 50V10Z" fill="#fff" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Quality Control Section -->
+		<section class="quality-control-section">
+			<div class="container">
+				<div class="quality-control-header">
+					<h2 class="quality-control-title">Всебічний контроль якості</h2>
+				</div>
+
+				<div class="quality-control-grid">
+					<!-- First Row - 3 items -->
+					<div class="quality-control-item">
+						<div class="quality-control-image">
+							<img src="images/quality-1.png" alt="Аномальне виявлення">
+						</div>
+						<div class="quality-control-content">
+							<h3 class="quality-control-item-title">Аномальне виявлення</h3>
+							<p class="quality-control-description">Визначте, чи телефон має будь-які ненормальні умови, такі як
+								оновлення, зомування, забір води тощо, щоб усунути проблеми.</p>
+						</div>
+					</div>
+
+					<div class="quality-control-item">
+						<div class="quality-control-image">
+							<img src="images/quality-2.png" alt="Комплексне тестування">
+						</div>
+						<div class="quality-control-content">
+							<h3 class="quality-control-item-title">Комплексне тестування</h3>
+							<p class="quality-control-description">Проведіть комплексне тестування машини, особливо виявлення
+								ключових частин і функцій, щоб забезпечити нормальне використання функцій.</p>
+						</div>
+					</div>
+
+					<div class="quality-control-item">
+						<div class="quality-control-image">
+							<img src="images/quality-3.png" alt="Огляд вигляду">
+						</div>
+						<div class="quality-control-content">
+							<h3 class="quality-control-item-title">Огляд вигляду</h3>
+							<p class="quality-control-description">Відповідно до зовнішнього вигляду машини, строго розділіть
+								колірний клас, щоб усунути сміттєву колорову машину.</p>
+						</div>
+					</div>
+
+					<!-- Second Row - 2 items (second one is wider) -->
+					<div class="quality-control-item">
+						<div class="quality-control-image">
+							<img src="images/quality-4.png" alt="Ексклюзивна упаковка">
+						</div>
+						<div class="quality-control-content">
+							<h3 class="quality-control-item-title">Ексклюзивна упаковка</h3>
+							<p class="quality-control-description">Після очищення та дезінфекції застосовується різна упаковка
+								відповідно до різних категорій, щоб забезпечити безпеку та відсутність пошкодження під час
+								транспортування.</p>
+						</div>
+					</div>
+
+					<div class="quality-control-item quality-control-item-wide">
+						<div class="quality-control-image">
+							<img src="images/quality-5.png" alt="Технічний контроль">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Reviews Section -->
+		<section class="reviews-section">
+			<div class="container">
+				<div class="reviews-header">
+					<h2 class="reviews-title">Чому нас обирають?</h2>
+				</div>
+
+				<div class="reviews-slider">
+					<div class="reviews-slide">
+						<div class="reviews-grid">
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="reviews-slide">
+						<div class="reviews-grid">
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="review-item">
+								<div class="review-avatar">
+									<img src="images/reviewer.png" alt="Ім'я">
+								</div>
+								<div class="review-content">
+									<div class="review-name">Ім'я</div>
+									<div class="review-rating">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+										<img src="images/icon-star-yellow.svg" alt="star">
+									</div>
+									<p class="review-text">Мені сподобалось обслуговування. Телефон прийшли в чудовій упаковці.
+										Кур'єр був привітний.</p>
+									<div class="review-meta">
+										<span class="review-date">Вдячна за товар:</span>
+										<span class="review-product">Назва товару</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="reviews-dots"></div>
+			</div>
+		</section>
+
+
+
+
+
+
+	</main>
+	<footer class="footer">
+		<div class="footer__main container">
+			<div class="footer__brand">
+				<a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Choice"></a>
+				<p class="footer__desc">Choice — сучасний інтернет-магазин техніки та електроніки. Великий вибір, швидка
+					доставка, офіційна гарантія.</p>
+				<div class="footer__social">
+					<a href="#" class="footer__social-link" aria-label="Facebook"><img src="images/icon-call.svg"
+							alt="call"></a>
+					<a href="#" class="footer__social-link" aria-label="Instagram"><img src="images/icon-insta.svg"
+							alt="Instagram"></a>
+					<a href="#" class="footer__social-link" aria-label="YouTube"><img src="images/icon-x.svg" alt="x"></a>
+					<a href="#" class="footer__social-link" aria-label="Telegram"><img src="images/icon-telegram.svg"
+							alt="Telegram"></a>
+				</div>
+			</div>
+			<nav class="footer__nav" aria-label="Навігація">
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">Навігація</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Смартфони</a></li>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Побутова техніка</a></li>
+						<li><a href="#">Аксесуари</a></li>
+						<li><a href="#">Гаджети</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">ТОП категорій</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Доставка і оплата</a></li>
+						<li><a href="#">Гарантія</a></li>
+						<li><a href="#">Повернення</a></li>
+						<li><a href="#">Бонусна програма</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<ul class="footer__nav-list">
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Вакансії</a></li>
+						<li><a href="#">Партнерам</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footer__contacts">
+				<div class="footer__contacts-title">Ми на зв'язку</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Оформити замовлення<br>9:00 - 21:00</div>
+				</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Служба підтримки<br>9:00 - 21:00</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer__bottom-wrap">
+			<div class="container">
+				<div class="footer__bottom">
+					<div class="footer__copyright">CHOICE "© 2025. Всі права захищені"</div>
+
+					<div class="footer__payments">
+						<img src="images/icon-visa.svg" alt="Visa">
+						<img src="images/icon-mastercard.svg" alt="Mastercard">
+					</div>
+					<div class="footer__privacy-wrapper">
+						<a href="#" class="footer__privacy">Політика конфіденційності</a>
+						<a href="#" class="footer__privacy">Договір оферти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Video Modal -->
+	<div id="videoModal" class="video-modal">
+		<div class="video-modal-overlay" onclick="closeVideoModal()"></div>
+		<div class="video-modal-content">
+			<button class="video-modal-close" onclick="closeVideoModal()">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<div class="video-container">
+				<iframe id="youtubeVideo" width="100%" height="100%" src="" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	@@include('html/scripts.html',{})
+
+	<script>
+		function openVideoModal() {
+			const modal = document.getElementById('videoModal');
+			const iframe = document.getElementById('youtubeVideo');
+
+			// YouTube video ID from the URL
+			const videoId = 'MQRzeUx7280';
+			iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+
+			modal.style.display = 'flex';
+			document.body.style.overflow = 'hidden';
+		}
+
+		function closeVideoModal() {
+			const modal = document.getElementById('videoModal');
+			const iframe = document.getElementById('youtubeVideo');
+
+			modal.style.display = 'none';
+			iframe.src = '';
+			document.body.style.overflow = 'auto';
+		}
+
+		// Close modal on Escape key
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape') {
+				closeVideoModal();
+			}
+		});
+	</script>
+</body>
+
+</html>

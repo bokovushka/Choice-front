@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":"Choice - Інтернет-магазин"
+})
+
+<body>
+	<header>
+		<!-- Discount banner -->
+		<div class="discount-banner">
+			<div class="discount-content">
+				<span>Не пропусти! МЕГА знижки на Пʼятницю 13</span>
+				<span>-50%</span>
+				<span>-40%</span>
+				<span>-30%</span>
+			</div>
+		</div>
+
+		<!-- Top header with language and city selection -->
+		<div class="top-header">
+			<div class="container">
+				<div class="top-header-content">
+					<!-- Left menu -->
+					<div class="lang-city">
+						<div class="custom-dropdown custom-dropdown--gray lang-selector" tabindex="0" aria-haspopup="listbox"
+							aria-expanded="false" aria-label="Вибір мови">
+							<span class="custom-dropdown__current">UA</span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="false">EN</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">RU</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="true">UA</li>
+							</ul>
+						</div>
+						<div class="custom-dropdown city-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false"
+							aria-label="Вибір міста">
+							<img src="images/location.svg" alt="Location" class="city-selector__icon">
+							<span class="custom-dropdown__current">Черкаси</span>
+							<span class="city-selector__arrow" aria-hidden="true"></span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="true">Черкаси</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Київ</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Львів</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Right section -->
+					<div class="menu-links">
+						<div class="menu-item">
+							<a href="#">Choice</a>
+							<img src="images/dropdown.svg" alt="Dropdown">
+						</div>
+						<a href="#" class="menu-link">Врятувати світ</a>
+						<a href="#" class="menu-link">Trade-In</a>
+						<a href="#" class="menu-link">Доставка</a>
+						<a href="#" class="menu-link">Повернення</a>
+						<div class="help-link">
+							<img src="images/help-icon.svg" alt="Help">
+							<span>Допомога</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Main header with logo, search and cart -->
+		<div class="main-header">
+			<div class="container">
+				<div class="main-header-content">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="Choice">
+						</a>
+					</div>
+
+					<!-- Catalog button -->
+					<div class="catalog-btn">
+						<div class="burger-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<span>Каталог</span>
+					</div>
+
+					<!-- Search -->
+					<div class="search-container">
+						<div class="search-input">
+							<div class="search-icon">
+								<img src="images/search.svg" alt="Search">
+							</div>
+							<input type="text" placeholder="Я шукаю...">
+							<div class="microphone-icon">
+								<img src="images/microphone.svg" alt="Voice search">
+							</div>
+						</div>
+						<button class="search-btn">Знайти</button>
+					</div>
+
+					<!-- User actions -->
+					<div class="user-actions">
+						<a href="#" class="action-item">
+							<img src="images/data-icon.svg" alt="Profile">
+						</a>
+						<a href="#" class="action-item">
+							<img src="images/favorites.svg" alt="Favorites">
+						</a>
+						<a href="#" class="cart-btn">
+							<img src="images/cart.svg" alt="Cart">
+							<span>Кошик</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<!-- Save Planet Section -->
+		<section class="save-planet-section">
+			<div class="save-planet-decorative-right">
+				<img src="images/save-main-right.svg" alt="">
+			</div>
+			<div class="container">
+				<div class="save-planet-content">
+					<div class="save-planet-image">
+						<img src="images/save-main.png" alt="Планета Земля">
+					</div>
+					<div class="save-planet-text">
+						<h2 class="save-planet-title">Ми можемо <br> зберегти планету</h2>
+						<p class="save-planet-description">Завдяки ремонту і добільшому використанні техніки, ми <br>
+							зменшуємо кількість сміття на планеті.</p>
+
+						<div class="save-planet-stats">
+							<div class="save-planet-stat">
+								<span class="save-planet-stat-number">від <strong>20</strong> до <strong>50</strong></span>
+								<div class="save-planet-stat-text-wrap">
+									<span class="save-planet-stat-unit">млн тонн</span>
+									<p class="save-planet-stat-text">сміття викидається<br> щороку у світі.</p>
+								</div>
+
+							</div>
+						</div>
+
+						<p class="save-planet-note">Мобільні телефони та інші електронні предмети містять <br> в своєму складі
+							дорогоцінні метали - золото та срібло.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Recycling Statistics Section -->
+		<section class="recycling-stats-section">
+			<div class="container">
+				<div class="recycling-stats-content">
+					<div class="recycling-stats-text">
+						<p class="recycling-stats-intro">З кожного мільйону мобільних телефонів,<br> при переробці можна
+							добути</p>
+
+						<div class="recycling-stats-grid">
+							<div class="recycling-stat">
+								<span class="recycling-stat-number"><strong>16</strong></span>
+								<span class="recycling-stat-unit">тонн міді</span>
+							</div>
+
+							<div class="recycling-stat">
+								<span class="recycling-stat-number"><strong>772</strong></span>
+								<span class="recycling-stat-unit">фунтів срібла</span>
+							</div>
+
+							<div class="recycling-stat">
+								<span class="recycling-stat-number"><strong>350</strong></span>
+								<span class="recycling-stat-unit">кг золота</span>
+							</div>
+
+							<div class="recycling-stat">
+								<span class="recycling-stat-number"><strong>15</strong></span>
+								<span class="recycling-stat-unit">кг паладію</span>
+							</div>
+						</div>
+
+						<p class="recycling-stats-bottom-text">Чи можна дати нове життя <br> телефону? Звісно!</p>
+					</div>
+
+					<div class="recycling-stats-image">
+						<img src="images/save-circle.png" alt="Переробка телефонів">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Environmental Impact Section -->
+		<section class="environmental-impact-section">
+			<div class="environmental-impact-decorative-left">
+				<img src="images/save-fear-left.png" alt="">
+			</div>
+			<div class="environmental-impact-decorative-right">
+				<img src="images/save-fear-right.png" alt="">
+			</div>
+
+			<div class="container">
+				<div class="environmental-impact-header">
+					<h2 class="environmental-impact-title">Найбільший страх - <br>"потонути" у сміті</h2>
+					<p class="environmental-impact-subtitle">Як це на нас може вплинути?</p>
+				</div>
+
+				<div class="environmental-impact-cards">
+					<div class="environmental-impact-card environmental-impact-card--blue">
+						<div class="environmental-impact-card-image">
+							<img src="images/save-1.png" alt="Антисанітарія">
+						</div>
+						<div class="environmental-impact-card-content">
+							<h3 class="environmental-impact-card-title">Антисанітарія</h3>
+							<p class="environmental-impact-card-text">Звалища стоять все більші, а чистих територій менше.
+								Задумайтесь, що ви щодня викидаєте маленький пакетик сміття, і у сому дію роблять сотні тисяч
+								людей лише в одному місті. Це забруднює довкілля.</p>
+						</div>
+					</div>
+
+					<div class="environmental-impact-card environmental-impact-card--light-blue">
+						<div class="environmental-impact-card-image">
+							<img src="images/save-2.png" alt="Отруєння">
+						</div>
+						<div class="environmental-impact-card-content">
+							<h3 class="environmental-impact-card-title">Отруєння</h3>
+							<p class="environmental-impact-card-text">Коли техніка неправильно утилізована, вона отруює
+								середовище і робить його непридатним до життя на сотні, а то і на тисячі років.</p>
+						</div>
+					</div>
+
+					<div class="environmental-impact-card environmental-impact-card--green">
+						<div class="environmental-impact-card-image">
+							<img src="images/save-3.png" alt="Швидка мода">
+						</div>
+						<div class="environmental-impact-card-content">
+							<h3 class="environmental-impact-card-title">"Швидка мода"</h3>
+							<p class="environmental-impact-card-text">Звісно, що нам хочеться найновішу техніку, бо ми думаємо,
+								що лише вона найкраща. Але нескінченне заохочення зміною горішок робить зарплатно людей, які її
+								виготовляють, нижчою і це не поліпшує їх умов праці.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Help Earth Section -->
+		<section class="help-earth-section">
+			<div class="container">
+				<div class="help-earth-content">
+					<div class="help-earth-text">
+						<h2 class="help-earth-title">
+							Ми разом можемо <br>
+							<span class="help-earth-title-highlight">допомогти Землі</span>
+						</h2>
+
+						<p class="help-earth-description">
+							Наш проект надає можливість придбати відновлену техніку, яка майже не відрізняється від щойно
+							розпакованих гаджетів, а ціна буде набагато вигіднішою.
+						</p>
+
+						<p class="help-earth-description">
+							Ми просто змінили деталі, які вийшли з ладу і разом вже врятували частинку Землі, на якій разом
+							живемо від відходів, забруднень та отруєння.
+						</p>
+					</div>
+
+					<div class="help-earth-image">
+						<img src="images/save-4.png" alt="Допомогти Землі">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Dual Info Section -->
+		<section class="dual-info-section">
+			<div class="container">
+				<!-- Suspicious Tech Block -->
+				<div class="dual-info-block dual-info-block--blue">
+					<div class="dual-info-image">
+						<img src="images/save-5.png" alt="Стара техніка">
+					</div>
+					<div class="dual-info-content">
+						<h3 class="dual-info-title">
+							<span class="dual-info-title-highlight">Стара техніка здається підозрілою?</span>
+						</h3>
+						<p class="dual-info-text">
+							Насправді ні. Наші фахівці відбирають техніку, яка потребує мінімального ремонту та має товарний
+							вигляд. Новинки будуть непомітні оку, а про зміни всередині знатимете лише ви.
+						</p>
+					</div>
+				</div>
+
+				<!-- Warranty Security Block -->
+				<div class="dual-info-block dual-info-block--green">
+					<div class="dual-info-content">
+						<h3 class="dual-info-title">
+							<span class="dual-info-title-highlight">Гарантія та безпека</span>
+						</h3>
+						<p class="dual-info-text">
+							Ми працюємо лише з сервісними центрами, які закуповують деталі в офіційного представника. Ми
+							надаємо нашим клієнтам в разі необхідності перелік документів на комплектуючі, щоб усе було
+							максимально прозоро.
+						</p>
+					</div>
+					<div class="dual-info-image">
+						<img src="images/save-6.png" alt="Гарантія та безпека">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Second Life Section -->
+		<section class="second-life-section">
+			<div class="container">
+				<div class="second-life-header">
+					<h2 class="second-life-title">Дай техніці друге життя: <br>принось або купуй</h2>
+				</div>
+
+				<div class="second-life-content">
+					<div class="second-life-services">
+						<div class="second-life-service">
+							<div class="second-life-service-image">
+								<img src="images/save-7.png" alt="Магазин онлайн">
+							</div>
+							<h3 class="second-life-service-title">Магазин онлайн</h3>
+							<p class="second-life-service-text">Більше ста моделей найпопулярніших смартфонів</p>
+						</div>
+
+						<div class="second-life-service">
+							<div class="second-life-service-image">
+								<img src="images/save-8.png" alt="Магазин у твоєму місті">
+							</div>
+							<h3 class="second-life-service-title">Магазин у твоєму місті</h3>
+							<p class="second-life-service-text">Шукай наш магазин у твоєму місті і зможеш отримати консультацію
+								від наших фахівців. Вони допоможуть обрати найбільш оптимальний варіант смартфону для вас.</p>
+						</div>
+
+						<div class="second-life-service">
+							<div class="second-life-service-image">
+								<img src="images/save-9.png" alt="Заберемо з дому">
+							</div>
+							<h3 class="second-life-service-title">"Заберемо з дому"</h3>
+							<p class="second-life-service-text">У вас є смартфон, яким ви більше не користуєтесь? Можете за
+								нього отримати гроші, і ми, для вашої зручності, заберемо його прямо з рук, не потрібно буде
+								шукати місце здачі техніки.</p>
+						</div>
+					</div>
+
+					<div class="second-life-logo">
+						<img src="images/logo-big.svg" alt="Choice Logo">
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Services Section -->
+		<section class="services-section">
+			<div class="services-decorative-left">
+				<img src="images/about-left.svg" alt="">
+			</div>
+			<div class="services-decorative-right">
+				<img src="images/about-right.svg" alt="">
+			</div>
+			<div class="container">
+				<div class="services-header">
+					<h2 class="services-title">Наші послуги</h2>
+					<p class="services-subtitle">Підзаголовок для розкривання</p>
+				</div>
+
+				<div class="services-grid">
+					<div class="services-card">
+						<h3 class="services-title">Trade-In</h3>
+						<p class="services-description">Заміна старого девайсу тепер ще доступніша.</p>
+						<p class="services-description">Ми створили програму обміну, що дозволить покращити твій досвід та
+							збереже час.</p>
+						<a href="#" class="services-btn">Дізнатись більше</a>
+					</div>
+
+					<div class="services-card">
+						<h3 class="services-title">Choice</h3>
+						<p class="services-description">Заміна старого девайсу тепер ще доступніша.</p>
+						<p class="services-description">Ми створили програму обміну, що дозволить покращити твій досвід та
+							збереже час.</p>
+						<a href="#" class="services-btn">Дізнатись більше</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="footer__main container">
+			<div class="footer__brand">
+				<a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Choice"></a>
+				<p class="footer__desc">Choice — сучасний інтернет-магазин техніки та електроніки. Великий вибір, швидка
+					доставка, офіційна гарантія.</p>
+				<div class="footer__social">
+					<a href="#" class="footer__social-link" aria-label="Facebook"><img src="images/icon-call.svg"
+							alt="call"></a>
+					<a href="#" class="footer__social-link" aria-label="Instagram"><img src="images/icon-insta.svg"
+							alt="Instagram"></a>
+					<a href="#" class="footer__social-link" aria-label="YouTube"><img src="images/icon-x.svg" alt="x"></a>
+					<a href="#" class="footer__social-link" aria-label="Telegram"><img src="images/icon-telegram.svg"
+							alt="Telegram"></a>
+				</div>
+			</div>
+			<nav class="footer__nav" aria-label="Навігація">
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">Навігація</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Смартфони</a></li>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Побутова техніка</a></li>
+						<li><a href="#">Аксесуари</a></li>
+						<li><a href="#">Гаджети</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">ТОП категорій</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Доставка і оплата</a></li>
+						<li><a href="#">Гарантія</a></li>
+						<li><a href="#">Повернення</a></li>
+						<li><a href="#">Бонусна програма</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<ul class="footer__nav-list">
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Вакансії</a></li>
+						<li><a href="#">Партнерам</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footer__contacts">
+				<div class="footer__contacts-title">Ми на зв'язку</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Оформити замовлення<br>9:00 - 21:00</div>
+				</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Служба підтримки<br>9:00 - 21:00</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer__bottom-wrap">
+			<div class="container">
+				<div class="footer__bottom">
+					<div class="footer__copyright">CHOICE "© 2025. Всі права захищені"</div>
+
+					<div class="footer__payments">
+						<img src="images/icon-visa.svg" alt="Visa">
+						<img src="images/icon-mastercard.svg" alt="Mastercard">
+					</div>
+					<div class="footer__privacy-wrapper">
+						<a href="#" class="footer__privacy">Політика конфіденційності</a>
+						<a href="#" class="footer__privacy">Договір оферти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Video Modal -->
+	<div id="videoModal" class="video-modal">
+		<div class="video-modal-overlay" onclick="closeVideoModal()"></div>
+		<div class="video-modal-content">
+			<button class="video-modal-close" onclick="closeVideoModal()">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<div class="video-container">
+				<iframe id="youtubeVideo" width="100%" height="100%" src="" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	@@include('html/scripts.html',{})
+
+	<script>
+		function openVideoModal() {
+			const modal = document.getElementById('videoModal');
+			const iframe = document.getElementById('youtubeVideo');
+
+			// YouTube video ID from the URL
+			const videoId = 'MQRzeUx7280';
+			iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+
+			modal.style.display = 'flex';
+			document.body.style.overflow = 'hidden';
+		}
+
+		function closeVideoModal() {
+			const modal = document.getElementById('videoModal');
+			const iframe = document.getElementById('youtubeVideo');
+
+			modal.style.display = 'none';
+			iframe.src = '';
+			document.body.style.overflow = 'auto';
+		}
+
+		// Close modal on Escape key
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape') {
+				closeVideoModal();
+			}
+		});
+	</script>
+</body>
+
+</html>

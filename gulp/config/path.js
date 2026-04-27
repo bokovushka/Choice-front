@@ -10,14 +10,14 @@ export const path = {
 		js: `${buildFolder}/js/`,
 		css: `${buildFolder}/css/`,
 		html: `${buildFolder}/`,
-		images: `${buildFolder}/img/`,
+		images: `${buildFolder}/images/`,
 		fonts: `${buildFolder}/fonts/`,
 		assets: `${buildFolder}/assets/`
 	},
 	src: {
 		js: `${srcFolder}/js/*.js`,//{libs.js,main.js,jquery.js}
-		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg}`,
-		svg: `${srcFolder}/img/**/*.svg`,
+		images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp,svg}`,
+		svg: `${srcFolder}/images/**/*.svg`,
 		scss: `${srcFolder}/scss/{libs.scss,main.scss}`,
 		html: `${srcFolder}/*.html`, //.pug
 		assets: `${srcFolder}/assets/**/*.*`,
@@ -27,7 +27,7 @@ export const path = {
 		js: `${srcFolder}/js/**/*.js`,
 		scss: `${srcFolder}/scss/**/*.scss`,
 		html: `${srcFolder}/**/*.html`, //.pug
-		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
+		images: `${srcFolder}/images/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
 		assets: `${srcFolder}/assets/**/*.*`
 	},
 	clean: buildFolder,

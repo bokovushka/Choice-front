@@ -17,6 +17,7 @@
 		"@fancyapps/ui": "^5.0.36",
 		"fuse.js": "7.0.0",
 		"gulp-cli": "2.3.0",
+		"inputmask": "^5.0.9",
 		"popper.js": "1.16.1",
 		"readmore-js": "2.2.1",
 		"stream": "0.0.2"

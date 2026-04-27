@@ -14,7 +14,7 @@ export const js = () => {
 			entry: {
 				main: './src/js/main.js',
 				libs: './src/js/libs.js',
-				jquery: './src/js/jquery.js',
+				// jquery: './src/js/jquery.js',
 			},
 			output: {
 				filename: '[name].min.js',

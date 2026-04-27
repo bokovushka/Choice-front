@@ -1,9 +1,0 @@
-<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.000000" height="20.000000" fill="none" clip-path="url(#clipPath_2)" customFrame="url(#clipPath_2)">
-	<defs>
-		<clipPath id="clipPath_2">
-			<rect width="20.000000" height="20.000000" x="0.000000" y="0.000000" rx="4.000000" fill="" />
-		</clipPath>
-	</defs>
-	<rect id="Checkbox" width="20.000000" height="20.000000" x="0.000000" y="0.000000" rx="4.000000" fill="" />
-	<rect id="Checkbox" width="19.000000" height="19.000000" x="0.500000" y="0.500000" rx="3.500000" stroke="rgb(210,213,218)" stroke-width="1.000000" />
-</svg>

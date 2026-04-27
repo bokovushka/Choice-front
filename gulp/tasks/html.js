@@ -20,7 +20,7 @@ export const html = () => {
 			verbose: true
 		}))
 		*/
-		.pipe(app.plugins.replace(/@img\//g, 'img/'))
+		.pipe(app.plugins.replace(/@img\//g, 'images/'))
 		// .pipe(
 		// 	app.plugins.if(
 		// 		app.isBuild,

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":"Choice - Інтернет-магазин"
+})
+
+<body>
+	<header>
+		<!-- Discount banner -->
+		<div class="discount-banner">
+			<div class="discount-content">
+				<span>Не пропусти! МЕГА знижки на Пʼятницю 13</span>
+				<span>-50%</span>
+				<span>-40%</span>
+				<span>-30%</span>
+			</div>
+		</div>
+
+		<!-- Top header with language and city selection -->
+		<div class="top-header">
+			<div class="container">
+				<div class="top-header-content">
+					<!-- Left menu -->
+					<div class="lang-city">
+						<div class="custom-dropdown custom-dropdown--gray lang-selector" tabindex="0" aria-haspopup="listbox"
+							aria-expanded="false" aria-label="Вибір мови">
+							<span class="custom-dropdown__current">UA</span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="false">EN</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">RU</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="true">UA</li>
+							</ul>
+						</div>
+						<div class="custom-dropdown city-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false"
+							aria-label="Вибір міста">
+							<img src="images/location.svg" alt="Location" class="city-selector__icon">
+							<span class="custom-dropdown__current">Черкаси</span>
+							<span class="city-selector__arrow" aria-hidden="true"></span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="true">Черкаси</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Київ</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Львів</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Right section -->
+					<div class="menu-links">
+						<div class="menu-item">
+							<a href="#">Choice</a>
+							<img src="images/dropdown.svg" alt="Dropdown">
+						</div>
+						<a href="#" class="menu-link">Врятувати світ</a>
+						<a href="#" class="menu-link">Trade-In</a>
+						<a href="#" class="menu-link">Доставка</a>
+						<a href="#" class="menu-link">Повернення</a>
+						<div class="help-link">
+							<img src="images/help-icon.svg" alt="Help">
+							<span>Допомога</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Main header with logo, search and cart -->
+		<div class="main-header">
+			<div class="container">
+				<div class="main-header-content">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="Choice">
+						</a>
+					</div>
+
+					<!-- Catalog button -->
+					<div class="catalog-btn">
+						<div class="burger-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<span>Каталог</span>
+					</div>
+
+					<!-- Search -->
+					<div class="search-container">
+						<div class="search-input">
+							<div class="search-icon">
+								<img src="images/search.svg" alt="Search">
+							</div>
+							<input type="text" placeholder="Я шукаю...">
+							<div class="microphone-icon">
+								<img src="images/microphone.svg" alt="Voice search">
+							</div>
+						</div>
+						<button class="search-btn">Знайти</button>
+					</div>
+
+					<!-- User actions -->
+					<div class="user-actions">
+						<a href="#" class="action-item">
+							<img src="images/data-icon.svg" alt="Profile">
+						</a>
+						<a href="#" class="action-item">
+							<img src="images/favorites.svg" alt="Favorites">
+						</a>
+						<a href="#" class="cart-btn">
+							<img src="images/cart.svg" alt="Cart">
+							<span>Кошик</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<div class="breadcrumbs-wrapper">
+			<div class="container">
+				<nav class="breadcrumbs" aria-label="Breadcrumb">
+					<ol class="breadcrumbs__list">
+						<li class="breadcrumbs__item breadcrumbs__item--home">
+							<a href="/" class="breadcrumbs__link"><img src="images/icon-home.svg" alt="Головна"
+									class="breadcrumbs__icon">Головна</a>
+						</li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__arrow"></span><span
+								class="breadcrumbs__text">Блог</span></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__arrow"></span><span
+								class="breadcrumbs__text">Стаття</span></li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+		<section class="blog-section">
+
+			<div class="blog-main">
+				<div class="container">
+					<div class="blog-main-post">
+						<div class="blog-main-post-img-wrapper">
+							<img src="images/blog.png" alt="blog-post-img">
+							<div class="blog-main-post-img-content">
+								<div class="blog-main-post-date">17 <br> вересня</div>
+								<div class="blog-main-post-title">Що таке 5G технологія?</div>
+							</div>
+						</div>
+						<div class="blog-main-post-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt
+								consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque. Etiam euismod, urna eu
+								tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
+							<p>Morbi non urna nec sapien dictum dictum. Sed euismod, urna eu tincidunt consectetur, nisi nisl
+								aliquam nunc, eget aliquam massa nisl quis neque. Etiam euismod, urna eu tincidunt consectetur,
+								nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
+							<p>Aliquam erat volutpat. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam
+								nunc, eget aliquam massa nisl quis neque. Etiam euismod, urna eu tincidunt consectetur, nisi
+								nisl aliquam nunc, eget aliquam massa nisl quis neque.</p>
+							<p>Curabitur euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa
+								nisl quis neque. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
+								aliquam massa nisl quis neque.</p>
+						</div>
+						<div class="blog-main-post-author">
+							<div class="blog-main-post-author-img">
+								<img src="images/icon-security.svg" alt="blog-post-author-img">
+							</div>
+							<div class="blog-main-post-author-content">
+								<div class="blog-main-post-author-prof">Автор</div>
+								<div class="blog-main-post-author-name">Іван Іванов</div>
+								<div class="blog-main-post-author-desc">Технічний експерт</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="related-products-section">
+			<div class="container">
+				<div class="related-products-header">
+					<div class="related-products-header-title">
+						Пропозиції до статті
+					</div>
+
+				</div>
+				<div class="promo-wrapper">
+					<div class="promo-item">
+						<div class="promo-item-like">
+							<img src="images/icon-like.svg" alt="like">
+						</div>
+						<div class="promo-item-slider">
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+						</div>
+						<div class="promo-item-content">
+							<div class="product-card-inner">
+								<h3>Шуруповерт звичайний</h3>
+								<p class="product-card-desc">Годинник спортивний</p>
+								<div class="discount-message">
+									<span>Знижка 2 000₴</span>
+								</div>
+								<div class="prices">
+									<div class="prices-left">
+										<div class="old-price-wrapper">
+											<span class="old-price">3 000₴</span>
+											<span class="discount-tag">-50%</span>
+										</div>
+										<span class="current-price">3 000₴</span>
+									</div>
+									<button class="add-to-cart" aria-label="Додати до кошика">
+										<img src="images/cart.svg" alt="Кошик">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="promo-item">
+						<div class="promo-item-like">
+							<img src="images/icon-like.svg" alt="like">
+						</div>
+						<div class="promo-item-slider">
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+						</div>
+						<div class="promo-item-content">
+							<div class="product-card-inner">
+								<h3>Шуруповерт звичайний</h3>
+								<p class="product-card-desc">Годинник спортивний</p>
+								<div class="discount-message">
+									<span>Знижка 2 000₴</span>
+								</div>
+								<div class="prices">
+									<div class="prices-left">
+										<div class="old-price-wrapper">
+											<span class="old-price">3 000₴</span>
+											<span class="discount-tag">-50%</span>
+										</div>
+										<span class="current-price">3 000₴</span>
+									</div>
+									<button class="add-to-cart" aria-label="Додати до кошика">
+										<img src="images/cart.svg" alt="Кошик">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="promo-item">
+						<div class="promo-item-like">
+							<img src="images/icon-like.svg" alt="like">
+						</div>
+						<div class="promo-item-slider">
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+						</div>
+						<div class="promo-item-content">
+							<div class="product-card-inner">
+								<h3>Шуруповерт звичайний</h3>
+								<p class="product-card-desc">Годинник спортивний</p>
+								<div class="discount-message">
+									<span>Знижка 2 000₴</span>
+								</div>
+								<div class="prices">
+									<div class="prices-left">
+										<div class="old-price-wrapper">
+											<span class="old-price">3 000₴</span>
+											<span class="discount-tag">-50%</span>
+										</div>
+										<span class="current-price">3 000₴</span>
+									</div>
+									<button class="add-to-cart" aria-label="Додати до кошика">
+										<img src="images/cart.svg" alt="Кошик">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="promo-item">
+						<div class="promo-item-like">
+							<img src="images/icon-like.svg" alt="like">
+						</div>
+						<div class="promo-item-slider">
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+						</div>
+						<div class="promo-item-content">
+							<div class="product-card-inner">
+								<h3>Шуруповерт звичайний</h3>
+								<p class="product-card-desc">Годинник спортивний</p>
+								<div class="discount-message">
+									<span>Знижка 2 000₴</span>
+								</div>
+								<div class="prices">
+									<div class="prices-left">
+										<div class="old-price-wrapper">
+											<span class="old-price">3 000₴</span>
+											<span class="discount-tag">-50%</span>
+										</div>
+										<span class="current-price">3 000₴</span>
+									</div>
+									<button class="add-to-cart" aria-label="Додати до кошика">
+										<img src="images/cart.svg" alt="Кошик">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="promo-item">
+						<div class="promo-item-like">
+							<img src="images/icon-like.svg" alt="like">
+						</div>
+						<div class="promo-item-slider">
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+							<div class="promo-item-slider-slide">
+								<img src="images/test-product.png" alt="product">
+							</div>
+						</div>
+						<div class="promo-item-content">
+							<div class="product-card-inner">
+								<h3>Шуруповерт звичайний</h3>
+								<p class="product-card-desc">Годинник спортивний</p>
+								<div class="discount-message">
+									<span>Знижка 2 000₴</span>
+								</div>
+								<div class="prices">
+									<div class="prices-left">
+										<div class="old-price-wrapper">
+											<span class="old-price">3 000₴</span>
+											<span class="discount-tag">-50%</span>
+										</div>
+										<span class="current-price">3 000₴</span>
+									</div>
+									<button class="add-to-cart" aria-label="Додати до кошика">
+										<img src="images/cart.svg" alt="Кошик">
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-news">
+			<div class="container">
+				<div class="section-news-header">
+					<h2>Читайте також</h2>
+				</div>
+				<div class="news-list">
+					<article class="news-card">
+						<a href="#" class="news-card__image-link">
+							<img src="images/news-test.png" alt="Новина 1" class="news-card__image">
+						</a>
+						<div class="news-card__content">
+							<time class="news-card__date" datetime="2024-05-01">01.05.2024</time>
+							<h3 class="news-card__title"><a href="#">Відкриття нового магазину у Києві</a></h3>
+							<p class="news-card__desc">Ми відкрили новий магазин у самому центрі столиці. Завітайте за
+								вигідними пропозиціями!</p>
+						</div>
+					</article>
+					<article class="news-card">
+						<a href="#" class="news-card__image-link">
+							<img src="images/news-test.png" alt="Новина 2" class="news-card__image">
+						</a>
+						<div class="news-card__content">
+							<time class="news-card__date" datetime="2024-04-20">20.04.2024</time>
+							<h3 class="news-card__title"><a href="#">Весняний розпродаж стартував!</a></h3>
+							<p class="news-card__desc">Знижки до 50% на популярні товари. Не пропустіть свій шанс оновити
+								техніку!</p>
+						</div>
+					</article>
+					<article class="news-card">
+						<a href="#" class="news-card__image-link">
+							<img src="images/news-test.png" alt="Новина 3" class="news-card__image">
+						</a>
+						<div class="news-card__content">
+							<time class="news-card__date" datetime="2024-04-10">10.04.2024</time>
+							<h3 class="news-card__title"><a href="#">Нові надходження гаджетів</a></h3>
+							<p class="news-card__desc">Оновлення асортименту: смартфони, ноутбуки, аксесуари вже у продажу.</p>
+						</div>
+					</article>
+					<article class="news-card">
+						<a href="#" class="news-card__image-link">
+							<img src="images/news-test.png" alt="Новина 4" class="news-card__image">
+						</a>
+						<div class="news-card__content">
+							<time class="news-card__date" datetime="2024-03-28">28.03.2024</time>
+							<h3 class="news-card__title"><a href="#">Подарунки до свят!</a></h3>
+							<p class="news-card__desc">Даруємо подарунки кожному покупцю до великодніх свят. Деталі у розділі
+								"Акції".</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer class="footer">
+		<div class="footer__main container">
+			<div class="footer__brand">
+				<a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Choice"></a>
+				<p class="footer__desc">Choice — сучасний інтернет-магазин техніки та електроніки. Великий вибір, швидка
+					доставка, офіційна гарантія.</p>
+				<div class="footer__social">
+					<a href="#" class="footer__social-link" aria-label="Facebook"><img src="images/icon-call.svg"
+							alt="call"></a>
+					<a href="#" class="footer__social-link" aria-label="Instagram"><img src="images/icon-insta.svg"
+							alt="Instagram"></a>
+					<a href="#" class="footer__social-link" aria-label="YouTube"><img src="images/icon-x.svg" alt="x"></a>
+					<a href="#" class="footer__social-link" aria-label="Telegram"><img src="images/icon-telegram.svg"
+							alt="Telegram"></a>
+				</div>
+			</div>
+			<nav class="footer__nav" aria-label="Навігація">
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">Навігація</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Смартфони</a></li>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Побутова техніка</a></li>
+						<li><a href="#">Аксесуари</a></li>
+						<li><a href="#">Гаджети</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">ТОП категорій</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Доставка і оплата</a></li>
+						<li><a href="#">Гарантія</a></li>
+						<li><a href="#">Повернення</a></li>
+						<li><a href="#">Бонусна програма</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<ul class="footer__nav-list">
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Вакансії</a></li>
+						<li><a href="#">Партнерам</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footer__contacts">
+				<div class="footer__contacts-title">Ми на зв'язку</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Оформити замовлення<br>9:00 - 21:00</div>
+				</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Служба підтримки<br>9:00 - 21:00</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer__bottom-wrap">
+			<div class="container">
+				<div class="footer__bottom">
+					<div class="footer__copyright">CHOICE "© 2025. Всі права захищені"</div>
+
+					<div class="footer__payments">
+						<img src="images/icon-visa.svg" alt="Visa">
+						<img src="images/icon-mastercard.svg" alt="Mastercard">
+					</div>
+					<div class="footer__privacy-wrapper">
+						<a href="#" class="footer__privacy">Політика конфіденційності</a>
+						<a href="#" class="footer__privacy">Договір оферти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	@@include('html/scripts.html',{})
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":"Choice - Інтернет-магазин"
+})
+
+<body>
+	<header>
+		<!-- Discount banner -->
+		<div class="discount-banner">
+			<div class="discount-content">
+				<span>Не пропусти! МЕГА знижки на Пʼятницю 13</span>
+				<span>-50%</span>
+				<span>-40%</span>
+				<span>-30%</span>
+			</div>
+		</div>
+
+		<!-- Top header with language and city selection -->
+		<div class="top-header">
+			<div class="container">
+				<div class="top-header-content">
+					<!-- Left menu -->
+					<div class="lang-city">
+						<div class="custom-dropdown custom-dropdown--gray lang-selector" tabindex="0" aria-haspopup="listbox"
+							aria-expanded="false" aria-label="Вибір мови">
+							<span class="custom-dropdown__current">UA</span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="false">EN</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">RU</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="true">UA</li>
+							</ul>
+						</div>
+						<div class="custom-dropdown city-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false"
+							aria-label="Вибір міста">
+							<img src="images/location.svg" alt="Location" class="city-selector__icon">
+							<span class="custom-dropdown__current">Черкаси</span>
+							<span class="city-selector__arrow" aria-hidden="true"></span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="true">Черкаси</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Київ</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Львів</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Right section -->
+					<div class="menu-links">
+						<div class="menu-item">
+							<a href="#">Choice</a>
+							<img src="images/dropdown.svg" alt="Dropdown">
+						</div>
+						<a href="#" class="menu-link">Врятувати світ</a>
+						<a href="#" class="menu-link">Trade-In</a>
+						<a href="#" class="menu-link">Доставка</a>
+						<a href="#" class="menu-link">Повернення</a>
+						<div class="help-link">
+							<img src="images/help-icon.svg" alt="Help">
+							<span>Допомога</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Main header with logo, search and cart -->
+		<div class="main-header">
+			<div class="container">
+				<div class="main-header-content">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="Choice">
+						</a>
+					</div>
+
+					<!-- Catalog button -->
+					<div class="catalog-btn">
+						<div class="burger-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<span>Каталог</span>
+					</div>
+
+					<!-- Search -->
+					<div class="search-container">
+						<div class="search-input">
+							<div class="search-icon">
+								<img src="images/search.svg" alt="Search">
+							</div>
+							<input type="text" placeholder="Я шукаю...">
+							<div class="microphone-icon">
+								<img src="images/microphone.svg" alt="Voice search">
+							</div>
+						</div>
+						<button class="search-btn">Знайти</button>
+					</div>
+
+					<!-- User actions -->
+					<div class="user-actions">
+						<a href="#" class="action-item">
+							<img src="images/data-icon.svg" alt="Profile">
+						</a>
+						<a href="#" class="action-item">
+							<img src="images/favorites.svg" alt="Favorites">
+						</a>
+						<a href="#" class="cart-btn">
+							<img src="images/cart.svg" alt="Cart">
+							<span>Кошик</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- Hero Section -->
+		<section class="hero-section">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">Choice Обмін: дайте речам другий шанс</h1>
+						<p class="hero-description">Маєте пристрій або річ, якою більше не користуєтеся? Обміняйте їх через
+							Choice Обмін та отримайте щось натомість. Легкий і вигідний спосіб оновити свої речі, даючи їм
+							друге життя!</p>
+					</div>
+					<div class="hero-image">
+						<img src="images/exchange-main.png" alt="Choice Обмін">
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Mission Section -->
+		<section class="mission-section">
+			<div class="container">
+				<div class="mission-header">
+					<h2 class="mission-title">Наша місія</h2>
+				</div>
+
+				<div class="mission-grid">
+					<div class="mission-item">
+						<div class="mission-image">
+							<img src="images/mission-1.png" alt="Місія компанії">
+						</div>
+						<div class="mission-content">
+							<h3 class="mission-item-title">Місія компанії</h3>
+							<p class="mission-description">Ми змінюємо підхід до технологій, продовжуючи життя гаджетів і
+								зменшуючи електронні відходи. Choice створює можливості для свідомого вибору, пропонуючи якісні
+								відновлені пристрої, що поєднують доступність, надійність і турботу про планету.</p>
+						</div>
+					</div>
+
+					<div class="mission-item">
+						<div class="mission-image">
+							<img src="images/mission-2.png" alt="Бачення компанії">
+						</div>
+						<div class="mission-content">
+							<h3 class="mission-item-title">Бачення компанії</h3>
+							<p class="mission-description">Майбутнє, в якому технології використовуються свідомо, а кожен
+								пристрій отримує другий шанс. Ми прагнемо зміцнити культуру, де відповідальність перед природою
+								стає таким же стандартом, як і якість.</p>
+						</div>
+					</div>
+
+					<div class="mission-item">
+						<div class="mission-image">
+							<img src="images/mission-3.png" alt="Цінності компанії">
+						</div>
+						<div class="mission-content">
+							<h3 class="mission-item-title">Цінності компанії</h3>
+							<p class="mission-description">Ми керуємось відповідальністю перед світом, прагнучи мінімізувати
+								електронні відходи та продовжувати життя технологій. Для нас важливі якість і прозорість — кожен
+								пристрій проходить ретельну перевірку, а кожна угода базується на довірі.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Guarantees Section -->
+		<section class="guarantees-section guarantee-third">
+			<div class="container">
+				<div class="guarantees-header">
+					<h2 class="section-title">Наші гарантії</h2>
+					<p class="section-subtitle">Підзаголовок для розкривання</p>
+				</div>
+
+				<div class="guarantees-grid">
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Персональний менеджер">
+						</div>
+						<h3 class="guarantee-title">Персональний менеджер</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Блискавична доставка">
+						</div>
+						<h3 class="guarantee-title">Блискавична доставка</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Безтурботна розстрочка">
+						</div>
+						<h3 class="guarantee-title">Безтурботна розстрочка</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+
+					<div class="guarantee-card">
+						<div class="guarantee-icon">
+							<img src="images/icon-security.svg" alt="Задоволені клієнти">
+						</div>
+						<h3 class="guarantee-title">Задоволені клієнти</h3>
+						<p class="guarantee-description">Тільки захищені транзакції та оплати за продукцію</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Services Section -->
+		<section class="services-section">
+			<div class="services-decorative-left">
+				<img src="images/about-left.svg" alt="">
+			</div>
+			<div class="services-decorative-right">
+				<img src="images/about-right.svg" alt="">
+			</div>
+			<div class="container">
+				<div class="services-header">
+					<h2 class="services-title">Наші послуги</h2>
+					<p class="services-subtitle">Підзаголовок для розкривання</p>
+				</div>
+
+				<div class="services-grid">
+					<div class="services-card">
+						<h3 class="services-title">Trade-In</h3>
+						<p class="services-description">Заміна старого девайсу тепер ще доступніша.</p>
+						<p class="services-description">Ми створили програму обміну, що дозволить покращити твій досвід та
+							збереже час.</p>
+						<a href="#" class="services-btn">Дізнатись більше</a>
+					</div>
+
+					<div class="services-card">
+						<h3 class="services-title">Choice</h3>
+						<p class="services-description">Заміна старого девайсу тепер ще доступніша.</p>
+						<p class="services-description">Ми створили програму обміну, що дозволить покращити твій досвід та
+							збереже час.</p>
+						<a href="#" class="services-btn">Дізнатись більше</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="hero-section">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">Choice Обмін: дайте речам другий шанс</h1>
+						<p class="hero-description">Маєте пристрій або річ, якою більше не користуєтеся? Обміняйте їх через
+							Choice Обмін та отримайте щось натомість. Легкий і вигідний спосіб оновити свої речі, даючи їм
+							друге життя!</p>
+					</div>
+					<div class="hero-image">
+						<div class="video-preview">
+							<img src="images/obmin-2.png" alt="Choice Обмін">
+							<button class="play-button" onclick="openVideoModal()">
+								<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15 10L50 30L15 50V10Z" fill="#fff" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer class="footer">
+		<div class="footer__main container">
+			<div class="footer__brand">
+				<a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Choice"></a>
+				<p class="footer__desc">Choice — сучасний інтернет-магазин техніки та електроніки. Великий вибір, швидка
+					доставка, офіційна гарантія.</p>
+				<div class="footer__social">
+					<a href="#" class="footer__social-link" aria-label="Facebook"><img src="images/icon-call.svg"
+							alt="call"></a>
+					<a href="#" class="footer__social-link" aria-label="Instagram"><img src="images/icon-insta.svg"
+							alt="Instagram"></a>
+					<a href="#" class="footer__social-link" aria-label="YouTube"><img src="images/icon-x.svg" alt="x"></a>
+					<a href="#" class="footer__social-link" aria-label="Telegram"><img src="images/icon-telegram.svg"
+							alt="Telegram"></a>
+				</div>
+			</div>
+			<nav class="footer__nav" aria-label="Навігація">
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">Навігація</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Смартфони</a></li>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Побутова техніка</a></li>
+						<li><a href="#">Аксесуари</a></li>
+						<li><a href="#">Гаджети</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">ТОП категорій</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Доставка і оплата</a></li>
+						<li><a href="#">Гарантія</a></li>
+						<li><a href="#">Повернення</a></li>
+						<li><a href="#">Бонусна програма</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<ul class="footer__nav-list">
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Вакансії</a></li>
+						<li><a href="#">Партнерам</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footer__contacts">
+				<div class="footer__contacts-title">Ми на зв'язку</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Оформити замовлення<br>9:00 - 21:00</div>
+				</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Служба підтримки<br>9:00 - 21:00</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer__bottom-wrap">
+			<div class="container">
+				<div class="footer__bottom">
+					<div class="footer__copyright">CHOICE "© 2025. Всі права захищені"</div>
+
+					<div class="footer__payments">
+						<img src="images/icon-visa.svg" alt="Visa">
+						<img src="images/icon-mastercard.svg" alt="Mastercard">
+					</div>
+					<div class="footer__privacy-wrapper">
+						<a href="#" class="footer__privacy">Політика конфіденційності</a>
+						<a href="#" class="footer__privacy">Договір оферти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Video Modal -->
+	<div id="videoModal" class="video-modal">
+		<div class="video-modal-overlay" onclick="closeVideoModal()"></div>
+		<div class="video-modal-content">
+			<button class="video-modal-close" onclick="closeVideoModal()">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</button>
+			<div class="video-container">
+				<iframe id="youtubeVideo" width="100%" height="100%" src="" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	@@include('html/scripts.html',{})
+
+	<script>
+		function openVideoModal() {
+			const modal = document.getElementById('videoModal');
+			const iframe = document.getElementById('youtubeVideo');
+
+			// YouTube video ID from the URL
+			const videoId = 'MQRzeUx7280';
+			iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+
+			modal.style.display = 'flex';
+			document.body.style.overflow = 'hidden';
+		}
+
+		function closeVideoModal() {
+			const modal = document.getElementById('videoModal');
+			const iframe = document.getElementById('youtubeVideo');
+
+			modal.style.display = 'none';
+			iframe.src = '';
+			document.body.style.overflow = 'auto';
+		}
+
+		// Close modal on Escape key
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape') {
+				closeVideoModal();
+			}
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":"Choice - Інтернет-магазин"
+})
+
+<body>
+	<header>
+		<!-- Discount banner -->
+		<div class="discount-banner">
+			<div class="discount-content">
+				<span>Не пропусти! МЕГА знижки на Пʼятницю 13</span>
+				<span>-50%</span>
+				<span>-40%</span>
+				<span>-30%</span>
+			</div>
+		</div>
+
+		<!-- Top header with language and city selection -->
+		<div class="top-header">
+			<div class="container">
+				<div class="top-header-content">
+					<!-- Left menu -->
+					<div class="lang-city">
+						<div class="custom-dropdown custom-dropdown--gray lang-selector" tabindex="0" aria-haspopup="listbox"
+							aria-expanded="false" aria-label="Вибір мови">
+							<span class="custom-dropdown__current">UA</span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="false">EN</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">RU</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="true">UA</li>
+							</ul>
+						</div>
+						<div class="custom-dropdown city-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false"
+							aria-label="Вибір міста">
+							<img src="images/location.svg" alt="Location" class="city-selector__icon">
+							<span class="custom-dropdown__current">Черкаси</span>
+							<span class="city-selector__arrow" aria-hidden="true"></span>
+							<ul class="custom-dropdown__dropdown" role="listbox" tabindex="-1">
+								<li class="custom-dropdown__option" role="option" aria-selected="true">Черкаси</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Київ</li>
+								<li class="custom-dropdown__option" role="option" aria-selected="false">Львів</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Right section -->
+					<div class="menu-links">
+						<div class="menu-item">
+							<a href="#">Choice</a>
+							<img src="images/dropdown.svg" alt="Dropdown">
+						</div>
+						<a href="#" class="menu-link">Врятувати світ</a>
+						<a href="#" class="menu-link">Trade-In</a>
+						<a href="#" class="menu-link">Доставка</a>
+						<a href="#" class="menu-link">Повернення</a>
+						<div class="help-link">
+							<img src="images/help-icon.svg" alt="Help">
+							<span>Допомога</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Main header with logo, search and cart -->
+		<div class="main-header">
+			<div class="container">
+				<div class="main-header-content">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="Choice">
+						</a>
+					</div>
+
+					<!-- Catalog button -->
+					<div class="catalog-btn">
+						<div class="burger-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<span>Каталог</span>
+					</div>
+
+					<!-- Search -->
+					<div class="search-container">
+						<div class="search-input">
+							<div class="search-icon">
+								<img src="images/search.svg" alt="Search">
+							</div>
+							<input type="text" placeholder="Я шукаю...">
+							<div class="microphone-icon">
+								<img src="images/microphone.svg" alt="Voice search">
+							</div>
+						</div>
+						<button class="search-btn">Знайти</button>
+					</div>
+
+					<!-- User actions -->
+					<div class="user-actions">
+						<a href="#" class="action-item">
+							<img src="images/data-icon.svg" alt="Profile">
+						</a>
+						<a href="#" class="action-item">
+							<img src="images/favorites.svg" alt="Favorites">
+						</a>
+						<a href="#" class="cart-btn">
+							<img src="images/cart.svg" alt="Cart">
+							<span>Кошик</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="auth-modal">
+			<div class="auth-modal__content">
+				<!-- Logo -->
+				<div class="auth-modal__logo">
+					<img src="images/logo.png" alt="Choice">
+				</div>
+
+				<!-- Modal Body -->
+				<div class="auth-modal__body">
+					<!-- Left Side - Form -->
+					<div class="auth-modal__form-section">
+						<!-- Tabs -->
+						<div class="auth-modal__tabs">
+							<button class="auth-modal__tab auth-modal__tab--active" data-tab="login">Вхід</button>
+							<button class="auth-modal__tab" data-tab="register">Реєстрація</button>
+						</div>
+
+						<!-- Login Form -->
+						<form class="auth-modal__form auth-modal__form--login auth-modal__form--active" id="loginForm">
+							<div class="auth-modal__form-group">
+								<label for="loginEmail" class="auth-modal__label">Email або номер телефону:</label>
+								<input type="text" id="loginEmail" class="auth-modal__input"
+									placeholder="Введіть ваш email або номер телефону">
+							</div>
+
+							<!-- <div class="auth-modal__form-options">
+                                <a href="#" class="auth-modal__forgot-link">Забули пароль?</a>
+                            </div> -->
+
+							<button type="submit" class="auth-modal__submit-btn">Увійти через смс</button>
+							<button type="submit" class="auth-modal__submit-link">Увійти через пароль</button>
+						</form>
+
+						<!-- Registration Form -->
+						<form class="auth-modal__form auth-modal__form--register" id="registerForm">
+							<div class="auth-modal__form-group">
+								<label for="registerSurname" class="auth-modal__label">Прізвище</label>
+								<input type="text" id="registerSurname" class="auth-modal__input"
+									placeholder="Введіть ваше прізвище">
+							</div>
+
+
+							<div class="auth-modal__form-group">
+								<label for="registerName" class="auth-modal__label">Ім'я</label>
+								<input type="text" id="registerName" class="auth-modal__input" placeholder="Введіть ваше ім'я">
+							</div>
+
+							<div class="auth-modal__form-group">
+								<label for="registerPhone" class="auth-modal__label">Телефон</label>
+								<input type="text" id="registerPhone" class="auth-modal__input"
+									placeholder="Введіть ваш номер телефону">
+							</div>
+
+							<div class="auth-modal__form-group">
+								<label for="registerEmail" class="auth-modal__label">Email*</label>
+								<input type="email" id="registerEmail" required class="auth-modal__input"
+									placeholder="Введіть ваш email">
+							</div>
+
+							<div class="auth-modal__form-group">
+								<label for="registerPassword" class="auth-modal__label">Пароль*</label>
+								<input type="password" id="registerPassword" required class="auth-modal__input"
+									placeholder="Створіть пароль">
+							</div>
+
+							<div class="auth-modal__form-group">
+								<label for="confirmPassword" class="auth-modal__label">Підтвердіть пароль*</label>
+								<input type="password" id="confirmPassword" required class="auth-modal__input"
+									placeholder="Підтвердіть пароль">
+							</div>
+
+							<button type="submit" class="auth-modal__submit-btn">Зареєструватися</button>
+							<div class="auth-modal__form-options">
+								<span> Реєструючись, ви погоджуєтесь з <a href="#" class="auth-modal__terms-link">користувацькою
+										угодою.</a></span>
+							</div>
+						</form>
+					</div>
+
+					<!-- Divider -->
+					<div class="auth-modal__divider">
+						<span>або</span>
+					</div>
+
+					<!-- Right Side - Social Login -->
+					<div class="auth-modal__social-section">
+						<h3 class="auth-modal__social-title">Увійти через</h3>
+
+						<div class="auth-modal__social-buttons">
+							<button class="auth-modal__social-btn auth-modal__social-btn--google">
+								<img src="images/icon-google.svg" alt="Google">
+								Google
+							</button>
+
+							<button class="auth-modal__social-btn auth-modal__social-btn--facebook">
+								<img src="images/icon-fb-white.svg" alt="Facebook">
+								Facebook
+							</button>
+
+							<button class="auth-modal__social-btn auth-modal__social-btn--apple">
+								<img src="images/icon-apple.svg" alt="Apple">
+								Apple
+							</button>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__main container">
+			<div class="footer__brand">
+				<a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Choice"></a>
+				<p class="footer__desc">Choice — сучасний інтернет-магазин техніки та електроніки. Великий вибір, швидка
+					доставка, офіційна гарантія.</p>
+				<div class="footer__social">
+					<a href="#" class="footer__social-link" aria-label="Facebook"><img src="images/icon-call.svg"
+							alt="call"></a>
+					<a href="#" class="footer__social-link" aria-label="Instagram"><img src="images/icon-insta.svg"
+							alt="Instagram"></a>
+					<a href="#" class="footer__social-link" aria-label="YouTube"><img src="images/icon-x.svg" alt="x"></a>
+					<a href="#" class="footer__social-link" aria-label="Telegram"><img src="images/icon-telegram.svg"
+							alt="Telegram"></a>
+				</div>
+			</div>
+			<nav class="footer__nav" aria-label="Навігація">
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">Навігація</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Смартфони</a></li>
+						<li><a href="#">Ноутбуки</a></li>
+						<li><a href="#">Побутова техніка</a></li>
+						<li><a href="#">Аксесуари</a></li>
+						<li><a href="#">Гаджети</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<h3 class="footer__nav-title">ТОП категорій</h3>
+					<ul class="footer__nav-list">
+						<li><a href="#">Доставка і оплата</a></li>
+						<li><a href="#">Гарантія</a></li>
+						<li><a href="#">Повернення</a></li>
+						<li><a href="#">Бонусна програма</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+				<div class="footer__nav-block">
+					<ul class="footer__nav-list">
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Вакансії</a></li>
+						<li><a href="#">Партнерам</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footer__contacts">
+				<div class="footer__contacts-title">Ми на зв'язку</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Оформити замовлення<br>9:00 - 21:00</div>
+				</div>
+				<div class="footer__contacts-phone-block">
+					<a href="tel:0440565020" class="footer__contacts-phone">044 056 50 20</a>
+					<div class="footer__contacts-phone-desc">Служба підтримки<br>9:00 - 21:00</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer__bottom-wrap">
+			<div class="container">
+				<div class="footer__bottom">
+					<div class="footer__copyright">CHOICE "© 2025. Всі права захищені"</div>
+
+					<div class="footer__payments">
+						<img src="images/icon-visa.svg" alt="Visa">
+						<img src="images/icon-mastercard.svg" alt="Mastercard">
+					</div>
+					<div class="footer__privacy-wrapper">
+						<a href="#" class="footer__privacy">Політика конфіденційності</a>
+						<a href="#" class="footer__privacy">Договір оферти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	@@include('html/scripts.html',{})
+</body>
+
+</html>
