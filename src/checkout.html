@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":"Choice - Інтернет-магазин"
+})
+
+<body>
+	@@include('html/header.html',{})
+	<main>
+		<section class="checkout-main">
+			<div class="container">
+				<div class="checkout-body">
+					<div class="checkout-stepper">
+						<form class="checkout-form">
+							<div class="checkout-form__title">Оформлення замовлення </div>
+							<div class="checkout-part active">
+								<div class="checkout-part__head">
+									<div class="checkout-part__side">
+										<span class="checkout-part__num"></span>
+										<div class="checkout-part__wrap">
+											<div class="checkout-part__title">Ваші дані</div>
+											<div class="btn-edit">Змінити</div>
+										</div>
+									</div>
+									<div class="filled-data">Влад Сергеев, ter88kit@icloud.com, +38(097)447-44-47 </div>
+								</div>
+								<div class="form-information">
+									<div class="form-card">
+										<div class="tabs-custom">
+											<div class="tabs-custom__nav">
+												<button type="button" class="btn-tabs-custom is-active" data-tab="1">Новий
+													покупець</button>
+												<button type="button" class="btn-tabs-custom" data-tab="2">Постійний
+													покупець</button>
+											</div>
+											<div class="tabs-custom__content">
+												<div class="tabs-custom__pane is-active" data-tab-content="1">
+													<div class="field__wrapper">
+														<div class="field">
+															<label class="small-txt">Прізвище</label>
+															<input type="text" name="lastname" class="form-control" placeholder="">
+														</div>
+														<div class="field">
+															<label class="small-txt">Ім'я</label>
+															<input type="text" name="name" class="form-control" placeholder="">
+														</div>
+														<div class="field">
+															<label class="small-txt">Ваш номер телефону (для доставки)</label>
+															<input type="tel" name="phone" class="form-control phone-mask-input"
+																placeholder="">
+														</div>
+														<div class="field">
+															<label class="small-txt">Електронна пошта</label>
+															<input type="email" name="email" class="form-control" placeholder="">
+														</div>
+														<div class="btn-checkout">
+															<div class="btn-wrap">
+																<button type="button"
+																	class="btn-login btn-checkout__next">Увійти</button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="tabs-custom__pane" data-tab-content="2">
+													<div class="field__wrapper">
+														<div class="field">
+															<label class="small-txt">Електронна пошта</label>
+															<input type="email" name="email" class="form-control" placeholder="">
+														</div>
+														<div class="field">
+															<label class="small-txt">Пароль</label>
+															<input type="password" name="password" class="form-control" placeholder="">
+														</div>
+														<div class="wrap">
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="checkbox-agree">
+																<label class="custom-control-label" for="checkbox-agree">
+																	<span class="custom-checkbox--info">Запамʼятати мене</span>
+																</label>
+															</div>
+															<button type="button" class="btn-recovery-password">Відновити
+																пароль</button>
+														</div>
+														<button type="button" class="btn-login-number">Увійти по номеру
+															телефона</button>
+														<div class="btn-checkout">
+															<div class="btn-wrap">
+																<button type="button"
+																	class="btn-login btn-checkout__next">Увійти</button>
+															</div>
+														</div>
+														<div class="login-social">
+															<div class="divider">
+																<span>або</span>
+															</div>
+															<div class="head-label">Увійти за допомогою</div>
+															<div class="social-buttons">
+																<a href="##" class="social-btn i-apple">
+																	<svg class="i-accessability icon">
+																		<use xlink:href="/images/icons/icons.svg#i-apple"></use>
+																	</svg>
+																	Continue with Apple
+																</a>
+
+																<a href="##" class="social-btn i-facebook">
+																	<svg class="i-accessability icon">
+																		<use xlink:href="/images/icons/icons.svg#i-facebook"></use>
+																	</svg>
+																	Continue with Facebook
+																</a>
+
+																<a href="##" class="social-btn i-google">
+																	<svg class="i-accessability icon">
+																		<use xlink:href="/images/icons/icons.svg#i-google"></use>
+																	</svg>
+																	Continue with Google
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="checkout-part hide">
+								<div class="checkout-part__head">
+									<div class="checkout-part__side">
+										<span class="checkout-part__num"></span>
+										<div class="checkout-part__wrap">
+											<div class="checkout-part__title">Доставка</div>
+											<div class="btn-edit">Змінити</div>
+										</div>
+									</div>
+									<div class="filled-data">Київ, Самовивіз із відділення “Нова пошта”, Пункт №50673 (до 10 кг):
+										вул.Касіяна Василя, 4 (маг.”Еко-маркет”)</div>
+								</div>
+								<div class="form-information form-information__delivery">
+									<div class="form-card">
+										<div class="field">
+											<label class="small-txt">Місто</label>
+											<div class="select-wrap select-city__wrap">
+												<select class="select-city-value" name="select-city-value">
+													<option></option>
+													<option value="0">Київ</option>
+													<option value="1">Харків</option>
+													<option value="2">Львів</option>
+												</select>
+											</div>
+											<div class="field--help-info small-txt">Помилка введення</div>
+										</div>
+										<div class="order-choose-city">
+											<span class="order-choose-city__link">
+												Київ
+											</span>
+											<span class="order-choose-city__link">
+												Харків
+											</span>
+											<span class="order-choose-city__link">
+												Львів
+											</span>
+											<span class="order-choose-city__link">
+												Одеса
+											</span>
+											<span class="order-choose-city__link">
+												Запоріжжя
+											</span>
+										</div>
+										<div class="choose-delivery-wrap">
+											<div class="choose-radio">
+												<div class="delivery-group">
+													<div class="delivery-option is-active">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-1"
+																name="checkbox-group-1" checked="">
+															<label class="custom-control-label" for="checkbox-1">
+																<div class="label-img">
+																	<img src="/images/delivery/delivery-1.png" alt="delivery">
+																</div>
+																<div class="descrp">
+																	Самовивіз із відділення “Нова Пошта”
+																	За тарифами перевізника
+																</div>
+															</label>
+														</div>
+														<div class="delivery-content">
+															<div class="field">
+																<div class="select-wrap select-post-office__wrap">
+																	<select class="select-post-office" name="select-post-office">
+																		<option></option>
+																		<option value="0">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="1">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="2">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="4">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="5">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																	</select>
+																</div>
+																<div class="field--help-info small-txt">Помилка введення</div>
+															</div>
+														</div>
+													</div>
+													<div class="delivery-option">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-2"
+																name="checkbox-group-1">
+															<label class="custom-control-label" for="checkbox-2">
+																<div class="label-img">
+																	<img src="/images/delivery/delivery-2.png" alt="delivery">
+																</div>
+																<div class="descrp">Самовивіз із відділення “Укрпошти”
+																	За тарифами перевізника
+																</div>
+															</label>
+														</div>
+														<div class="delivery-content">
+															<div class="field">
+																<div class="select-wrap select-post-office__wrap">
+																	<select class="select-post-office" name="select-post-office">
+																		<option></option>
+																		<option value="0">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="1">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="2">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="4">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="5">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																	</select>
+																</div>
+																<div class="field--help-info small-txt">Помилка введення</div>
+															</div>
+														</div>
+													</div>
+													<div class="delivery-option">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-3"
+																name="checkbox-group-1">
+															<label class="custom-control-label" for="checkbox-3">
+																<div class="label-img">
+																	<img src="/images/delivery/delivery-1.png" alt="delivery">
+																</div>
+																<div class="descrp"> Поштомат “Нова Пошта”
+																	За тарифами перевізника
+																</div>
+															</label>
+														</div>
+														<div class="delivery-content">
+															<div class="field">
+																<div class="select-wrap select-post-office__wrap">
+																	<select class="select-post-office" name="select-post-office">
+																		<option></option>
+																		<option value="0">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="1">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="2">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="4">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="5">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																	</select>
+																</div>
+																<div class="field--help-info small-txt">Помилка введення</div>
+															</div>
+														</div>
+													</div>
+													<div class="delivery-option">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-4"
+																name="checkbox-group-1">
+															<label class="custom-control-label" for="checkbox-4">
+																<div class="label-img">
+																	<img src="/images/delivery/delivery-1.png" alt="delivery">
+																</div>
+																<div class="descrp">Кур'єром “Нова Пошта”
+																	За тарифами перевізника
+																</div>
+															</label>
+														</div>
+														<div class="delivery-content">
+															<div class="field">
+																<div class="select-wrap select-post-office__wrap">
+																	<select class="select-post-office" name="select-post-office">
+																		<option></option>
+																		<option value="0">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="1">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="2">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="4">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="5">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																	</select>
+																</div>
+																<div class="field--help-info small-txt">Помилка введення</div>
+															</div>
+														</div>
+													</div>
+													<div class="delivery-option">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-5"
+																name="checkbox-group-1">
+															<label class="custom-control-label" for="checkbox-5">
+																<div class="label-img">
+																	<img src="/images/delivery/delivery-3.png" alt="delivery">
+																</div>
+																<div class="descrp">Кур'єром Choicy
+																	За тарифами перевізника
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="delivery-option">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-6"
+																name="checkbox-group-1">
+															<label class="custom-control-label" for="checkbox-6">
+																<div class="label-img">
+																	<img src="/images/delivery/delivery-1.png" alt="delivery">
+																</div>
+																<div class="descrp">Поштомат “Нова Пошта”
+																	За тарифами перевізника
+																</div>
+															</label>
+														</div>
+														<div class="delivery-content">
+															<div class="field">
+																<div class="select-wrap select-post-office__wrap">
+																	<select class="select-post-office" name="select-post-office">
+																		<option></option>
+																		<option value="0">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="1">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="2">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="4">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																		<option value="5">Пункт №50763 (до 10 кг): вул. Касіяна Василя,4
+																			(маг.
+																			“Еко....”)</option>
+																	</select>
+																</div>
+																<div class="field--help-info small-txt">Помилка введення</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="choose-delivery">
+												<div class="choose-delivery__checkbox">
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input"
+															id="checkbox-who-delivery">
+														<label class="custom-control-label" for="checkbox-who-delivery">
+															<span class="custom-checkbox--info">Отримувач замовлення інша людина</span>
+														</label>
+													</div>
+												</div>
+												<div class="choose-delivery__form">
+													<div class="field__wrapper">
+														<div class="field">
+															<label class="small-txt">Прізвище</label>
+															<input type="text" name="lastname" class="form-control">
+														</div>
+														<div class="field">
+															<label class="small-txt">Ім'я</label>
+															<input type="text" name="name" class="form-control">
+														</div>
+														<div class="field">
+															<label class="small-txt">По-батькові</label>
+															<input type="text" name="other-name" class="form-control">
+														</div>
+														<div class="field">
+															<label class="small-txt">Телефон</label>
+															<input type="tel" name="phone" class="form-control phone-mask-input">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="btn-checkout">
+											<div class="btn-wrap">
+												<button type="button" class="btn-login btn-checkout__next">Далі</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="checkout-part hide">
+								<div class="checkout-part__head">
+									<div class="checkout-part__side">
+										<span class="checkout-part__num"></span>
+										<div class="checkout-part__wrap">
+											<div class="checkout-part__title">Оберіть спосіб оплати</div>
+											<div class="btn-edit">Змінити</div>
+										</div>
+									</div>
+									<div class="filled-data">Київ, Самовивіз із відділення “Нова пошта”, Пункт №50673 (до 10 кг):
+										вул.Касіяна Василя, 4 (маг.”Еко-маркет”)</div>
+								</div>
+								<div class="form-information">
+									<div class="form-card">
+										<div class="choose-payment-wrap">
+											<div class="choose-radio">
+												<div class="payment-group">
+													<div class="payment__option is-active">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-group-2-1"
+																name="checkbox-group-2" checked="">
+															<label class="custom-control-label" for="checkbox-group-2-1">
+																<div class="descrp">
+																	Оплата частинами / Розстрочка
+																</div>
+															</label>
+														</div>
+														<div class="payment-group__inner">
+															<div class="payment__option">
+																<div class="custom-control custom-radio">
+																	<input type="radio" class="custom-control-input"
+																		id="checkbox-group-inner-2-1" name="checkbox-group-inner-2"
+																		checked="">
+																	<label class="custom-control-label" for="checkbox-group-inner-2-1">
+																		<div class="label-img">
+																			<img src="/images/payment/i-payment-1.png" alt="payment">
+																		</div>
+																		<div class="payment__option-info">
+																			<div class="descrp-wrap">
+																				<div class="descrp">
+																					Sense Кредит від 3 до 10 міс.
+																				</div>
+																				<div class="name-bank">SenseBanke</div>
+																			</div>
+																			<span class="i-info"></span>
+																		</div>
+																	</label>
+																</div>
+															</div>
+															<div class="payment__option">
+																<div class="custom-control custom-radio">
+																	<input type="radio" class="custom-control-input"
+																		id="checkbox-group-inner-2-2" name="checkbox-group-inner-2">
+																	<label class="custom-control-label" for="checkbox-group-inner-2-2">
+																		<div class="label-img">
+																			<img src="/images/payment/i-payment-2.png" alt="payment">
+																		</div>
+																		<div class="payment__option-info">
+																			<div class="descrp-wrap">
+																				<div class="descrp">
+																					Плати Частинами від 4 до 6 міс.
+																				</div>
+																				<div class="name-bank">Globus</div>
+																			</div>
+																			<span class="i-info"></span>
+																		</div>
+																	</label>
+																</div>
+															</div>
+															<div class="payment__option">
+																<div class="custom-control custom-radio">
+																	<input type="radio" class="custom-control-input"
+																		id="checkbox-group-inner-2-3" name="checkbox-group-inner-2">
+																	<label class="custom-control-label" for="checkbox-group-inner-2-3">
+																		<div class="label-img">
+																			<img src="/images/payment/i-payment-3.png" alt="payment">
+																		</div>
+																		<div class="payment__option-info">
+																			<div class="descrp-wrap">
+																				<div class="descrp">
+																					Credit2U від 3 до 10 міс.
+																				</div>
+																				<div class="name-bank">Credit2U</div>
+																			</div>
+																			<span class="i-info"></span>
+																		</div>
+																	</label>
+																</div>
+															</div>
+															<div class="payment__option">
+																<div class="custom-control custom-radio">
+																	<input type="radio" class="custom-control-input"
+																		id="checkbox-group-inner-2-4" name="checkbox-group-inner-2">
+																	<label class="custom-control-label" for="checkbox-group-inner-2-4">
+																		<div class="label-img">
+																			<img src="/images/payment/i-payment-4.png" alt="payment">
+																		</div>
+																		<div class="payment__option-info">
+																			<div class="descrp-wrap">
+																				<div class="descrp">
+																					ПУМБ 6 міс.
+																				</div>
+																				<div class="name-bank">PUMB</div>
+																			</div>
+																			<span class="i-info"></span>
+																		</div>
+																	</label>
+																</div>
+															</div>
+															<div class="payment__option">
+																<div class="custom-control custom-radio">
+																	<input type="radio" class="custom-control-input"
+																		id="checkbox-group-inner-2-5" name="checkbox-group-inner-2">
+																	<label class="custom-control-label" for="checkbox-group-inner-2-5">
+																		<div class="label-img">
+																			<img src="/images/payment/i-payment-5.png" alt="payment">
+																		</div>
+																		<div class="payment__option-info">
+																			<div class="descrp-wrap">
+																				<div class="descrp">
+																					Легка Розсрочка від 3 до 5 міс.
+																				</div>
+																				<div class="name-bank">SenseBank</div>
+																			</div>
+																			<span class="i-info"></span>
+																		</div>
+																	</label>
+																</div>
+															</div>
+															<div class="payment__option">
+																<div class="custom-control custom-radio">
+																	<input type="radio" class="custom-control-input"
+																		id="checkbox-group-inner-2-6" name="checkbox-group-inner-2">
+																	<label class="custom-control-label" for="checkbox-group-inner-2-6">
+																		<div class="label-img">
+																			<img src="/images/payment/i-payment-6.png" alt="payment">
+																		</div>
+																		<div class="payment__option-info">
+																			<div class="descrp-wrap">
+																				<div class="descrp">
+																					Покупка частинами від 3 до 5 міс.
+																				</div>
+																				<div class="name-bank">МоноБанк покупка частинами </div>
+																			</div>
+																			<span class="i-info"></span>
+																		</div>
+																	</label>
+																</div>
+															</div>
+															<div class="payment__option">
+																<div class="custom-control custom-radio">
+																	<input type="radio" class="custom-control-input"
+																		id="checkbox-group-inner-2-7" name="checkbox-group-inner-2">
+																	<label class="custom-control-label" for="checkbox-group-inner-2-7">
+																		<div class="label-img">
+																			<img src="/images/payment/i-payment-3.png" alt="payment">
+																		</div>
+																		<div class="payment__option-info">
+																			<div class="descrp-wrap">
+																				<div class="descrp">
+																					Оплата Частинами від 2 до 5 міс.
+																				</div>
+																				<div class="name-bank">ПриватБанк</div>
+																			</div>
+																			<span class="i-info"></span>
+																		</div>
+																	</label>
+																</div>
+															</div>
+															<div class="payment__option">
+																<div class="custom-control custom-radio">
+																	<input type="radio" class="custom-control-input"
+																		id="checkbox-group-inner-2-8" name="checkbox-group-inner-2">
+																	<label class="custom-control-label" for="checkbox-group-inner-2-8">
+																		<div class="label-img">
+																			<img src="/images/payment/i-payment-3.png" alt="payment">
+																		</div>
+																		<div class="payment__option-info">
+																			<div class="descrp-wrap">
+																				<div class="descrp">
+																					Плати Частинами
+																				</div>
+																				<div class="name-bank">А-банк Плати частинами</div>
+																			</div>
+																			<span class="i-info"></span>
+																		</div>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="payment__option">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-group-2-2"
+																name="checkbox-group-2">
+															<label class="custom-control-label" for="checkbox-group-2-2">
+																<div class="descrp">
+																	При отриманні
+																</div>
+															</label>
+														</div>
+													</div>
+													<div class="payment__option">
+														<div class="custom-control custom-radio">
+															<input type="radio" class="custom-control-input" id="checkbox-group-2-3"
+																name="checkbox-group-2">
+															<label class="custom-control-label" for="checkbox-group-2-3">
+																<div class="descrp">
+																	Visa / Mastercard / Apple Pay / Google Pay
+																</div>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="field">
+											<textarea class="form-control" rows="6"
+												placeholder="Коментар до замовлення"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="sidebar sticky-wrap">
+						<div class="checkout-card">
+							<div class="checkout-card__header">
+								<div class="checkout-card__head">Кошик</div>
+								<a href="##" class="btn-edit">Змінити</a>
+							</div>
+							<div class="checkout-card__item">
+								<img src="images/hgfvk.png" class="checkout-card__image">
+								<div class="checkout-card__info">
+									<div class="checkout-card__title">
+										Смартфон iPhone 16 Pro Max 256GB Natural Titanium (MYWY3SX/A)
+									</div>
+									<div class="checkout-card__price">
+										<span class="old-price">999 000₴</span>
+										<span class="discount">999 999₴</span>
+									</div>
+									<div class="checkout-card__current-price">999 999₴</div>
+									<div class="checkout-card__bonus">
+										<span class="i-bonus"></span>
+										<span class="bonus-count">+18₴</span> <span class="descrp">на бонусний рахунок</span>
+									</div>
+								</div>
+							</div>
+							<div class="checkout-card__item">
+								<img src="images/hgfvk.png" class="checkout-card__image">
+								<div class="checkout-card__info">
+									<div class="checkout-card__title">
+										Смартфон iPhone 16 Pro Max 256GB Natural Titanium (MYWY3SX/A)
+									</div>
+									<div class="checkout-card__price">
+										<span class="old-price">999 000₴</span>
+										<span class="discount">999 999₴</span>
+									</div>
+									<div class="checkout-card__current-price">999 999₴</div>
+									<div class="checkout-card__bonus">
+										<span class="i-bonus"></span>
+										<span class="bonus-count">+18₴</span> <span class="descrp">на бонусний рахунок</span>
+									</div>
+								</div>
+							</div>
+							<div class="checkout-card__summary">
+								<div class="checkout-card__head checkout-card__head-line">І того</div>
+								<div class="bonus-wrap">
+									<div class="checkout-card__bonus">
+										<span class="descrp">На бонусний рахунок</span>
+										<div>
+											<span class="i-bonus"></span><span class="bonus-count">+18₴</span>
+										</div>
+									</div>
+								</div>
+								<div class="summary-goods">
+									<span>Товари <span class="count">(1)</span></span>
+									<span class="summary-goods__price">23 539₴</span>
+								</div>
+								<div class="summary-delivery">
+									<span>Доставка</span>
+									<span class="delivery-value delivery-free">Безкоштовна</span>
+								</div>
+
+								<div class="summary-total">
+									<div class="checkout-card__head">Повна ціна</div>
+									<span class="summary-total__price">
+										<span class="old-price">23 539₴</span>
+										<span class="new-price">23 539₴</span></span>
+								</div>
+							</div>
+
+							<div class="checkout-card__bonuses">
+								<div class="checkout-card__head">Бонуси</div>
+								<div class="checkout-card__bonus">
+									<span class="descrp">Доступно для списання бонусів:</span> <span class="i-bonus"></span><span
+										class="bonus-count">682₴</span>
+								</div>
+								<div class="bonus-slider">
+									<div class="slider-value"></div>
+									<div id="price-slider-full" class="range-slider"></div>
+								</div>
+							</div>
+							<div class="btn-checkout">
+								<div class="btn-wrap">
+									<button type="button" class="btn-place-order">Оформити замовлення</button>
+								</div>
+							</div>
+
+							<div class="checkout-agreement">
+								Підтверджая заказ, я принимаю условия оплаты и доставки
+							</div>
+
+							<div class="checkout-guarantee">
+								40 днів гарантії на всі товари
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('html/footer.html',{})
+	@@include('html/scripts.html',{})
+</body>
+
+</html>

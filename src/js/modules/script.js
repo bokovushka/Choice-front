@@ -100,29 +100,29 @@ onReady(() => {
 
 // });
 
-function initPhoneMasks(root = document) {
-	const els = root.querySelectorAll(`
-    input[type="tel"],
-    input[name="phone"],
-    input.phone-field
-  `);
-	if (!els.length) return;
+// function initPhoneMasks(root = document) {
+// 	const els = root.querySelectorAll(`
+//     input[type="tel"],
+//     input[name="phone"],
+//     input.phone-field
+//   `);
+// 	if (!els.length) return;
 
-	// Фільтруємо поля, виключаючи ті що мають клас 'no-phone-mask'
-	const filteredEls = Array.from(els).filter(el => !el.classList.contains('no-phone-mask'));
-	if (!filteredEls.length) return;
+// 	// Фільтруємо поля, виключаючи ті що мають клас 'no-phone-mask'
+// 	const filteredEls = Array.from(els).filter(el => !el.classList.contains('no-phone-mask'));
+// 	if (!filteredEls.length) return;
 
-	const im = new Inputmask({
-		mask: '+380 (99) 999-99-99',
-		placeholder: ' ',
-		clearIncomplete: true,
-		showMaskOnHover: false,
-		removeMaskOnSubmit: true,
-	});
+// 	const im = new Inputmask({
+// 		mask: '+380 (99) 999-99-99',
+// 		placeholder: ' ',
+// 		clearIncomplete: true,
+// 		showMaskOnHover: false,
+// 		removeMaskOnSubmit: true,
+// 	});
 
-	im.mask(filteredEls);
-}
-onReady(() => initPhoneMasks());
+// 	im.mask(filteredEls);
+// }
+// onReady(() => initPhoneMasks());
 onReady(() => {
 	const scrollBlocks = document.querySelectorAll('.custom-scroll');
 
