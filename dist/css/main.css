@@ -20247,6 +20247,9 @@ textarea {
 .field:not(:last-child) {
   margin-bottom: 15px;
 }
+.choose-delivery__form .field:not(:last-child) {
+  margin-bottom: 5px;
+}
 .field label {
   font-size: 14px;
   font-weight: 300;
@@ -20553,7 +20556,8 @@ textarea {
   align-items: center;
   justify-content: space-between;
   column-gap: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
+  margin-top: -3px;
 }
 
 .custom-control.custom-checkbox {
@@ -20569,11 +20573,14 @@ textarea {
   opacity: 0;
 }
 .custom-control.custom-checkbox .custom-control-label {
-  padding-left: 35px;
+  padding-left: 26px;
   cursor: pointer;
   position: relative;
   display: inline-block;
   margin-bottom: 0;
+}
+.choose-delivery__checkbox .custom-control.custom-checkbox .custom-control-label {
+  padding-left: 36px;
 }
 .custom-control.custom-checkbox .custom-control-label::after, .custom-control.custom-checkbox .custom-control-label::before {
   content: "";
@@ -20581,8 +20588,8 @@ textarea {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   overflow: hidden;
   border: 1px solid #706F6F;
   border-radius: 2.75px;
@@ -20595,7 +20602,7 @@ textarea {
   height: 7px;
   opacity: 0;
   visibility: hidden;
-  left: 5px;
+  left: 4px;
   border: unset;
 }
 .custom-control.custom-checkbox .custom-control-label::before {
@@ -20801,10 +20808,13 @@ textarea {
 @media (max-width: 576px) {
   .tabs-custom .btn-tabs-custom {
     width: calc((100% - 24px)/2);
-    padding: 7px 10px;
+    padding: 7px 16px;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+  }
+  .tabs-custom .btn-tabs-custom:last-child {
+    min-width: 182px;
   }
 }
 .tabs-custom .btn-tabs-custom.is-active {
@@ -20899,7 +20909,7 @@ textarea {
 .social-buttons {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 10px;
 }
 
 .social-btn {
@@ -21014,7 +21024,7 @@ textarea {
 }
 
 .form-information {
-  padding-left: 41px;
+  padding-left: 42px;
   padding-top: 14px;
 }
 @media (max-width: 576px) {
@@ -21024,9 +21034,14 @@ textarea {
 }
 
 .form-information__delivery {
-  padding-bottom: 25px;
-  padding-bottom: 31px;
+  padding-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .form-information__delivery {
+    padding-bottom: 30px;
+  }
+}
+
 .checkout-main {
   background: #F9FAFD;
 }
@@ -21051,7 +21066,7 @@ textarea {
   align-items: flex-start;
   justify-content: space-between;
   column-gap: 40px;
-  padding: 52px 0;
+  padding: 45px 0;
 }
 @media (max-width: 992px) {
   .checkout-body {
@@ -21158,11 +21173,6 @@ textarea {
   align-items: center;
   column-gap: 20px;
 }
-@media (max-width: 576px) {
-  .checkout-part .checkout-part__head .checkout-part__side {
-    column-gap: 15px;
-  }
-}
 .checkout-part .checkout-part__head .checkout-part__side .checkout-part__num {
   width: 20px;
   height: 20px;
@@ -21230,7 +21240,7 @@ textarea {
 .login-social {
   min-width: 300px;
   width: max-content;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 @media (max-width: 576px) {
   .login-social {
@@ -21299,7 +21309,7 @@ textarea {
 }
 @media (max-width: 576px) {
   .checkout-card {
-    padding: 10px;
+    padding: 9px;
   }
 }
 @media (min-width: 993px) {
@@ -21364,7 +21374,7 @@ textarea {
   line-height: 14px;
 }
 .checkout-card .checkout-card__item .checkout-card__info .checkout-card__price .discount {
-  font-size: 9px;
+  font-size: 7px;
   font-weight: 500;
   line-height: normal;
   color: #F9FAFD;
@@ -21549,6 +21559,14 @@ textarea {
   display: block;
 }
 
+.choose-delivery-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
 .delivery-content {
   display: none;
 }
@@ -21567,8 +21585,8 @@ textarea {
 }
 
 .choose-delivery__checkbox {
-  margin-top: 15px;
-  padding-top: 15px;
+  margin-top: 13px;
+  padding-top: 13px;
   border-top: 1px solid #d9d9d9;
   margin-bottom: 15px;
 }
@@ -21805,7 +21823,7 @@ textarea {
 }
 @media (min-width: 768px) {
   .header-checkout .header-checkout__body {
-    padding: 23px 0;
+    padding: 29px 0 23px 0;
   }
 }
 .header-checkout .header-checkout__body .header-checkout__logo {
