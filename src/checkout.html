@@ -5,7 +5,7 @@
 })
 
 <body>
-	@@include('html/header.html',{})
+	@@include('html/header-checkout.html',{})
 	<main>
 		<section class="checkout-main">
 			<div class="container">
@@ -18,7 +18,7 @@
 									<div class="checkout-part__side">
 										<span class="checkout-part__num"></span>
 										<div class="checkout-part__wrap">
-											<div class="checkout-part__title">Ваші дані</div>
+											<div class="checkout-part__title">Ваші данні</div>
 											<div class="btn-edit">Змінити</div>
 										</div>
 									</div>
@@ -55,8 +55,7 @@
 														</div>
 														<div class="btn-checkout">
 															<div class="btn-wrap">
-																<button type="button"
-																	class="btn-login btn-checkout__next">Увійти</button>
+																<button type="button" class="btn-login btn-checkout__next">Далі</button>
 															</div>
 														</div>
 													</div>
@@ -927,7 +926,6 @@
 				</div>
 			</div>
 		</section>
-		/
 	</main>
 	<!-- tooltip template -->
 	<template id="tooltip-privat">
@@ -938,7 +936,7 @@
 			<li>Кредитна картка ПриватБанк</li>
 		</ol>
 	</template>
-	@@include('html/footer.html',{})
+	@@include('html/footer-checkout.html',{})
 	@@include('html/scripts.html',{})
 </body>
 

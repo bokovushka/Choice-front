@@ -20999,8 +20999,8 @@ textarea {
 }
 
 .form-information {
-  padding-left: 40px;
-  padding-top: 15px;
+  padding-left: 41px;
+  padding-top: 14px;
 }
 @media (max-width: 576px) {
   .form-information {
@@ -21015,6 +21015,16 @@ textarea {
 .checkout-main {
   background: #F9FAFD;
 }
+.checkout-main img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (min-width: 1425px) {
+  .checkout-main .container {
+    padding: 0 5px;
+  }
+}
 @media (max-width: 576px) {
   .checkout-main .container {
     padding: 0 15px;
@@ -21026,11 +21036,17 @@ textarea {
   align-items: flex-start;
   justify-content: space-between;
   column-gap: 40px;
-  padding: 55px 0;
+  padding: 52px 0;
 }
 @media (max-width: 992px) {
   .checkout-body {
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .checkout-body {
+    padding-bottom: 31px;
+    padding-top: 0;
   }
 }
 @media (max-width: 576px) {
@@ -21676,4 +21692,139 @@ textarea {
 }
 .tooltip ol.list-default li li::before {
   content: counters(item, ".") " ";
+}
+
+.header-checkout,
+.footer-checkout {
+  background: #F9FAFD !important;
+}
+.header-checkout img,
+.footer-checkout img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (min-width: 1425px) {
+  .header-checkout .container,
+.footer-checkout .container {
+    padding: 0 5px;
+  }
+}
+@media (max-width: 576px) {
+  .header-checkout .container,
+.footer-checkout .container {
+    padding: 0 15px;
+  }
+}
+
+.footer-checkout .footer-checkout__copyright {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #706F6F;
+  text-align: center;
+  padding: 5px 0 17px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-checkout .footer-checkout__copyright {
+    padding-bottom: 38px;
+  }
+}
+.footer-checkout .footer-checkout__address {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #706F6F;
+  text-align: center;
+  margin-bottom: 17px;
+}
+@media (min-width: 768px) {
+  .footer-checkout .footer-checkout__address {
+    display: none;
+  }
+}
+.footer-checkout .footer-checkout-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .footer-checkout .footer-checkout-card {
+    display: none;
+  }
+}
+.footer-checkout .footer-checkout-card .footer-checkout-card__item.visa {
+  width: 78px;
+  height: 25px;
+}
+.footer-checkout .footer-checkout-card .footer-checkout-card__item.master-card {
+  width: 31px;
+  height: 24px;
+}
+
+@media (max-width: 767px) {
+  .header-checkout {
+    padding: 18px 0 25px 0;
+  }
+}
+.header-checkout .header-checkout__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5.5px 0;
+}
+@media (min-width: 768px) {
+  .header-checkout .header-checkout__body {
+    padding: 23px 0;
+  }
+}
+.header-checkout .header-checkout__body .header-checkout__logo {
+  width: 131px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .header-checkout .header-checkout__body .header-checkout__logo {
+    width: 206px;
+  }
+}
+.header-checkout .header-checkout__body .header-checkout__phone {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 8px;
+  flex-direction: column;
+  row-gap: 5px;
+}
+@media (min-width: 768px) {
+  .header-checkout .header-checkout__body .header-checkout__phone {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.header-checkout .header-checkout__body .header-checkout__phone span {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+@media (min-width: 768px) {
+  .header-checkout .header-checkout__body .header-checkout__phone span {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+.header-checkout .header-checkout__body .header-checkout__phone .header-checkout__call {
+  color: #051B32;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+@media (min-width: 768px) {
+  .header-checkout .header-checkout__body .header-checkout__phone .header-checkout__call {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
 }
