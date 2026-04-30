@@ -20241,6 +20241,8 @@ textarea {
 .field {
   position: relative;
   line-height: normal;
+  display: flex;
+  flex-direction: column;
 }
 .field:not(:last-child) {
   margin-bottom: 15px;
@@ -20251,6 +20253,9 @@ textarea {
   line-height: 20px;
   color: #1A1A1A;
   margin-bottom: 4px;
+}
+.order-payment-part .field label {
+  margin-bottom: 0;
 }
 .field.error::after {
   content: "";
@@ -20267,16 +20272,16 @@ textarea {
   top: 50px;
 }
 .field.error .select2-container .select2-selection {
-  border: 1px solid var(--red);
+  border: 1px solid #ED021D;
 }
 .field.error .form-control {
-  border: 1px solid var(--red);
-  background: var(--white);
+  border: 1px solid #ED021D;
+  background: #F9FAFD;
   padding-right: 45px;
 }
 .field.error .form-control:hover, .field.error .form-control:focus, .field.error .form-control:not(:placeholder-shown) {
-  border: 1px solid var(--red) !important;
-  background: var(--white);
+  border: 1px solid #ED021D !important;
+  background: #F9FAFD;
 }
 .field.error .field--help-info {
   display: block;
@@ -20284,14 +20289,14 @@ textarea {
   line-height: 20px;
 }
 .field.error textarea.form-control {
-  border: 1px solid var(--red) !important;
+  border: 1px solid #ED021D !important;
 }
 .field.field-select-default .select2-container .select2-selection {
-  border: 1px solid var(--white);
+  border: 1px solid #F9FAFD;
 }
 .field.field-select-default .select2-container--open.select2-container--below .select2-selection,
 .field.field-select-default .select2-container--open.select2-container--above .select2-selection {
-  border: 1px solid var(--blue);
+  border: 1px solid #2EA4FF;
 }
 .field .field--help-info {
   display: none;
@@ -20300,16 +20305,17 @@ textarea {
   font-size: 18px;
   font-weight: 500;
   line-height: 140%;
-  color: var(--black);
+  color: #1A1A1A;
 }
 .field .form-control {
-  background: var(--white);
-  color: var(--black);
+  background: #F9FAFD;
+  color: #1A1A1A;
   padding: 8px 24px;
   height: 44px;
   min-width: 100%;
   border: 2px solid #d9d9d9;
   border-radius: 10px;
+  outline: unset;
 }
 .field .form-control::placeholder {
   font-size: 16px;
@@ -20318,12 +20324,12 @@ textarea {
   color: #9A9A9A;
 }
 .field .form-control:not(:placeholder-shown) {
-  border: 1px solid #e0e0e0 !important;
-  background: var(--white);
+  border: 2px solid #e0e0e0 !important;
+  background: #F9FAFD;
 }
 .field .form-control:focus, .field .form-control:active {
-  border: 1px solid #7DCCFF !important;
-  background: var(--white);
+  border: 2px solid #2EA4FF !important;
+  background: #F9FAFD;
 }
 .field .form-control:hover {
   border: 2px solid #d9d9d9;
@@ -20336,10 +20342,6 @@ textarea {
 .field .inner .form-control {
   border-radius: 8px;
   min-width: auto;
-}
-.sidebar-filter .field .inner .form-control {
-  border: 1px solid #e0e0e0 !important;
-  background: #F2F2F2;
 }
 .field.field-compete .form-control {
   border: unset !important;
@@ -20358,38 +20360,44 @@ textarea {
 .field textarea::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background-color: var(--white);
+  background-color: #F9FAFD;
   border-radius: 24px;
 }
 .field textarea::-webkit-scrollbar-thumb {
-  background-color: var(--blue);
+  background-color: #2EA4FF;
   border-radius: 24px;
+}
+.field textarea::placeholder {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 20px !important;
+  color: #1A1A1A !important;
 }
 .field textarea.form-control {
   padding: 14px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: unset !important;
   height: 100px;
   border: 1px solid #D9D9D9 !important;
 }
-.field textarea.form-control:hover, .field textarea.form-control:focus, .field textarea.form-control:active {
-  border: 1px solid #D9D9D9 !important;
-}
 .field textarea.form-control:not(:placeholder-shown) {
-  border: 1px solid #D9D9D9 !important;
+  border: 1px solid #d9d9d9 !important;
+}
+.field textarea.form-control:focus, .field textarea.form-control:active {
+  border: 1px solid #2EA4FF !important;
 }
 .field .textarea-container {
   position: relative;
   border-radius: 20px;
   padding: 12px 32px 42px 32px;
-  background: var(--white);
-  border: 1px solid var(--blue);
+  background: #F9FAFD;
+  border: 1px solid #2EA4FF;
 }
 .field .textarea-counter {
   font-size: 14px;
   font-weight: 500;
   line-height: 140%;
-  color: var(--grey);
+  color: #d9d9d9;
   position: absolute;
   right: 32px;
   bottom: 15px;
@@ -20409,12 +20417,18 @@ textarea {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: var(--black);
-  background: var(--white);
+  color: #1A1A1A;
+  background: #F9FAFD;
   padding: 10px 14px;
   gap: 5px;
   border: 1px solid #d9d9d9;
   border-radius: 10px;
+}
+.order-payment-part .field .select2-container .select2-selection {
+  padding: 8px 16px;
+  border: 2px solid #706f6f;
+  border-radius: 10px;
+  gap: 10px;
 }
 .field .select2-container .select2-selection .select2-selection__placeholder {
   color: #D9D9D9;
@@ -20422,7 +20436,7 @@ textarea {
 .field .select2-container .select2-selection .select2-selection__rendered {
   padding-left: 0;
   padding-right: 0;
-  color: var(--black);
+  color: #1A1A1A;
 }
 .field .select2-container .select2-selection .select2-selection__arrow {
   all: unset;
@@ -20442,20 +20456,33 @@ textarea {
   background-size: cover;
   transition: 0.3s ease-out 0s;
 }
+.order-payment-part .field .select2-container .select2-selection .select2-selection__arrow b::after {
+  background: url(../images/icons/icons.svg#i-triangle-arrow) no-repeat center;
+  background-size: cover;
+  width: 10px;
+  height: 5px;
+  margin: 0 7px;
+}
 .field .select2-container .select2-selection .select2-results__option {
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey);
+  color: #9d9d9d;
   padding: 12px 32px;
-  background: var(--white);
+  background: #F9FAFD;
 }
 .field .select2-container.select2-container--open.select2-container--below .select2-selection {
   border-radius: 4px 4px 0 0;
   border-bottom: 1px solid #e0e0e0;
 }
+.order-payment-part .field .select2-container.select2-container--open.select2-container--below .select2-selection {
+  border-radius: 10px 10px 0 0;
+}
 .field .select2-container.select2-container--open.select2-container--above .select2-selection {
   border-radius: 0 0 4px 4px;
   border-top: 1px solid #e0e0e0;
+}
+.order-payment-part .field .select2-container.select2-container--open.select2-container--above .select2-selection {
+  border-radius: 0 0 10px 10px;
 }
 .field .select2-container.select2-container--open.select2-container--above .select2-selection__arrow b::after {
   transform: rotate(-180deg);
@@ -20483,18 +20510,29 @@ textarea {
   border-radius: 0 0 4px 4px;
   overflow: hidden;
   border: none;
-  border: 1px solid #7DCCFF;
+  border: 1px solid #2EA4FF;
+}
+.order-payment-part .select2-container .select2-dropdown.select2-dropdown--below {
+  border-width: 2px;
+  border-radius: 0 0 10px 10px;
 }
 .select2-container .select2-dropdown.select2-dropdown--above {
   border-radius: 4px 4px 0 0;
   overflow: hidden;
   border: none;
-  border: 1px solid #7DCCFF;
+  border: 1px solid #2EA4FF;
+}
+.order-payment-part .select2-container .select2-dropdown.select2-dropdown--above {
+  border-width: 2px;
+  border-radius: 10px 10px 0 0;
 }
 .select2-container .select2-dropdown .select2-results__option {
-  color: var(--black);
-  background: var(--white);
+  color: #1A1A1A;
+  background: #F9FAFD;
   padding: 12px 32px;
+}
+.order-payment-part .select2-container .select2-dropdown .select2-results__option {
+  padding: 8px 16px;
 }
 .select2-container .select2-dropdown .select2-results__option--selected,
 .select2-container .select2-dropdown .select2-results__option--highlighted.select2-results__option--selectable {
@@ -20567,9 +20605,16 @@ textarea {
   border-radius: 50%;
 }
 @media (min-width: 1425px) {
+  .custom-control.custom-checkbox .custom-control-label:hover:after {
+    opacity: 1;
+    visibility: visible;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7458%) hue-rotate(346deg) brightness(106%) contrast(109%);
+  }
   .custom-control.custom-checkbox .custom-control-label:hover::before {
     opacity: 1;
     visibility: visible;
+    border-color: #2EA4FF;
+    background: #2EA4FF;
   }
 }
 .custom-control.custom-checkbox .custom-control-label .custom-checkbox--help-info {
@@ -20581,11 +20626,15 @@ textarea {
   font-weight: 300;
   line-height: 16px;
 }
+.choose-delivery-wrap .custom-control.custom-checkbox .custom-control-label span {
+  font-size: 14px;
+  line-height: 20px;
+}
 .custom-control.custom-checkbox .custom-control-label span a {
-  color: var(--white);
+  color: #F9FAFD;
 }
 .custom-control.custom-checkbox .custom-control-label span a:hover {
-  color: var(--black);
+  color: #1A1A1A;
 }
 .custom-control.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: unset;
@@ -20605,7 +20654,7 @@ textarea {
   display: block;
 }
 .custom-control.custom-checkbox.error .custom-control-label .custom-checkbox--help-info {
-  color: var(--red);
+  color: #ED021D;
 }
 
 .choose-radio-label {
@@ -20743,6 +20792,11 @@ textarea {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  transition: 0.3s ease-out 0s;
+}
+.tabs-custom .btn-tabs-custom:hover {
+  color: #FFFFFF;
+  background: #1A1A1A;
 }
 @media (max-width: 576px) {
   .tabs-custom .btn-tabs-custom {
@@ -20808,6 +20862,12 @@ textarea {
   line-height: 24px;
   padding: 8px 20px;
   cursor: pointer;
+  transition: 0.3s ease-out 0s;
+}
+.btn-checkout__next:hover, .btn-checkout__next:focus,
+.btn-login:hover,
+.btn-login:focus {
+  background: #0C4178;
 }
 @media (max-width: 576px) {
   .btn-checkout__next,
@@ -20880,6 +20940,7 @@ textarea {
   position: relative;
   padding: 6px 14px;
   padding-right: 45px;
+  cursor: pointer;
 }
 .btn-edit::after, .btn-edit::before {
   content: "";
@@ -21146,8 +21207,9 @@ textarea {
 }
 
 .sidebar {
-  width: 602px;
   flex-shrink: 0;
+  position: relative;
+  width: 602px;
 }
 @media (max-width: 1425px) {
   .sidebar {
@@ -21183,9 +21245,24 @@ textarea {
   border: 2px solid #D9D9D9;
   border-radius: 10px;
 }
+@media (min-width: 993px) {
+  .checkout-card {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: inherit;
+  }
+}
 @media (max-width: 576px) {
   .checkout-card {
     padding: 10px;
+  }
+}
+@media (min-width: 993px) {
+  .checkout-card.fixed {
+    position: fixed;
+    top: 0;
+    right: unset;
   }
 }
 .checkout-card .btn-checkout {
@@ -21419,6 +21496,7 @@ textarea {
   line-height: 20px;
   color: #2EA4FF;
   border-bottom: dashed 1px;
+  cursor: pointer;
 }
 
 .choose-delivery-wrap {
@@ -21478,6 +21556,9 @@ textarea {
   padding-top: 15px;
   padding-left: 35px;
 }
+.choose-payment-wrap .payment-group__inner .payment__option.is-active .order-payment-part {
+  display: block;
+}
 .choose-payment-wrap .payment-group__inner .payment__option .custom-control-label {
   padding-left: 20px;
 }
@@ -21516,4 +21597,83 @@ textarea {
 
 .payment__option.is-active .payment-group__inner {
   display: block;
+}
+
+.order-payment-part {
+  border: 2px solid #D9D9D9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 4px;
+  display: none;
+}
+.order-payment-part .field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.order-form-table-item {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-form-table-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1000;
+  max-width: 411px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  font-size: 14px;
+  line-height: 16px;
+  color: #1A1A1A;
+}
+.tooltip .tooltip-head {
+  font-weight: 700;
+}
+.tooltip ol.list-default {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+.tooltip ol.list-default ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+.tooltip ol.list-default li {
+  display: table;
+  counter-increment: item;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+.tooltip ol.list-default li:not(:last-child) {
+  margin-bottom: 2px;
+}
+.tooltip ol.list-default li::before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 10px;
+}
+.tooltip ol.list-default li li {
+  margin: 0;
+}
+.tooltip ol.list-default li li::before {
+  content: counters(item, ".") " ";
 }

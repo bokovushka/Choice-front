@@ -1,4 +1,5 @@
-//?tabs
+//? ||====== tabs ======||
+
 document.querySelectorAll('.tabs-custom').forEach((tabs) => {
 	const buttons = tabs.querySelectorAll('.btn-tabs-custom');
 	const panes = tabs.querySelectorAll('.tabs-custom__pane');
@@ -22,7 +23,8 @@ document.querySelectorAll('.tabs-custom').forEach((tabs) => {
 	});
 });
 
-//?step
+//? ||====== multi step ckeckout  ======||
+
 document.addEventListener('DOMContentLoaded', () => {
 	const parts = document.querySelectorAll('.checkout-part');
 	let currentStep = 0;
@@ -69,7 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	initStepper();
 });
 
-
+//? ||====== checkbox-who-delivery ======||
+//показує форму якщо активний
 
 $(document).ready(function () {
 
@@ -87,19 +90,87 @@ $(document).ready(function () {
 
 });
 
+//? ||====== radio button payment-group ======||
+//показує вкладені групи radio button якщо такі наявні
+
 $(document).ready(function () {
 
 	$('.payment-group').on('change', 'input[type="radio"]', function () {
 
-		const $group = $(this).closest('.payment-group');
-		const $option = $(this).closest('.payment__option');
+		const $input = $(this);
+		const $option = $input.closest('.payment__option');
+		const $group = $input.closest('.payment-group');
 
-		// прибрати активність тільки в цій групі
-		$group.find('.payment__option').removeClass('is-active');
+		// ===== lvl 1 =====
+		if ($option.parent('.payment-group').length) {
 
-		// активувати поточну
-		$option.addClass('is-active');
+			// верхні
+			$group.children('.payment__option')
+				.removeClass('is-active');
+
+			$option.addClass('is-active');
+		}
+
+		// ===== lvl 2 =====
+		if ($option.closest('.payment-group__inner').length) {
+
+			// внутрішні
+			$option
+				.siblings('.payment__option')
+				.removeClass('is-active');
+
+			$option.addClass('is-active');
+
+			// + батьківський
+			$option.closest('.payment-group > .payment__option')
+				.addClass('is-active');
+		}
 
 	});
 
 });
+
+//? ||====== Липкий сайдбар ======||
+
+if ($('.checkout-card').length && window.innerWidth > 992) {
+	StickyMove($('.checkout-card'), $('.footer'));
+}
+
+//! sticky sidebar function
+
+function StickyMove(StickyBlock, DownBlockMove) {
+
+	const parent = StickyBlock.parent();
+	const startTop = StickyBlock.offset().top;
+	const parentTop = parent.offset().top;
+
+	// 👉 фіксуємо мінімальну висоту
+	parent.css('min-height', StickyBlock.outerHeight() + 'px');
+
+	$(window).on('scroll', function () {
+		const scrollTop = $(this).scrollTop();
+		const footerTop = DownBlockMove.offset().top;
+		const blockHeight = StickyBlock.outerHeight();
+
+		const stopPoint = footerTop - blockHeight - parentTop - 55;
+
+		if (scrollTop > startTop) {
+			if (scrollTop < footerTop - blockHeight - 55) {
+				StickyBlock
+					.addClass('fixed')
+					.css({ position: '', top: '' });
+			} else {
+				StickyBlock
+					.removeClass('fixed')
+					.css({
+						position: 'absolute',
+						top: stopPoint + 'px'
+					});
+			}
+		} else {
+			StickyBlock
+				.removeClass('fixed')
+				.css({ position: '', top: '' });
+		}
+	});
+}

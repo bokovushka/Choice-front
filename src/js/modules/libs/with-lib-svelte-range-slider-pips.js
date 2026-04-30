@@ -1,7 +1,8 @@
 import RangeSlider from "../../../../node_modules/svelte-range-slider-pips/dist/svelte-range-slider-pips.mjs";
 
 document.addEventListener("DOMContentLoaded", () => {
-	if (!window.location.pathname.includes("checkout")) return;
+
+	if (!document.querySelector("#price-slider-full")) return;
 
 	function initPriceSlider({
 		sliderId,
@@ -24,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 				max,
 				value: start,
 				step: 1,
-
 				range: "min",
 				float: true,
 			}
@@ -36,16 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			`;
 		}
 
-		// стартове значення
 		update(start);
 
-		// slider → custom output
 		slider.$on("change", (e) => {
 			update(e.detail.value);
 		});
 	}
 
-	// === INIT ===
 	initPriceSlider({
 		sliderId: "price-slider-full",
 		outputSelector: ".slider-value",

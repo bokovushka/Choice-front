@@ -34,7 +34,6 @@ $(document).ready(function () {
 		});
 	});
 
-	// radio change → toggle блоків
 	$('input[name="checkbox-group-1"]').on('change', function () {
 
 		const $option = $(this).closest('.delivery-option');
@@ -44,6 +43,27 @@ $(document).ready(function () {
 
 		// активувати тільки цей
 		$option.addClass('is-active');
+	});
+
+});
+
+$(document).ready(function () {
+
+	$('.payment__option').each(function () {
+
+		const $option = $(this);
+		const $select = $option.find('.select-payment-method-value');
+
+		if (!$select.length) return;
+
+		const $wrap = $select.closest('.select-payment-method__wrap');
+
+		$select.select2({
+			minimumResultsForSearch: -1,
+			placeholder: "Ваше місто",
+			dropdownParent: $wrap
+		});
+
 	});
 
 });
