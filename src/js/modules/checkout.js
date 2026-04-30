@@ -28,36 +28,42 @@ document.querySelectorAll('.tabs-custom').forEach((tabs) => {
 document.addEventListener('DOMContentLoaded', () => {
 	const parts = document.querySelectorAll('.checkout-part');
 	let currentStep = 0;
+	let maxStepReached = 0;
 
 	function initStepper() {
 		parts.forEach((part, index) => {
-			part.classList.toggle('active', index === currentStep);
-			part.classList.toggle('hide', index !== currentStep);
-			part.classList.toggle('is-done', index < currentStep);
+			const isActive = index === currentStep;
+			const isDone = index < maxStepReached && !isActive;
+
+			part.classList.toggle('active', isActive);
+			part.classList.toggle('hide', !isActive);
+			part.classList.toggle('is-done', isDone);
 		});
 	}
 
 	function goToStep(step) {
 		if (step < 0 || step >= parts.length) return;
 
+		if (step > maxStepReached) {
+			maxStepReached = step;
+		}
+
 		currentStep = step;
 		initStepper();
+
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	}
 
 	document.addEventListener('click', (e) => {
 
-		// NEXT
 		if (e.target.closest('.btn-checkout__next')) {
 			goToStep(currentStep + 1);
 		}
 
-		// PREV (просто назад на 1 крок)
 		if (e.target.closest('.btn-checkout__prev')) {
 			goToStep(currentStep - 1);
 		}
 
-		// EDIT (перехід до конкретного кроку)
 		if (e.target.closest('.btn-edit')) {
 			const part = e.target.closest('.checkout-part');
 			const index = [...parts].indexOf(part);
