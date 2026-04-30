@@ -241,7 +241,7 @@ textarea {
 			line-height: 24px;
 			color: #1A1A1A;
 			background: #F9FAFD;
-			padding: 10px 14px;
+			padding: 10px 24px;
 			gap: 5px;
 			border: 1px solid rgba(217, 217, 217, 1);
 			border-radius: 10px;
@@ -907,6 +907,10 @@ textarea {
 	padding-right: 48px;
 	cursor: pointer;
 
+	@media (max-width: 768px) {
+		padding-right: 43px;
+	}
+
 	&::after,
 	&::before {
 		content: "";
@@ -922,6 +926,10 @@ textarea {
 		width: 18px;
 		height: 18px;
 		right: 16px;
+
+		@media (max-width: 768px) {
+			right: 12px;
+		}
 	}
 
 	&::after {
@@ -930,6 +938,10 @@ textarea {
 		width: 7px;
 		height: 7px;
 		right: 23px;
+
+		@media (max-width: 768px) {
+			right: 18px;
+		}
 	}
 }
 
@@ -982,6 +994,10 @@ textarea {
 
 .form-information__delivery {
 	padding-bottom: 25px;
+
+	@media (max-width: 768px) {}
+
+	padding-bottom: 31px;
 }
 
 .checkout-main {
@@ -1031,6 +1047,10 @@ textarea {
 		font-weight: 600;
 		line-height: 29px;
 		margin-bottom: 30px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+		}
 	}
 }
 
@@ -1102,6 +1122,9 @@ textarea {
 			padding-bottom: 25px;
 			margin-left: 40px;
 			width: 638px;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 20px;
 
 			@media (max-width: 1424px) {
 				width: auto;
@@ -1109,6 +1132,10 @@ textarea {
 
 			@media (max-width: 992px) {
 				width: auto;
+			}
+
+			@media (max-width: 768px) {
+				padding-bottom: 15px;
 			}
 
 			@media (max-width: 576px) {
@@ -1548,9 +1575,9 @@ textarea {
 }
 
 .order-choose-city {
-	margin: 15px 0;
+	margin: 16px 0 19px 0;
 	display: flex;
-	column-gap: 25px;
+	column-gap: 26px;
 
 	.order-choose-city__link {
 		font-size: 14px;

@@ -20419,7 +20419,7 @@ textarea {
   line-height: 24px;
   color: #1A1A1A;
   background: #F9FAFD;
-  padding: 10px 14px;
+  padding: 10px 24px;
   gap: 5px;
   border: 1px solid #d9d9d9;
   border-radius: 10px;
@@ -20942,6 +20942,11 @@ textarea {
   padding-right: 48px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .btn-edit {
+    padding-right: 43px;
+  }
+}
 .btn-edit::after, .btn-edit::before {
   content: "";
   display: block;
@@ -20956,12 +20961,22 @@ textarea {
   height: 18px;
   right: 16px;
 }
+@media (max-width: 768px) {
+  .btn-edit::before {
+    right: 12px;
+  }
+}
 .btn-edit::after {
   background: url(../images/icons/icons.svg#i-arrow-r) no-repeat center;
   background-size: cover;
   width: 7px;
   height: 7px;
   right: 23px;
+}
+@media (max-width: 768px) {
+  .btn-edit::after {
+    right: 18px;
+  }
 }
 
 .i-bonus {
@@ -21010,8 +21025,8 @@ textarea {
 
 .form-information__delivery {
   padding-bottom: 25px;
+  padding-bottom: 31px;
 }
-
 .checkout-main {
   background: #F9FAFD;
 }
@@ -21061,6 +21076,11 @@ textarea {
   line-height: 29px;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .checkout-form .checkout-form__title {
+    margin-bottom: 15px;
+  }
+}
 
 .checkout-part {
   position: relative;
@@ -21109,6 +21129,9 @@ textarea {
   padding-bottom: 25px;
   margin-left: 40px;
   width: 638px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
 }
 @media (max-width: 1424px) {
   .checkout-part .checkout-part__head .filled-data {
@@ -21118,6 +21141,11 @@ textarea {
 @media (max-width: 992px) {
   .checkout-part .checkout-part__head .filled-data {
     width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .checkout-part .checkout-part__head .filled-data {
+    padding-bottom: 15px;
   }
 }
 @media (max-width: 576px) {
@@ -21501,9 +21529,9 @@ textarea {
 }
 
 .order-choose-city {
-  margin: 15px 0;
+  margin: 16px 0 19px 0;
   display: flex;
-  column-gap: 25px;
+  column-gap: 26px;
 }
 .order-choose-city .order-choose-city__link {
   font-size: 14px;

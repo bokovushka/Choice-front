@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function initStepper() {
 		parts.forEach((part, index) => {
 			const isActive = index === currentStep;
-			const isDone = index < maxStepReached && !isActive;
+			const isDone = index <= maxStepReached && !isActive;
 
 			part.classList.toggle('active', isActive);
 			part.classList.toggle('hide', !isActive);
@@ -44,9 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	function goToStep(step) {
 		if (step < 0 || step >= parts.length) return;
 
-		if (step > maxStepReached) {
-			maxStepReached = step;
-		}
+		// 🔥 головний фікс
+		maxStepReached = Math.max(maxStepReached, currentStep);
 
 		currentStep = step;
 		initStepper();
